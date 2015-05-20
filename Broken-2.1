@@ -1,0 +1,217 @@
+
+Broken Changelog
+v2.1
+ 
+project build/
+1dbe69a New changelog setup *Original from DU*...Authorship on prior source
+4d7da94 change changelog location
+d8a02b8 add support for extended prop post processing
+b487a7d Force bsdiff for recovery_from_boot.p if not using GZIP
+35eb88c envsetup: hmm: Put descriptions into an array
+d2a2bdc main: don't assume java version string begins with the java version
+aa204d8 Add back mka bootzip
+ 
+project external/ffmpeg/
+566fb12 ffmpeg: Update Android build configuration
+ 
+project frameworks/av/
+0f7631d Revert "nuplayer: do not use cached source for wvm content -- DO NOT MERGE"
+11909b2 stagefright: httplive: Bring in line with upstream
+ced9c54 Revert "audio: Update timestamp for offload playback after EOS."
+ea2e10f audio: Fix media server crash at the start of voice call
+cafd0ce libstagefright: add NULL check in MediaCodecSource's puller
+6023c18 stagefright: Correct total duration of HFR clips
+ff6af5c libmedia: avoid processing stale callback events when track recycled
+cb88c33 libstagefright: Fix for handling of stream with corrupt frames
+baf5836 audio: Fixed streamType for non-media streams
+ 
+project frameworks/base/
+a1a2615 [1/3] frameworks/base: add "Accept all files" option for incoming files via Bluetooth
+c2bd5e5 fix blue H+ icon in statusbar
+273b046 Intercept Home button press to wake device
+8517faa environment: return external dir if secondary is not defined
+7c26d11 Make "SD Card removed" notification dismissible if the removed SD Card is not the primary storage
+dd3e7f5 base: fix external sdcard mountpoint
+a6bf526 Forward Port: Smoother Upload and Download Animation
+9e88cdb NavBar tile [1/2]
+8fdd59b App Circle Bar Tile [1/2]
+1530a9d Reboot/Recovery tile (1/2)
+e23d5f5 fix for systemui crash for dual sim users
+6dbda23 Add user configurable lockscreen shortcuts [1/2]
+09373ac Revert "SystemUI: add quick settings pull down with one finger"
+b143c46 keyguard: dont show check symbol key when quick unlock is enabled
+22fbf3b bootanimation: allow preload the bootanimation
+ee76dd7 bootanimation: allow using RGB565
+8ad59d4 SystemUI: add quick settings pull down with one finger
+d3d07fe Changing Broken boot imagery
+90be8b6 Fix volume key music control with ambient display enabled
+9502528 Add music tile (1/2)
+6c8c5dd Force Expanded Notifications (1/2)
+dc12fff Fixing Music tile
+d315b1a Revert "Frameworks: Do not allow to access quick settings on secure lockscreen - option (1/2)"
+8a30957 Give the power menu an animation *Thanks to Omni for the parts I used
+e28a261 inputservice: Allow disabling the usage of cursor layers.
+6788e99 framework: fix screenshot and rotation animation for devices with abnormal hw rotation
+9d2a240 Add support for QC's time_daemon
+eaa27ac [ActivityManager] Prevent provider from been created twice.
+b30461d [ActivityManager] Reset ActivityRecord's waitingVisible
+66c9d87 lowmemorykiller: Overwrite LMK parameters for low-tier devices
+4e02921 [ActivityManager] Ensure provider external access count will be released.
+c31ad20 [ActivityManager] Fix index out of bounds when updating next pss time.
+01c76aa [ActivityManager] Avoid orphan ContentProviderRecord.
+218f0ee [ActivityManager] Reduce report wrong anr activity
+14d5cc0 [ActivityManager] Fix adjust to wrong focused stack
+62e2b90 [ActivityManager] Set appropriate relation of task to home
+46a28fe [ActivityManager] Prevent application holding AMS lock
+552c9b8 [ActivityManager] Fix process record leakage.
+5c9e4dc [ActivityManager] Distinguish FG or BG receiver finished
+a2b8cbc [ActivityManager] Fix activity always visible.
+c14a085 lowmemorykiller: Fix high min-free values
+c88c1bf Alarm: add support for power off alarm
+04cc169 [ActivityManager] Avoid improper resume top activity.
+8ea295f [ActivityManager] Reduce report wrong anr activity
+c4d8605 [ActivityManager] Examine bad process before clean up application record
+d8d983d [ActivityManager] Fix ServiceRecord leakage
+b104560 [ActivityManager] Do not add service to reschedule after removing users.
+b87429f [ActivityManager] Improve task order of getRunningTasks.
+cfdffe2 [ActivityManager] Fix index OOB when resetting removed task
+aac2f84 Add ProcessInfoService to activity manager.
+a584929 [ActivityManager] Fix index out of bounds when updating next pss time.
+6b47852 Trigger GC Delay for subsequent launches.
+7dd95a8 [ActivityManager] Skip receiver precisely.
+7cdbc7a bootanimation: Only try to shutdown the mediaplayer if it was prepared
+41b857a bootanimation: allow preload the bootanimation
+424b758 bootanimation: allow using RGB565
+8f8b92c Make sure emulated storage path index is 0
+77af062 SystemUI: make alarm text selector less blocky
+629dd0c Keyguard: don't refresh ui when screen off
+a2b4a2e Fix lockscreen selection view in landscape mode.
+50e3d0a Frameworks: Policy: implement a pin keypad shuffler [1/2]
+30158a5 bootanim: Add continuous splash support
+755f214 QS: add Sync tile (1/2)
+7e3c9e4 QS: Add Ambient Display Tile (1/2)
+06ebe5f AmbientDisplay: Remove option for adding QS tile for ambient display if device doesn't support it.
+b0df582 Frameworks: Do not allow to access quick settings on secure lockscreen - option (1/2)
+3d273d5 Return: Smart Pulldown [1/2]
+fa0f865 Fix Smart Pulldown
+212f0c4 [2/2] Frameworks: Slim doze options
+6b38c1f [1/3] Frameworks: Proximity speaker
+052df5a Add slimseekbar
+8e00ea5 Frameworks: port SlimSeekBarPreference to SlimLP
+a1e446d Fix qs panel expansion
+78ac2ea Fix lockscreen notification expansion
+66c3986 change color of trigger region field *you cant see white on white background
+3c3ff8f Bump the OOM
+84ac585 Revert "keyguard: dont show check symbol key when quick unlock is enabled"
+d9c3af8 KeyguardSimPinView: don't send dummy request to get remaining pin
+ 
+project frameworks/native/
+5efd990 binder: Add readuInt64() symbol for LG RIL compatibility
+6ee3e4f sensorservice: Don't replace HAL orientation sensor
+ 
+project frameworks/opt/telephony/
+d941dac Revert "Revert "Start populating sub_id again.""
+ 
+project hardware/qcom/audio-caf/msm8916/
+a708ad9 post_proc: add support for virtualizer capability query
+ 
+project hardware/qcom/display-caf/msm8974/
+8db4dfe hwc: vds: isActive need to be set for wfd using vds solution
+4d0417d hwc: Avoid redoing GPU comp under certain conditions
+a25137d hwc: Add check for dirtyRect clear call.
+ 
+project hardware/qcom/media-caf/msm8974/
+f1cb445 mm-video-v4l2: vidc: vdec: handle flush while codec config ETB for hevc decoder
+ 
+project packages/apps/BrokenCenter/
+012998c change changelog link
+ 
+project packages/apps/Browser/
+4739ec5 Revert "Add Website Settings as valid fragment"
+162e3d0 Revert "Fix exception in Browser Settings"
+528ae85 Implement BrowserPreferencePage.isValidFragment.
+772e427 Forbid javascript- and file-scheme intents
+dcb60dc Link to the community
+ 
+project packages/apps/Camera2/
+39ce352 Automatic translation import
+ 
+project packages/apps/InCallUI/
+a0a56f5 [3/3] InCallUI: Proximity speaker
+6119daf InCallUI: clean up prox speaker code and improve usability
+f014a68 [2/2] InCallUI: let InCallUI handle proximity sensor for incoming calls
+7977b27 Proximity speaker: Fix issue with routing to speaker when connected to bluetooth
+ 
+project packages/apps/LockClock/
+f7ab915 Automatic translation import
+f4f559d Revert "cLock: Add to launcher"
+ 
+project packages/apps/Mms/
+93bd0c1 Relocating color calls for future mods
+f4f74da Color hackery
+93bb680 Revert "Color hackery"
+3a7ad91 Revert "Relocating color calls for future mods"
+8952757 Rearranging/renaming shit
+f082798 Layers 2.1
+ 
+project packages/apps/Settings/
+2e505f9 [3/3]Settings: add "Accept all files" option for incoming files via BT
+cb6f260 NavBar tile [2/2]
+435e7ca App Circle Bar Tile [2/2]
+1be502a Reboot/Recovery tile (2/2)
+55739e6 Add user configurable lockscreen shortcuts [2/2]
+904fa33 Add user configurable lockscreen shortcuts [2/2]
+0d9e676 Revert "Quicksettings quickpulldown"
+830d620 Settings: add quick pulldown listpreference
+e74b989 Adding a few needed summaries
+cc7ad78 Add music tile (2/2)
+3661050 Force Expanded Notifications (2/2)
+362e793 Revert "Rework: Disable Quick pulldown on lockscreen"
+cab78c2 bluetooth: Show a refresh icon on the select devices screen
+80048e6 Settings: Security: implement a pin keypad shuffler [2/2]
+ae13575 QS: add Sync tile (2/2)
+cbea1e7 QS: Add Ambient Display Tile (2/2)
+857aa8d Settings: Do not allow to access quick settings on secure lockscreen - option (2/2)
+fa50f3a Return: Smart Pulldown [2/2]
+45c2698 [1/2] Settings: Slim doze options
+b35550f Settings: fix app version overlaying package name
+22417f9 Fix notification light and battery light settings
+50ecd3d Add whitelist to HFM
+be0f930 How the hell did that get there...
+ 
+project packages/providers/MediaProvider/
+3baac1e Automatic translation import
+ 
+project packages/providers/TelephonyProvider/
+ecdea83 Properly upgrade DB
+fb2a277 APNs: Add statement to update carriers table to include read_only column
+c6ad84d Add proper DB upgrade path.
+ 
+project packages/services/Telephony/
+8d8dc5a Implement toggleLte
+3f94288 toggleLTE: switch to Global mode on devices that default to it
+a1cb458 [2/3] Telephony: Proximity speaker
+ 
+project platform_manifest/
+f8b1706 track our own BT for now
+7354ae6 back to slim bt
+ebda952 kill slimlauncher
+dcad1c0 Slims nfc
+3eacb7c Our own services/Telephony
+ddf6c20 slims extras
+5a9ac23 derp on me...
+8d76bb1 Minor fix in remote
+dee81e6 add remote & some newer chains
+8a53270 forgot the remote, smh
+cd2e957 Track our own browser
+ 
+project vendor/broken/
+b748bed versioning
+44069a3 kill slimlauncher
+43d66c3 Uncommenting out some services bools that shouldve been dont back when i did the fw shit..
+c19aa3a Added d2spr
+9d1fcd3 bringing apns up to date
+851f374 Update OmniSwitch
+0874432 cm: Put install tools in OUT/install
+eddff34 Zip and script tweaking
+8c23c92 Zip and script tweaking
