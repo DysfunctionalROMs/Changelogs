@@ -1,0 +1,3 @@
+
+project device/motorola/falcon/
+b734bb1 Revert "falcon: Update XT1032 Fingerprint"
