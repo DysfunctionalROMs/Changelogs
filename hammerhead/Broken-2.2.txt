@@ -1,0 +1,20 @@
+project device/lge/hammerhead/
+71a265b Minor system.prop cleanup
+b3279de Add kernel tunables [Thanks Randy]
+56630b5 Hammerhead Overhaul [1/2]
+f525b37 Adding back in stuff that got lost in overhaul
+149096b A little more cleanup
+8d93d89 Adding QCOM's cpu-boost back in
+a97c03c Re-add ambient display
+12a6b8c Remove CM's attempt at reinventing the wheel
+f5d4f94 Rearranging and lowering a couple freqs
+78589bb Switched kernels for now
+407ec2e No more permissive selinux
+27c17db Simplifying things a bit
+ecb0558 Adding proximity sensor overlay This should help ambient display behave a little better
+
+project kernel/lge/hammerhead/
+bf86945 Set fiops as default
+ac62a82 Bumped readahead up to 1024
+8b6ecbe Set ondemand as default
+a4d83d5 Minor rename

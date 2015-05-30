@@ -1,0 +1,15 @@
+project device/asus/flo/
+5221204 Added some startup vars
+
+project kernel/asus/flo/
+55cc8e1 Defconfig: Update defconfig
+fdcfeea Broke that shit
+a47ef6a Change default gov to Ondemand
+b9aeccc Added in some schedulers
+853b290 Added a few governors
+97226c2 Make it custom
+52e93b0 Added missing fast charge pieces
+156de3b Name change
+05d0b38 Row was being a cunt so I kicked it the fuck off
+a67ad24 Hell of a derp there.
+2e1f0dd How'd that get there?
