@@ -1,0 +1,210 @@
+
+project art/
+80a7ca4 ART: patchoat gets gzip support for compressed odex files
+8be27a5 ART: prevent patchoat from symlinking with dummy files
+
+project build/
+a149585 Generate extra userdata partition if needed
+22a4528 build: Move msm899x FLAC metadata flag to qcom_utils.mk
+0bc764e "LMY47W"
+fc2e5b6 "LMY47X"
+b0977a7 "LMY47Y"
+1eac22f "LMY47Z"
+ea53d15 "LMY48B"
+afb8382 [2/3] CmHardwareService: add cm hardware jar to system server
+b5fc7e6 Broken Optimizations V1
+951719f Build with 4.9
+79b9f34 Goddamn endifs
+eae07af Revert "[2/3] CmHardwareService: add cm hardware jar to system server"
+a0a6f2b Kill MusicFX
+00eaa84 Go back an extra week..>We be behind
+40da702 back to every 2 weeks
+930cd42 Backuptool
+8b2eedd Change zip naming
+
+project external/sepolicy/
+a7d52c4 Make recovery domain permissive so we can set SELinux permissive
+
+project frameworks/base/
+866e681 SystemUI: add quick settings pull down with one finger
+4c37688 SystemUI: fix right hand side gestures on lockscreen
+51e7578 SystemUI: add Settings.System toggle for quick-quick settings pulldown
+e7cf7a5 SystemUI : Port forward statusbar brightness control
+0e58182 Frameworks: add abillity to use quick settings pulldown on the left side
+183ba00 ProximityWake : Add support for checking proximity when waking device
+688a6cf [1/2] Frameworks: let InCallUI handle proximity sensor for incoming calls
+5b9027c Revert "Bump the OOM"
+420f429 Revert "Speed up Statusbar and Activity Manager"
+bc3eff6 Revert "Frameworks: Speed up orientation rotation"
+0bf24a3 Revert "Speed things up!!"
+981013d Revert "Speed up a few animations"
+c6c536e Killing duplicates fixing qs pulldown
+3495da0 Force showing custom carrier on keyguard status bar..for reg and msim
+a884149 Frameworks: Actually start to use HEADS_UP_REQUESTED extra
+239d572 Frameworks: Slim heads up customizations for LP (1/2)
+9d0771f frameworks: implement system-wide Torch service
+d41476d Add notification indicating flashlight is active
+37d0b4f Add double tap option to lockscreen shortcuts
+edfc3b8 Frameworks: Only set package name on user heads ups
+2e775ea Frameworks: Be sure heads up view is attached before removing it
+5e1370e Add PowerManager integration for button and keyboard backlight.
+67a0cb0 SystemUI: add AudioFX/visualizer tile
+e069d92 SystemUI: Visualizer tile improvements
+e35a297 SystemUI: make AudioFX tile not translatable
+9b4413e SystemUI: visualizer tile improvements
+ee2ced5 SystemUI: add visualizer to lock screen
+84eb629 SystemUI: fix crashes with custom lockscreen shortcuts
+4817c1d SystemUI: allow lock screen visualizer to be disabled
+19badab SystemUI: disable visualizers during power save mode
+1438fec SystemUI: move keyguard visualizer behind notifications
+f437408 SystemUI: improve visualier tile state management
+a4edc4c Fix Visualizer
+e81d4e7 Broken UserContentObserver
+a30de9c SystemUI : Add screen timeout tile
+2efcb4c Status bar greeting [1/2]
+db1fd55 Battery Bar [1/2]
+576ad88 Fix batteryBar on Navbar * this fixs the dual navbar battery bar when its supposed to be hidden and makes it work as intended * this also breaks statusbar tests need to spend some time solving this in java here https://github.com/PurifiedRom/android_frameworks_base/commit/39e80d24d28ac2026ff9dd3f7c832b6f489fe404#diff-ca2883aa3b534f5a1db5e0789780cf18R86 * proper fix would be to have it look for xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui which is what the statusbar uses and xmlns:systemui="http://schemas.android.com/apk/res-auto which is what navbar uses * we dont run statusbar tests so it isnt a big concern at the moment
+b8d0b32 Prevent leaking surfaces from exiting windows
+15c0d8a Find wall clock RTC through sysfs
+6983077 power: Disable keyboard/button lights while dozing/dreaming
+06023f1 Add a timeout state to frozen windows
+388b05c [ActivityManager] Avoid NullPointerException if no crash info
+7c61b26 restrict updateExternalMediaStatus to non-emulated storage
+373d9bb Avoid duplicated calling to isRestricted to improve performance
+f1659cf Fix an apk icon animation corruption issue
+33c9463 Optimize IncallUI delay for voice calls
+78dc6df frameworks : Extends mimetype list hence apps can view the media files.
+c82263e media:Modify the display of system default ringtone when it is none.
+d550a61 Screenshots info is not updated when device is plugged in MTP mode
+c23568b base: nat464X: Only update ipv4 pseudo-interface when it's connected
+4e8dc1a Remove opaque check in preparing dirty region
+508038e Fix ANR caused by hwuiTask thread
+90a546e Use fabsf() rather than abs()
+4586213 Don't create unnecessary RenderThread's instance when executing 'dumpsys gfxinfo'
+7e3cfce Fix HTC headset handling.
+2fba48f base: ConnectivityServer: Don't reap the new network
+d06c017 ScreenCap : Add jpeg support
+5b80717 printspooler: Print view crash.
+c52adca SystemUI: Set Occluded to false when keyguard is not showing
+b177228 Black Screen: Fix dlfree error when delet mZipInflater.
+9f32bc1 Fix NPE in NetdResponseCode.InterfaceClassActivity
+502b6a3 optimize wallpaper load,avoid show black wallpaper.
+fc906e4 Fix no vibration during shutdown.
+9b7189f frameworks/base: Make minfree values optimal for 32bit devices
+83a4c42 MediaSessionService: Error checks for UserRecord object
+c39db72 libandroidfw: Fatal exception of dlfree often causes the system crashed
+b597643 Fix IllegalStateException in Printspooler
+1c7ee97 Improve Recents-View
+d963146 base: Nat464: unregister network observer when we stop!
+010c23c connectivity: Remove net id broadcast change event
+3cd4d01 Context leaks in EditText causes out of memory
+5dd2148 [ActivityManager] Avoid unnecessary restart provider process
+26ebb40 bindService can't start up service process
+d3d4e4a [ActivityManager] Fix activity always visible.
+de2ca6d [ActivityManager] Finish the failed-to-pause activity
+0e0686f [ActivityManager] Move UI operation to UI handler
+310db34 That line dont go there
+c88415e CAF Task Manager switch [1/2]
+1edb5bf Fixed Task Manager bug described in post below
+2ba601e Fix battery bar on nav for tablets and phones Tweaked from https://github.com/BrokenOs/frameworks_base/commit/29a828cb7e1b204212e0be63003886879884fb59
+
+project frameworks/native/
+3189f87 Add 3GB dalvik heap and hwui memory
+
+project frameworks/opt/telephony/
+b50fb97 Make mImsPhone static. DO NOT MERGE ANYWHERE
+
+project hardware/qcom/display-caf/msm8960/
+eee4836 libhwcomposer: Enable rotator on resolution change
+6b2a623 gralloc: hwc: Propagate PROTECTED flag to hwc
+
+project packages/apps/BrokenCenter/
+8f9cbd1 Changelog link.. *Thanks Z
+
+project packages/apps/Camera2/
+9bafab3 Automatic translation import
+f5bad5b Automatic translation import
+
+project packages/apps/Settings/
+cf73f3a No more "miscellaneous" battery drain
+85d5334 Status bar brightness control
+ed717ea Fix the APN fc (should pay more attn)
+91d34df statusbar brightness OCD
+48a0c6a Settings: Slim heads up customizations for LP (2/2)
+1773585 Settings: add headsup manifest permission
+7660877 Add back torch to screen off gestures
+eddf537 Add double tap option to lockscreen shortcuts
+93b244a Fix color not showing in settings for notification light
+f95f527 Lost a torch string
+0bcbcf9 Revert "Lost a torch string"
+44a1d34 Revert "Add back torch to screen off gestures"
+19c0897 Forward port button/keyboard backlight options
+04703fb Add a 2 sec timeout for heads up notifications
+b05b6b8 Settings: add AudioFX tile
+5fa907c Settings: make AudioFX tile not translatable
+0cbb2d2 Properly grey out vol playback control when activating vol wake up device
+cf0b53e Settings: allow lock screen visualizer to be disabled
+5573958 wtfe
+eba05e4 Settings : Add screen timeout
+63152fb Status bar greeting [2/2]
+4d650d6 Battery Bar [2/2]
+527994a CAF Task Manager switch [2/2]
+4b78068 Tighten up Broken Version
+
+project packages/providers/DownloadProvider/
+b657a66 Automatic translation import
+07b4b4e Automatic translation import
+
+project packages/services/Telecomm/
+4c94c18 Revert "Phone: Add headset notification when wired headset plugin"
+
+project packages/services/Telephony/
+25c971e Broken seekbar
+d61b460 revert brokenseekbar
+c3970a0 Telephony: GSM: fix removing 'Carrier Settings' again
+
+project platform_manifest/
+2a206af our art
+40eeb65 add latest toolchains
+2e93b68 manifest: kill QuickSearchBox
+e153f20 Android 5.1.1 release 2
+609d1d1 Android 5.1.1 release 3
+04a9434 kill phone repo
+
+project prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9/
+c5d5557 Rebuild with r212222 to fix devirtualization bug in GCC4.9 (darwin)
+
+project prebuilts/gcc/linux-x86/aarch64/sabermod-aarch64-linux-gnu-5.1/
+edbac8b push it
+
+project prebuilts/gcc/linux-x86/aarch64/sabermod-aarch64-linux-gnu-6.0/
+3f851f9 p-push it real good
+
+project prebuilts/gcc/linux-x86/arm/sabermod-arm-linux-gnueabi-5.1/
+17c1935 sm5.1
+
+project prebuilts/gcc/linux-x86/arm/sabermod-arm-linux-gnueabi-6.0/
+af05428 sm6.0
+
+project system/core/
+4b2aac8 fastboot: Add MMX fastboot USB ID
+275f66e fs_mgr: introduce fs_mgr_format to format wiped partitions
+
+project system/vold/
+6f4ba46 Adjust to r3 fs_mgr changes
+
+project vendor/broken/
+8830d76 Get the script up to par with build
+9232a09 Get the script up to par with build
+864ff18 Got caught slippin
+e7b7a34 Added some versioning for in house use
+eb24b69 2.2
+cfd5612 comment out screen recorder till its back
+57f3760 [3/3] CmHardwareService: add sepolicy
+01904cc Comment out Viper and enable AudioFX
+8f658ea Added tl03wifi to lunch menu
+be558d2 Update vendorsetup.sh
+4067396 Fix Joshs derp
+328e5d3 Redo zip naming
+e240139 Tweak the backup script right this time
+23da265 Setting up versioning the right way

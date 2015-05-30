@@ -1,0 +1,88 @@
+project device/oneplus/bacon/
+fa4bcde Breaking Shit
+b96163f fml
+6be9e63 Change the defconfig and kill a few other residuals
+5df2e75 kill the chain for now
+aeb487e change kernel source
+d077c5f change kernel for now
+
+project device/oppo/common/
+30f1e8a disable hardwarewakekeys bool for now
+
+project device/oppo/msm8974-common/
+a9a5674 msm8974: Update TrustZone version to be consistent with newest CM nightlies.
+85df105 Unneeded bool
+efe3a63 right the kernel
+ec8dc06 kill an call for cm specific stuff
+0e909fb back to stock kernel for now
+
+project kernel/oneplus/msm8974/
+b5e17f6 fastcharge: qpnp-charger: remove mA from sysfs phase II
+f6b545a Defconfig: Set CONFIG_CHARGE_LEVEL
+76ffd83 Set kernel version
+abc9c94 msm8974-oppo: Update gpiomux config from oppo 4.4 source
+701ae70 clock-8974: Update from oppo 4.4 source
+08e48f5 nfc: Remove p61 nfc driver
+f085092 msm: camera: isp: Validate input parameter for vfe_write and vfe_read
+4cdfad5 ASoC: wcd9xxx: Add check for buffer overflow
+32c0719 diag: dci: Send mode reset command to the apps processor
+43482bd diag: dci: Mutex protect the list while traversal and node deletion
+650f6e3 diag: Prevent suspend in Memory Device mode
+7fc1b48 diag: Release wakeup sources properly
+a86360c diag: Update SSIDs, event ids and log codes
+c3a8de0 rpm_log: Fix file_read error
+1032c80 msm: smp2p: Use correct macro structure
+6172cf7 drivercore: Avoid adding devices without pm_ops to dpm list
+379736e PM: Move disabling/enabling runtime PM to late suspend/early resume
+ff06712 msm: sps: Support low memory condition in SPS driver
+d2413b4 msm: bam: Use memset_io instead of memset
+9b30182 msm: sps: update the checking of free slots
+f495d68 msm: rpm-smd: Read RPM acks before entering system sleep
+b627c08 qcom: rpm-smd: Force smd channel update in interrupt lock context
+4e93439 msm: rpm-smd: Increase the max outstanding sleep set messages to 24
+eb259de msm: mdss: Grouping enable and prepare calls for dsi link clocks
+ac591a6 wcd9xxx: Avoid wrong enabling of buck for HPH,LO concurrency
+4744168 ASoC: msm: qdsp6v2: fix for pcm_write failure during voip
+3d6be21 wcnss: handle CBC complete event from firmware
+b65c13a PM / devfreq: Fix devfreq_remove_device() to improve the sequence of resource free
+b1022c4 PM / devfreq: Workaround cpufreq REMOVE_POLICY versus hotplug lock race
+2e377c8 PM / devfreq: Refactor Cache HWmon governor to be more generic
+abddf01 PM / devfreq: cache_hwmon: Move IRQ handling to device drivers
+bf62791 PM / devfreq: cache_hwmon: Use array for reporting monitor stats
+2301284 PM / devfreq: cache_hwmon: Also print low mrps for debugging
+a5b7046 PM / devfreq: governor_cpufreq: Output device name in debug print
+0be5ea8 PM / devfreq: Add timeout feature for cpufreq governor
+8c04311 PM / devfreq: Fix error handling in governor_cpufreq
+7693429 PM / devfreq: governor_cpufreq: Rewrite locking to avoid deadlocks
+3eccb48 msm: Remove auxdata mapping for msm sdcc devices
+8dfc383 ARM: dts: msm: Remove device tree bindings that use msm_sdcc driver
+1795212 prima: Update to LA.BF.1.1.1_rb1.22
+c16a90e lowmemorykiller: Don't count swap cache pages twice
+479da50 ion: return a fresh sg_table from ion_map_dma_buf
+f6d491f PM: Fix a bug in dpm_suspend_late()
+74a99e5 irq: Enable all irqs unconditionally in irq_resume
+4c6c8e6 genirq: Remove racy waitqueue_active check
+39f6173 irqchip: gic: Mask PPIs during disable_percpu_irq()
+77d8ca0 msm: reorder init calls in board's init_machine handler
+64be003 alarmtimer: Fix bug where relative alarm timers were treated as absolute
+e3ab894 alarmtimer: Do not signal SIGEV_NONE timers
+34fe80f alarmtimer: Lock k_itimer during timer callback
+3be85c9 rtc: alarm: Fix data handling issue with alarm->type
+718be4a9 staging: android-alarm: Switch from wakelocks to wakeup sources
+78f9ae8 alarm: init power_on_alarm in alarm_dev_init
+6ee5d71 alarmtimer: set power off alarm to be triggered on time
+3c3b949 alarmtimer: add verification for rtc dev in power_on_alarm_init
+cdc82bc drivers: lpm-levels: Provide API to set wake up time from suspend
+4bb606c rtc: alarm: Change wake-up source
+62452fb Revert "synaptics: Update firmware to 14001227"
+f9eb4bf mmc: core: Avoid infinite retries of failed mmc command
+41d324e mmc: block: Fix an invalid use of req->cmd_flag in DISCARD operation
+df2d699 mmc: core: invoke low power mode if card is not present
+7e57e10 mmc: core: enhance card removal judgement for slow removal
+e3de309 cpufreq: limiter: add frequency limiter driver
+093e992 drivers: notifier: add state notifier driver
+d0dac66 Defconfig: Enable STATE_NOTIFIER
+152ed32 [PATCH] Implement kexec-hardboot
+
+project vendor/oneplus/
+0fa65ad bacon: Fix inverted magnetometer
