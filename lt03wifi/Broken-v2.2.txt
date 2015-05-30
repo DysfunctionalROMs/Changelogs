@@ -1,0 +1,9 @@
+
+project kernel/samsung/lt03wifi/
+21dd2ac add Liquid type opts to kernel
+94c0fdd disable strict in quite a few places
+4f1000e disable strict in qcache and compile net with -Os
+c1b937e more strict fixes
+53e30db fix graphite build
+0052d58 woops this shouldnt be there
+
