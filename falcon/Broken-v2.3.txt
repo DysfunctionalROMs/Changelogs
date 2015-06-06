@@ -1,0 +1,24 @@
+project device/motorola/falcon/
+0df885f fix recovery size error
+
+project device/motorola/msm8226-common/
+2127388 msm8226-common: add MotoDoze Service
+915c550 msm8226-common: doze: Add pocket mode
+63b88a6 msm8226-common: doze: Disable doze settings when doze disabled
+dbe08b5 msm8226-common: doze: Disable gestures by default
+092abce msm8226-common: doze: add "back" button in actionbar
+8fb7948 msm8226-common: doze: Add ambient display preference
+4501906 fix merge derp
+53b7f9d Revert "Kill FM for now"
+
+
+project kernel/motorola/msm8226/
+3f851ed msm8226: config: Disable CONFIG_ANDROID_LOGGER
+c992812 msm8226: config: Use -O2 not -Os
+2c93497 msm8226: config: enable incremental updates
+56392c0 drivers: t4k71: Add OTP Calibration for t4k71.
+2514764 arm: msm: mmi: devicetree clock overriding for t4k71
+28f82bc arm: msm: 8226: clock change for T4K71 front imager
+8014612 arm/dts: Thea: Add T4K71 front imager
+1ec35ba arm/dt: 8226: Add T4K71 front imager
+46ef311 disable lazy gpu algorythm for now
