@@ -1,0 +1,74 @@
+project device/oneplus/bacon/
+552dd7d Back to AK
+d152b49 bacon: Disable BLE vendor extensions
+195af1b bacon: Set optimal for BLE configuration
+92e6a1d bacon: Move volatile partitions out of fstab
+850dc9d Revert "bacon: Move volatile partitions out of fstab"
+7d7bf29 Pull ir_proximity prop out of common repo (3/3)
+af497aa bacon: Fix proximity sensor
+b61214e bacon: disable Mifare Reader to fix freeze after scanning MClassic
+
+project device/oppo/common/
+1661b42 oppo-common: Add keyhandler to system server classpath
+47a338c oppo-common: Unbreak touchscreen gestures
+5bfecdd KeyHandler: never dexopt it
+
+project device/oppo/msm8974-common/
+9fe38eb Back to AK
+4bbeada msm8974: Disable BLE peripheral mode
+26e64ac msm8974: Update WCN configuration
+0c4b519 msm8974: Allow flashing with older TrustZone version
+7095d17 Pull ir_proximity prop out of common repo (1/3)
+dcac449 msm8974: Update GPS configurations
+21158ec msm8974: Update WiFi configuration
+62d4dd5 msm8974: Use hybrid decoder for HEVC up to 1080P
+d694c8e Revert "msm8974: Update WiFi configuration"
+9db05b6 Revert "msm8974: Update GPS configurations"
+c86f785 msm8974-common: Fix USB ethernet support
+73cf3b5 msm8974: Update WiFi configuration
+
+project kernel/oneplus/AK-OnePone-Reborn/
+24713b7 thermal: msm8974-tsens: Add missing include for no-debugging cases
+6425229 Kernel Version: AK.249.OPO.CM12.1
+88df136 smd_pkt: Add sanity check to avoid unregistering the driver twice
+f5d03c6 msm: rpm_smd: Use spin_lock_irqsave in work function
+c05a2cf cpufreq: interactive: Reschedule timer if min_freq is reduced
+e7c8a81 Kernel Version: AK.250.OPO.CM12.1
+d5472b6 selinux: enable per-file labeling for debugfs files.
+0d1bdc6 ipv6: fib: fix potential NULL pointer dereference
+f31f457 Kernel Version: AK.251.OPO.CM12.1
+8c6f968 selinux: enable genfscon labeling for sysfs and pstore files
+7ba2b9f Kernel Version: AK.252.OPO.CM12.1
+9dc80f1 net/unix: sk_socket can disappear when state is unlocked
+28306bd New Build Breakage in branch: kernel-m-dev-tegra-flounder-3.10 @ 1960706
+cd96b62 neigh: Better handling of transition to NUD_PROBE state
+d3f0657 msm: thermal: Limit the emergency mitigation messages
+49f66d4 msm: thermal: fix build error after apply limit to thermal logs
+49b2d73 Kernel Version: AK.253.OPO.CM12.1
+744178b Revert "qce50: Update clock vote for improved performance"
+6201099 Kernel Version: AK.254.OPO.CM12.1
+0de307a Revert "mm: Increase MIN and MAX default readahead sizes"
+17fed76 msm: kgsl: Ratelimit fence error messages
+08eee98 msm: kgsl: fix Ratelimit fence error include
+e413c4a arm/dt: msm8974: Lower GPU voltage constraints
+1ad718b Kernel Version: AK.255.OPO.CM12.1
+60a02d5 wlan: Set peer staId for management frame.
+df8ef6e wlan: Ini param to allow back ground scan in TDLS.
+4a3b7a4 msm: mdss: fix potential crash when sending backlight DCS commands
+c61e9cb msm: mdss: disable dsi status check when display is off
+d68392e msm: mdss: remove unnecessary lock in checking DSI status
+b48a9b0 Kernel Version: AK.256.OPO.CM12.1
+8565749 Revert "cpufreq: interactive: Reschedule timer if min_freq is reduced"
+76a083b synaptics: Use per-panel firmware loading
+bfd02fd Kernel Version: AK.257.OPO.CM12.1
+68a519e PM: Enable asynchronous noirq resume threads to save the resuming time
+01e55e1 synaptics: Fix find7 compilation
+3ddcbc0 msm: mdss: Fix Iommu page fault for splash logo enabled feature
+c722cce Revert "ak_bacon_defconfig: disable MSM_RTB"
+18a425e Kernel Version: AK.258.OPO.CM12.1
+8fbbce4 Revert "cpufreq: interactive: Ramp up directly if cpu_load exceeds 100"
+1559b8a cpufreq: interactive: Reschedule timer if min_freq is reduced
+b420fa3 Kernel Version: AK.259.OPO.CM12.1
+
+project vendor/oppo/
+975ee02 msm8974-common: Update rmt_storage

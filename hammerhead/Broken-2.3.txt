@@ -1,0 +1,23 @@
+project device/lge/hammerhead/
+14e58a4 Kill Logspam
+7fd097c Enable Workaround for slow ROM flash
+88c5e96 Ensure No Secure Discard
+398c885 We get APNs from Vendor
+2d57c49 Delete Show 4G Overlays
+2934042 gps: Only show errors
+ab1bbef Remove Bug Report
+0187d0d hammerhead: disable touch boost debug spam
+439077a Enable odex compression
+
+project kernel/lge/hammerhead/
+05af23f Minor rename
+eeb1782 USB Fast Charge for Nexus 5
+90f4a23 [WIP] Rework FASTCHARGE
+716d7c5 Set fast charge ON as default value
+4ca9a2d msm: krait: add CPU Voltage control.
+4cca0bd Hammerhead: Add Overclock support
+dc92f26 Hammerhead: Add CPU Turbo boost
+f78b90e Linux 3.4.107
+0bc9660 Add turbo boost to defconfig
+8e863c5 Hammerhead: Add powersuspend
+e67203d Defconfig: Created custom section Relocated all the custom additions to one central place

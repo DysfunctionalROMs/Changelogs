@@ -1,0 +1,91 @@
+
+project build/
+8609a8b Add back MusicFX for AudioFX compatibility
+ee0ebfb Add cmhw to system server
+674f0f3 do a week
+
+project frameworks/base/
+1a862dc Add toggleTorch call
+790767c Stylus gestures features (1/2)
+d310ed3 [2/2] framework/base: Add EdgeGesture service.
+4870e9e Support GESTURE_SENSOR input device type with GestureService
+73258c8 input: Forward-port support for chained input filters
+b6477d9 Properly clean up when setting new InputFilter.
+2d9890f Frameworks/base: Fix old code in MediaPlayer
+ac8a9b0 Fix context leak
+3255095 Sometimes the application context is null
+7daca13 Prevent windows from freezing screen while timeout
+a0292a2 fix return value scale of notifyANR()
+3474105 Check caller status precisely when registering receiver.
+3e24d12 Also restart provider if there is external handle.
+49e14ff Fix lost singleton provider after force-stopping user or package.
+56d582f Don't apply animation clip to dialog activities
+0a70d20 Use the correct parent size to initialize animations
+b5a895e Adjust display inversion matrix to account for luminance
+f0ec9f7 AudioService: persist volume of ring stream when ringer mode changed
+6df412a Measure absolute value of pointer motion distance
+d03ebad Fix racing condition of mTouchExcludeRegion
+27c83ab Only one task within the stack should moveToBack
+657f430 Not include fullscreen opaque window on screenshot
+d88822e Don't relayout based on a window that isn't visible
+9556110 Remove the window whose client process has died or become zombie
+bb32c5f Fix bug of unnecessary wakeups after completed syncs.
+6ab1164 Fix for infinite loop in RemoteViewsAdapter
+21c6c21 Fix bugs regarding delay the dispatching of non-wakeup alarms
+8b8a8e1 Revert "Remove unnecessary sleep in ActivityThread."
+7b08fc1 Revert "SystemUI: Add data type and signal icons"
+8c56171 Make Swapping volume keys match the new context calls
+2239361 FWB: Gesture Anywhere - bring it back [1/2]
+4753adc Frameworks: Gesture Lockscreen (1/2)
+033cb92 Frameworks: Slim recent app screen
+a8720d1 Heads up notifications behavior fix
+ccb3f4b Fix bad .9's
+
+project frameworks/native/
+1068840 libgui: bail assertion if sensorservice cannot be found
+
+project frameworks/opt/cards/
+fac2ea8 remove trds resources
+b549b3c Update cards lib
+3dd47c3 rename paths
+ae6e11f use api21
+4073626 use api21 in android.mk
+8ab2196 Some RTL fixes
+d4d9024 Cardslib: CardsListView allow to touchevents from swipetodismiss for gesture events
+6caa229 more RTL changes
+ecdcf2a Cardslib: Add partial onLongClickListener ability
+64a9370 Some fixes
+bdde896 Use proper expand icons
+4544933 Use a better expand icon
+cc6e167 Fix the expand icon and center some things
+f4ca6d4 Another expanded icon fix
+5f986d5 More centering fixes
+1f45441 add TransformableDrawableButton stuff from Narfss
+fe324f3 bump up animation duration for expand button
+726f4ad revert button animation
+
+project packages/apps/LockClock/
+3fde33e Automatic translation import
+
+project packages/apps/Settings/
+a1f7ab8 Stylus gestures features (2/2)
+c303c77 Setting up gesture settings
+2c99ca0 Settings: Add preference for EdgeGesture service.
+21ca4ec Add OClick and hide the tiles
+27949e3 Settings: Gesture Anywhere - bring it back [2/2]
+7dc9e5a Settings: Gesture Lockscreen (2/2)
+189e456 Settings: Gesture Lockscreen (2/2)
+224d184 Fixing lockscreen gesture
+c096e17 Settings: Slim Recents
+21e33d4 Broken Build Type [1/2]
+eccf138 CMHW: Add "advanced" menu to Display/TapToWake and fix Keydisabler not surviving reboot
+
+project platform_manifest/
+dc49243 Our cards
+
+project vendor/broken/
+8eff98f v2.3
+d60b050 add t0lte and i605
+2be8e16 Ninja is the new testing
+69f005a Broken Build Type and fuck with backup
+dec9c0b vendor: NTFS support
