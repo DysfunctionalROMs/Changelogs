@@ -1,0 +1,7 @@
+project device/asus/flo/
+3be1ac7 Remove unneeded startup variables and enable odex compression
+
+project kernel/asus/flo/
+6ce8aae Remove old merge derps
+598991c Flo: Add intelli hotplug cpu driver with eco mode
+fbc86c2 Disable intelliplug for now
