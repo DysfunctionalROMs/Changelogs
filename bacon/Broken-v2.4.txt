@@ -1,0 +1,11 @@
+project device/oneplus/bacon/
+e7ae381 dex2oat that shit
+
+project kernel/oneplus/AK-OnePone-Reborn/
+c68f541 block: Make CFQ default to IOPS mode on SSDs
+a1649ae block: Update to BFQv7r8
+2c58c3e msm: mdss: reset pixel extension flag if validation fails
+e16fee7 Kernel Version: AK.261.OPO.CM12.1
+ca507b7 fs: take i_mutex during prepare_binprm for set[ug]id executables
+e30494c prima: Update to LA.BF.1.1.1.c3-02800-8x74.0
+c5da087 Kernel Version: AK.262.OPO.CM12.1
