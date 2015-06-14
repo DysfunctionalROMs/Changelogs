@@ -1,0 +1,2 @@
+project device/samsung/lt03wifi/
+027f445 Renabled HW keys and disabled HW key wake up since it isn't handle like that
