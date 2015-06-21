@@ -1,0 +1,9 @@
+
+project device/samsung/d2-common/
+537bbac Wifi Calling bool
+
+project kernel/samsung/d2/
+a9519cd Regen Deathly d2 defconfig
+809b86b d2: don't optimize for size
+
+
