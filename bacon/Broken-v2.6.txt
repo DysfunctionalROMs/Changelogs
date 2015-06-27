@@ -1,0 +1,36 @@
+project device/oppo/msm8974-common/
+33ce06d msm8974: Don't need to copy FFMPEG config anymore
+
+project kernel/oneplus/AK-OnePone-Reborn/
+fc143cc ARM: dts: A0001 Truly panel: Fix Mura
+8e2176f Linux 3.4.108
+3e272f2 ak_bacon_defconfig: update kernel version
+5c997c6 Kernel Version: AK.267.OPO.CM12.1
+0ddcf15 Revert "msm: simple gpu Algorithm: fix val may be used uninitialized in this function"
+0cfdbf8 Revert "msm: simple gpu Algorithm: Initial coding for devfreq based Adreno Drivers"
+8a26938 ak_bacon_defconfig: revert SIMPLE_GPU_ALGORITHM
+50c87ee drivers: state_notifier: Implement suspend_defer_timer
+28b955d msm: hotplug: Clean-up hotplug drivers
+cead639 drivers: state_notifier: enable by default
+704c1e4 devfreq: adreno_idler: Introduce Adreno idler for devfreq-based devices
+43fcf05 drivers: state_notifier: Export suspend status
+615c16f devfreq: adreno_idler: Clean up & Use state notifier helper
+af7900c ak_bacon_defconfig: enable ADRENO_IDLER
+74d955b devfreq: adreno_idler: enable at boot by default
+d176595 Kernel Version: AK.268.OPO.CM12.1
+7bd7f34 Revert "ak_bacon_defconfig: enable ZRAM and company II"
+7422a75 Revert "ak_bacon_defconfig: enable ZRAM and company"
+b9fe9b5 Kernel Version: AK.269.OPO.CM12.1
+e7152b6 ak_bacon_defconfig: disable FS_TRANSPARENT_COMPRESSION
+d291f5a ASoC: Avoid wrong map/unmap of ocmem
+c00797f msm: vidc: removed the async v4l2 event for session unsupported
+376ee07 Revert "msm8974pro: gpu: set initial power level to 200Mhz"
+ab9d80c Revert "mmc: disable software crc - 30% boost"
+ca2824a Revert "msm: mdss: enable splash logo for msm8974 devices"
+16a14e1 drivers: state_notifier: switch to backlight solution
+2b17857 Kernel Version: AK.270.OPO.CM12.1
+91e0932 nohz: Reduce overhead under high-freq idling patterns
+464f1c4 mm: slub: Default slub_max_order to 0
+897408d Kernel Version: AK.271.OPO.CM12.1
+
+and plenty more upstream changes....
