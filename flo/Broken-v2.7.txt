@@ -1,0 +1,6 @@
+
+project device/asus/flo/
+ea4e0f2 Flo: Add F2FS support
+89d3833 Switching kernel
+fcd1567 For fuck sake
+14bb5e2 Keeping block based builds Don't need users hacking the zip and bitching at us saying the rom is screwed up based on their crap
