@@ -1,0 +1,8 @@
+
+project device/lge/hammerhead/
+271c350 Keeping block based builds Don't need users hacking the zip and bitching at us saying the rom is screwed up based on their crap
+0ff4ac8 TWRP flags
+049372c IMSEnabler: Application to toggle the Enhanced 4G LTE Mode setting
+8842295 Enable VoLTE for Hammerhead Borrowed from Broken Shamu. Thanks @TeamFahQ
+5c01f63 Adding VoLTE and VOIP paths
+cec9371 WiFi calling props
