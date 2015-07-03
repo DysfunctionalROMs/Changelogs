@@ -1,0 +1,30 @@
+project device/oneplus/bacon/
+691578f keep block based zips
+
+project kernel/oneplus/AK-OnePone-Reborn/
+2917039 cpufreq: interactive: Replace strict_strtoul with kstrtoul
+88f5d5c cpufreq: interactive: call __cpufreq_driver_target() for cur frequency
+7183bec drivers: usb: keyboard/mouse: Use Android device as USB keyboard/mouse
+7b1b44e drivers: usb: keyboard/mouse: Added Boot mode patch
+81a94b4 ARM: dts: msm: Update adsp heap memory size
+37b780e spi: spi_qsd: Add multi-ee support
+a81b62a spi: spi_qsd: Reduce latency for non-shared cores
+e62be3d Kernel Version: AK.272.OPO.CM12.1
+080d969 msm8974pro: regulator: set retention and ldo voltages to the minimum values supported
+1bd2e26 msm8974pro: regulator: switch from warn to info for voltage debug
+38818ee msm8974pro: dts: cpufreq: reverted to 268Mhz underclock step
+77e3554 Disable -fconserve-stack on ARM v2
+0f6baff ./Makefile: tell gcc optimizer to never introduce new data races
+acdad2d block: disable entropy contributions for nonrot devices
+1331b4c mmc: clk_scaling: add sysfs for avoiding scale down in write
+24ff0a9 Kernel Version: AK.273.OPO.CM12.1
+ddf8786 writeback: Fix occasional slow sync(1)
+aa0bd0b Sync with KitKat charge standard 3000mah battery
+711e6f2 Update QCOM charger values from OPPO source
+bb57e07 mmc: improve recovery behavior when SDCC is jammed
+1ce2043 mmc: sdhci: fix catchall timeout calculation
+5847882 mmc: sdhci: fix voltage transition recovery
+9af5e4e mmc: sdhci: don't spew on CRC errors
+e71ff04 mmc: sdhci: ignore interrupts when the clock is off
+d800cb6 mmc: sdhci: handle long transfers more intelligently
+3c0dc5d Kernel Version: AK.274.OPO.CM12.1
