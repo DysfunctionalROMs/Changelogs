@@ -1,0 +1,11 @@
+
+project device/asus/flo/
+fcd1567 For fuck sake
+
+project kernel/asus/flo/
+7493814 block: Add all IO Schedulers
+b43f628 Flo: Add new CPU governors
+6749a5d Bumped readahead to 1024
+726710f Enable previously added govs
+1270dc0 Enable schedulers
+88b76fa Flo: LCD Gamma control

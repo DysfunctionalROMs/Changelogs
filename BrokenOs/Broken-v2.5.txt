@@ -1,0 +1,119 @@
+
+project bionic/
+1288aa3 libc : memcpy : allow to disable opt for some targets
+
+project device/qcom/sepolicy/
+43b0713 sepolicy: Update BCL sysfs nodes in file context
+ebc520e sepolicy:Allow mm-qcamerad to access sensormanager service access.
+
+project frameworks/base/
+f1a75b0 TorchService: close all opened cameras
+fac46af Blacklist (1/9)
+9bc8e4d Storage: Fix moving apps to external storage
+5a1ec62 Storage; Fix apps2sd for noemulated secondary storage
+0d8bf23 apps2sd: Only allow "move to ___" if the media is mounted [2/2]
+e92c517 Fix another off-by-one error in computeEllipsis
+174c66a base: Fix array bounds exception in getSecondaryStorageState
+ffe3e91 Modify GC Delay to include subsequent launches. (fix)
+9c49938 livedisplay: Add "off" state and fix issues with QS tile
+1026974 livedisplay: Fix issues when using multiple users
+d796330 livedisplay: Don't depend on automatic brightness
+f76a17c Fix LiveDisplay QS icon size
+a779734 Removed checks for 'system' packages in heads up logic
+3fc9551 Add support for wifi calling settings [2/4]
+2e9f4ac Fix Photosphere/Camera FCs on devices w/o FLASH_MODE & SCENE_MODE support
+1170b3b Fix install apps will fail after setting Preferred install location as Removable SD card and removing SD card
+189ce4a Task manager improvements
+e0ceef7 Expose pin shuffler icon color
+96118e3 WindowManager: remove freezing window to fix UI freezing issue
+a5050dc SystemUI : Fix Task Manager strings
+13a7bb5 Update some Task Manager functions
+a0d3959 Disable pin keypad shuffler by default
+f2d9457 Fixing task manager for the way use it...
+cce506c SystemUI: Create expandable volume panel.
+0494a4c SystemUI: Show operator name UI after getting valid operator name
+eb03ff4 Clean up keyguard carrier text handling.
+85ca0e7 Clean up helpers, utils, and various shit
+616c8a3 Fixed screen recorder to work with power menu options
+
+project frameworks/opt/net/ims/
+833fc62 Add support for wifi calling settings
+
+project frameworks/opt/telephony/
+64a1e7f Blacklist (7/9)
+
+project hardware/broadcom/libbt/
+874bd1d libbt-vendor: add support for samsung bluetooth
+
+project hardware/qcom/audio-caf/msm8916/
+c89f5bc audio: Only allow non-legacy HAL
+
+project hardware/qcom/audio-caf/msm8974/
+67221b2 hal: Convert libaudioamp to audio_amplifier HAL
+6be0bd5 audio: Modified atoi to atoll to convert large Numeric values
+813eb28 hal: Update pcm_open flag for VOIP
+397bd23 hal: Fix ANR if In-Call recording is started at end of voice call
+43db9f9 hal: Prevent de-routing in case the usecase doesn't share codec backend
+7a4cab3 hal: update input source type during open input stream
+
+project hardware/qcom/fm/
+07f4393 FM: respect hw.fm.internal_antenna
+99699b2 Automatic translation import
+4fcf8e4 Automatic translation import
+e016397 Automatic translation import
+2a422c3 FM: fix mRadioTextScroller usage in transmitter activity
+6d889de Automatic translation import
+
+project packages/apps/Dialer/
+a4a6097 Blacklist (3/9)
+
+project packages/apps/InCallUI/
+d797724 Blow up the damned holo window when starting a call
+ab3d3ab InCallUI : add call recorder function in InCallSreen
+35c67e5 Hide the weird call recorder overflow menu on devices which don't support it.
+e52e520 Blacklist (4/9)
+
+project packages/apps/Mms/
+11cfad4 Blacklist (5/9)
+
+project packages/apps/Settings/
+338ed61 Blacklist (2/9)
+b3ae3b1 apps2sd: Enable apps2sd for apps with unspecified install location
+39bfbb7 apps2sd: Only allow "move to ___" if the media is mounted [1/2]
+d11d7ff Settings: Livedisplay: Respect default values passed from CMHW
+43b389d Them sneaky xmls...
+bad0047 Enable Wifi Calling settings UI [1/4]
+5cb9787 Add support for Wifi calling settings UI
+10a0218 Relocate Expanded Notifs in preps for bigger shit
+a8f9ef5 Hide Other Mods till its ready
+12fefa5 Revert "Hide Other Mods till its ready"
+2b032de Bring out BrokenWalls for human consumption
+8617d6b Clean up helpers, utils, and various shit PART 2
+74fd434 Fix screen recorder to work with our power menu [2/3]
+
+project packages/providers/TelephonyProvider/
+35d94a4 Blacklist (8/9)
+
+project packages/services/Telecomm/
+ad958fe Blacklist (9/9)
+
+project packages/services/Telephony/
+4c1258c Add CMHW permission
+0ebeb44 Blacklist (6/9)
+bf58c26 Add support for Wifi calling settings UI [3/4]
+
+project platform_manifest/
+bafbbee kill exynos hardware repo
+6045fd3 track our own opt_hardware
+2be6007 Track a few repos for telephony
+22a5b4b our own ims
+41701f8 our net wifi
+b718bac A bit of OCD organization
+d3086f8 our bionic
+
+project vendor/broken/
+16f3452 kill the DPI shrinker for now
+d022d81 Update APNs from Slim......Too many to list...All credit to them..
+c1e1e05 2.5
+46ee4b9 Update host files AGAIN
+94e2392 Fix screen recorder to work with our power menu [3/3]

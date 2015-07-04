@@ -1,0 +1,84 @@
+project device/moto/shamu/
+f7acf54fa761da7234ad97d252eee7661b9f33d9 misc updates
+7a23f4ca08044c80345aa745accb4df7b563ef7c sepolicy updates
+ce92ff93a64140029fbde0b693de25e27e0dc248 Move system.prop defines to device.mk
+0d6fdc0aac113e32f4bc5b46073e190077c2c1ce config_enableWifiDisplay: relocate to more apropriate place
+617371f6ec106377ddb6c2a13fbc8abde45878a8 Update camera files
+9abc29d8db77391c6d563577d92345024c483711 Update power_shamu.c
+c5b683fddce14aca170ff2de1a411acf71250821 Update hardware tunables
+543e0a8d8403d4d276c61f90b239149edaca63ea  Enable USB OTG Shamu
+1a71b4929910c8c4bf730b064977199076405ed6 Needed for proper CDMA carrier display when not on LTE
+7c162f67097a995aa20fec2466c4aea1191fc444 device-proprietary-files.txt: fix typo
+a6790cf7304e163ed3c07a2f7acd51d1ba35b3f6 boardconfig.mk: fix typo
+5987c9a49f06a78b7eaf857bca4647f2d77262ed sepolicy: Fixes for atfwd, cne, and netmrgd denials
+2618b774d9c24c14e4dd199e1178893c914ef88f Disable dexpreopt only on affected apk's
+ff1a0dfd992627f9a463c4c3450ad2ea2a482d68 IMSEnabler: Application to toggle the Enhanced 4G LTE Mode setting
+2e6f00ae4728a8c9c420771b2c5a9a356da1b770 Add cnd service and associated sepolicy
+538050594c792a2e5c2a5adbc2433073a8bfde59 proprietary-files: Allow vvm to work
+6c342156aefb088e1c579e1d08e580b81674222a setup-makefiles: Use platform cert for CNEService
+883ee5954926afaa5f066b3acb42c8c450b95564 proprietary-files and props: Update for 5.1.1
+fc52608149b64a7ea887ac97db993038c0073ed7 broken.mk: Update fingerprint to 5.1.1
+912e58e58058c4edbaa486dcc46f2ffa4be6470c fstab.shamu: add f2fs support
+60e1274c88e323697804fe41bb36be488630903c system.prop: dex2oat
+c0f9f9f00378923f76d195db695c7e1530cea927 change adspd to from late_start to main.
+8cebc4258489cafbd024684ab64edd6a9f3b411c fstab.shamu: Mark cache and userdata as "formattable"
+8f524f9269062bbdf42c035f0a0d672614ffd1cc DO NOT MERGE: mm-camera-interface: Retry in case of timeouts
+605ef6890971de28f5ae8911c19e28b1b583a4c3 Accelerometer/ambient display
+3a61975eede498243ea6bfd774866688ba8ccc8e config.xml: Enable config_multiColorNotificationLed
+1210a64e207e1b8c2269e4c8a0e0e96dc5c7118d config.xml
+ceb39e5120b0aae1e347ec06d5a935232024a7e5 Revert "Setting palceholders for resources not yet avail"
+18d3889bdc6d04ae2f1dbe9338bf4f06720aa493 Revert "Revert "caf-a-mizing""
+cbfc184ed4882995d71fb2f2685e47561cc42972 Call for gsm.mk
+66011242d075fbda41ba1b4891fa84e3fcff655c ffmpeg: restoring the calls
+90dc2e6181e7ff7b4c4638e2152d75cfbfad1f63 Dropping TWRP definitions
+e4659df3f7ec89bd0cec210fb4454d03c83ea6bd Setting palceholders for resources not yet avail
+7bcbc4fe5b344df27adaafd765e0c3e70ee6f4c6 Revert "caf-a-mizing"
+42ba1bb0ac9ffa9784d16e6562511bd17aa8f2ab overlay:Setting palce hodler for config_multiColorNotificationLed
+574e8a772b6929998983322e5667fce7f1a81fad Adding TWRP definitions
+e2eef9b7f056f8d7c764a413dc2a969d47a65c94 caf-a-mizing
+6f48ad1437c088ff88d6f5a518f146264a6120b5 Art speed tweak
+a983156314d96b8a753a44f370b5fd38a8e49894 remove resource that is unavail in rom
+076b2dc4fd55f0a21536736305ab1d8725b5f11e Aligning with upstream
+0af89acd41284419da97bd96e5cf4c999d8d0e4e shamu: Update bloblist
+c8ff82e796628114a80b6d5b5609bdb790981388 Enable config_show_apn_setting_cdma
+fd91c3219f1725825f022251241644e5180c2476 Build libmm-qcamera from source
+af07c7f4aee26f90028df6d58aa458a190dbb320 power: Update performance profiles for removal of boost_sync
+f276a0b127b25fc2c9d7f7275a121574a39fde09 dontaudit sensors self:capability net_raw
+d7161bf2c2b1f2c3b58bd54029e6b14ce8346937 build.prop: Disable rcs as per stock
+ed064173a6f26f2e5d63131742da1a3d76e5b7d2 proprietary-files: Add IMS/HD Voice apk/jar/lib/permissions
+855bd096df9f2d0ff27dd46994195a8b18fc2482 proprietary-files: Add libssd and libq3dtools_esx
+220d7e9450e45b23acea49ffdbaeefeff6696628 build.prop: Add persist.radio.sib16_support
+4c46bc3d1f14227be4dd3b26094f05e1e0627a3a proprietary-files: Remove no longer used sap.conf
+cca5f4235586f6374df8ea4005716fa49695cd4a proprietary-files: Update based on 5.1 proprietary-blobs changes
+3e655cb259e090d120d95007f375626453513d0a Updating dependencies
+d0846d34d8817f8fed62126a948006bc35ccce08 Switching to more prefered device tree
+a9948a740a926b59c55350b550e7e1fe7a3bc0ca Trying to fix this shit
+613783605ea12c65a12e9d5a2adbb42333e7f302 Switching sources
+9c3b3694ddd1a5b8fbf1c5288397b80e70d5ccc8 Update broken.dependencies
+929ef19c6119ceaae9d5a593d3e23195b7a02060 Initial Brakage
+ee8152d921f6bb4bb4a406f6c809c83665169267 Merge tag 'android-5.1.0_r1' into android-5.1
+
+project kernel/motorola/shamu-lz/
+7aa8869c808afcb543e549ceeb1aece3e017c5e3 defconfig: Enable ESP match target
+5eb15ec3804f52e18c1d582f4358e27d16768694 Add config for TEE
+9301d7c7d8c08927eef544301a7a9f6cf4075970 Update BRANCH= in build.config
+4e4c885400d5b40418ed4e6510621e64d2f00565 Add build.config
+3b3f8d8ef5885e8af1c422e33c5d42f486c033d5 smd_pkt: Add sanity check to avoid unregistering the driver twice
+b2c80084b4a2cc242ee7b196cae94895baaa74eb ipv4, fib: pass LOOPBACK_IFINDEX instead of 0 to flowi4_iif
+00b5b53f7ba265b0175868fc361b83986ebb39c0 Update version number
+5d2d709dfdcbbbdccb712595b00230a4d6aae527 Wake gestures: sweep2wake, sweep2sleep and doubletap2wake
+a7775e9961ab1f7ee7489a866adb745881e104e4 Add user voltage control
+f76a275e1d026dc7dc77f745fa6c41280c7a3c5d i2c: enable extended recovery for touch i2c
+21e3c29e1cb0698ac332fe3f84cdb163b1484cf6  ARM: dts: msm: disable support of 50MHz for i2c for apq8084
+6a4d386a995cbf7e3b0750788a78e3dff86c7686 GPU: start at 240MHz
+bde87f0a70b9c6cbb80263b84ba071d8732d19f3 Added Faux Sound Control  Sound Control: initial bring up for Nexus 6 Linux 
+ba5a2da7f99194f72c403f60678dbca80f47cde6 Add KEXEC_HARDBOOT
+3a8f39b08d2cadbe30e4cb7e3626a64bea114d5f Updating build number and info
+e3ec17cf87d6233f3a7571e72f0f55cd671309aa PAGE_CAHCE_SIZE, PAGE_SIZE and VMALLOC: bump to 4096
+4bc7580589f672fef3b764cecd159aabb07338e0 Merge branch 'android-msm-shamu-3.10-lollipop-mr1' of https://android.google
+f6be39aad24969b9733e233eb44eda8acb9b2f4d iosched: added FIOPS and set it as default i/o scheduler
+5c1163f7779c04f98b482774ba24c69b98d5ae5d cpufreq:adding lionheart gov
+1ec7e9d2fed1b03ab2d71a65b2b76a23b21ce9ef vm_max_readahead: bumped to 4096
+eec0083f161389442dd7b8e523a279fdadd5b475 sysctl.h:Initial LZ mods
+54e590afcfacdc7e319a4973f5418ae01a52eeeb Fixed build errors. Mostly unintialized forbidden warnings
+e17c5baf58d35cd05f77c2fe18a8be270dd692df shamu-lz_defconig

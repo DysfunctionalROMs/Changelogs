@@ -1,0 +1,2 @@
+project device/lge/hammerhead/
+0e83713 hammerhead: Update CM hardware for PPC and LiveDisplay

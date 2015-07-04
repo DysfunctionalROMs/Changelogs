@@ -1,0 +1,19 @@
+
+project device/asus/flo/
+7e2eded Switching kernel
+
+project kernel/asus/flo/
+5707e91 REVERT THIS BEFORE UPDATE ion: Rename heap_mask when used in userspace
+0e9dd39 Fix some typos
+15131a8 Defconfig: Generate custom
+3ceec59 Remove old merge derps
+691fa1a USB fastcharge for Nexus 7 (2013)
+f6a6866 Sweep2wake and Doubletap2wake for the Nexus 7 (flo)
+d05eac5 Build fix
+f9b1b47 update ARM topology and cpu_power driver
+f117ffa thermal adjustments
+0dc4132 kernel-based thermal control (based on @crpalmer's work)
+970acc4 Max screen off frequency (default 1026MHz)
+38b7999 msm-sleeper: save max freq
+fd70684 Make 1.7 GHz the default max frequency
+c47b32b Set fast charge ON as default value

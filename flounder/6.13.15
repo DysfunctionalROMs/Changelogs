@@ -1,0 +1,35 @@
+6/13
+project device/htc/flounder/
+d346f2b change kernel path
+
+project kernel/tegra/
+d13827c decompressor: add LZ4 decompressor module
+d316ef7 lib: add support for LZ4-compressed kernel
+5765538 lib: add lz4 compressor module
+304a8c5 lib/lz4: correct the LZ4 license
+0bb0a82 lz4: fix compression/decompression signedness mismatch
+c287a87 lz4: ensure length does not wrap
+eb1439f lz4: fix another possible overrun
+d98aa02 lz4: add overrun checks to lz4_uncompress_unknownoutputsize()
+04c8c78 Merge Upstream ZRAM
+fcff7ff rename to NINJA
+9c00c0d teaser...
+30f9108 strict aliasing
+
+---------------------------------------------------------------------------------
+
+6/5
+project device/htc/flounder/
+bada5d6 Make changes to fix AudioFX on flounder build.
+20c4f3b Add Vendor only for AudioFX
+
+---------------------------------------------------------------------------------
+
+5/29
+project device/htc/flounder/
+d3d034d update toolchain
+3e0b23f updated dependencies
+b4fa0f2 get the path right
+
+project kernel/tegra/
+ff0bddf add graphite flags

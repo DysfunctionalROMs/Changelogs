@@ -1,0 +1,4 @@
+
+project device/samsung/lt03wifi/
+41d3b47 Update broken.dependencies to reflect kernel change
+

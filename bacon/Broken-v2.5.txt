@@ -1,0 +1,26 @@
+project device/oneplus/bacon/
+85d0140 Kill the Art tweaks
+
+project device/oppo/common/
+5e61ca9 Broken Utils
+
+project device/oppo/msm8974-common/
+bf4581e Dont dex prebuilts
+
+project kernel/oneplus/AK-OnePone-Reborn/
+dbf4094 msm: kgsl: check for NULL pointer access
+b5d81ff msm8974pro: gpu: set initial power level to 200Mhz
+fa0198b devfreq: gpu: added simple time_in_state stats
+c087f0f Kernel Version: AK.263.OPO.CM12.1
+2a520b6 msm: kgsl: Bump the GPU frequency for long blocks of processing
+ca3a4a9 msm: kgsl: Fix nice level for higher priority GPU start thread
+f54b8ea Kernel Version: AK.264.OPO.CM12.1
+909e590 staging: alarm-dev: Drop pre Android 1.0 _OLD ioctls
+2f518df staging: alarm-dev: Refactor alarm-dev ioctl code in prep for compat_ioctl
+4d988f9 rtc: alarm: Add power-on alarm feature
+121afb3 qpnp-rtc: clear alarm register when rtc irq is disabled
+5039694 rtc: alarm: init power_on_alarm_lock mutex in alarmtimer_rtc_timer_init
+34f9a09 alarm : Fix the race conditions in alarm-dev.c
+e54a27c Revert "alarmtimer: set power off alarm to be triggered on time"
+63d5b2e staging: alarm-dev: information leak in alarm_ioctl()
+be14f53 Kernel Version: AK.265.OPO.CM12.1

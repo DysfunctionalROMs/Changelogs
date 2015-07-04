@@ -1,0 +1,113 @@
+
+project build/
+2f121b0 Guess we could flash supersu regardless of official builds
+
+project device/qcom/sepolicy/
+7df1e09 Label factory reset protection partition.
+ac9ec47 selinux: Peripheral manager: Allow system server to talk to per_mgr
+b6f6410 sepolicy: Update policy for peripheral manager
+636426b sepolicy: Update sepolicy for qseecom rpmb component
+67154a4 sepolicy: Add support for pm-proxy executable
+8d37ea9 sepolicy: Allow write to S3D node
+7238829 Seandroid: Add policy for energy-awareness.
+fade4c9 common: Fixup healthd's ability to deal with poweroff alarms
+e805ca1 WFD: Revert SELinux changes for wfd running in its own service/domain
+
+project external/android-visualizer/
+b006226 visualizer view: optimize allocations during drawing
+c6d5a9f VisualizerView: add ability to disable drawing
+
+project external/sepolicy/
+2de1035 domain: Restore original neverallow rules for shipping builds
+e1dcd43 Revert "WFD : Adding policy exceptions in app domain for wfd"
+
+project external/stagefright-plugins/
+09051ba stagefright-plugins: Set sensible defaults for audio decoders
+50f961f stagefright-plugins: Update codec list with capabilities
+d001bef stagefright-plugins: Disable lowres
+
+project frameworks/av/
+6694648 stagefright: ffmpeg: Slightly raise the threshold for the ffmpeg scanner
+0fdfbe4 audiopolicy: Add msm8994
+562c706 Revert "libstagefright: free mMoovBoxBuffer"
+9a88d71 CameraService: Bump up the maximum number of cameras
+
+project frameworks/base/
+f68a785 SystemUI: fix heads up snooze button
+a68543c base: added national roaming info for Play in Poland
+e57df9c Fix screen pinning message to fit the double 3-dot menu to unpin introduced with SlimNavBar
+413ec5f [2/2] SlimHeadsUp: Add a global 3-way switch
+
+project frameworks/native/
+039694f Add dalvik heap override for xxxhdpi phone
+90aa01b Add HWUI overrides for xxxhdpi phone
+
+project hardware/qcom/fm/
+8199a88 Automatic translation import
+37a4212 Fix status text to reflect when FM is enabled.
+
+project hardware/qcom/keymaster/
+f33d1ad keystore: Enable building on msm8992 and msm8994
+8e39456 keymaster: fix build for msm8994
+
+project packages/apps/AudioFX/
+1a97ee0 Automatic translation import
+afae787 Automatic translation import
+ac0ac60 Expose actionbar background for Theming
+996b3e7 Expose text color and background colors for Theming
+5285b57 Automatic translation import
+afb0d63 Automatic translation import
+6a8a644 Automatic translation import
+
+project packages/apps/Bluetooth/
+4fc96b2 bluetooth: Tone down the logspam
+d78e57f Automatic translation import
+0d79654 Automatic translation import
+bd5218e Automatic translation import
+0de3412 Automatic translation import
+ea9cb28 Automatic translation import
+310c1c9 Automatic translation import
+db9c106 Automatic translation import
+e690b6d Automatic translation import
+c458fd3 Automatic translation import
+d309537 Automatic translation import
+6423557 Bluetooth: request audio focus on incoming call
+
+project packages/apps/Dialer/
+9b878e2 KIO - Call Log Phone Tint 1
+
+project packages/apps/Mms/
+baa5149 Rearranging/renaming shit
+067c85e Layers 2.1
+89da103 Blacklist (5/9)
+2563343 Revert "Layers 2.1"
+f783c35 Revert "Rearranging/renaming shit"
+88431bd Bring back layout color abstraction
+1d586c0 Updated status bar notification icons
+7bb5647 Switch to green
+8ec9af9 Moving custom bits to where they belong
+167c316 Expose hard coded background colors for conversation item
+2d7699d Expose hard coded colors for list item background
+0b8b366 Exposing delivery report colors
+9a9ac02 Exposing colors and background for recipients editor
+def1cb5 Green is too bright
+2ab00f4 Fixing some color calls for better themeing Thanks to @daveyannihilation for the assist
+
+project packages/apps/Settings/
+df3cde5 Selinux Switch
+7e9f126 Kill Broken Walls icon for now
+0720cab KIO - Expose Action Bar Part 2
+341d74f Revert "KIO - Expose Action Bar Part 2"
+ca25570 [1/2] SlimHeadsUp: Add a global 3-way switch
+
+project system/extras/
+13f8bb3 make_ext4fs: Support kernel transparent compression v2
+6b939a5 make_ext4fs: Fix mac build
+766839b fix keystore_signer
+03b2464 make_ext4fs: workaround for a glibc scandir bug
+
+project vendor/broken/
+7789498 Add Verizon LG G3
+3de9b04 Switching device name from fhd to moorefield aka ZenFone2
+0842738 2.7
+928c5dd Updated Kernel Aduitor
