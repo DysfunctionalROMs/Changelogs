@@ -1,0 +1,17 @@
+
+project device/motorola/falcon/
+70b2ef6 falcon: Set userdata size for encryption
+42a9931 Enable Block Based OTA
+
+project device/motorola/msm8226-common/
+e5fff03 msm8226-common: Remove config_bluetooth service
+c0f78ca msm8226-common: Move sensord to class main
+c6db58a msm8226-common: Disable QCOM hardware encryption
+7431c1d msm8226: Don't copy FFMPEG config anymore
+a5f99dc msm8226-common: Don't stop RIL daemon on decrypt
+efd13c0 msm8226-common: Allow vold permissions for encryption
+c24bbfc msm8226-common: Remove unnecessary vold permission
+2c1b4c4 Revert "msm8226-common: Remove unnecessary vold permission"
+
+project vendor/motorola/
+e7629a5 quark: Remove unused libadropbox
