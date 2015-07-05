@@ -1,4 +1,23 @@
 project device/moto/shamu/
+116f65bc88706eeefe92653e8b9ab5df37209d65 keep block based zips
+7eb8ba1559b8d7ea0ec36a109a49b83ce7f2e9b9 VoLTE: FINALLY unlock enhanced LTE (VoLTE) for AT&T users... hopefully it's 
+86d1e79edff9437902eda20dcdc4f7fb35499b0c Revert "Adding radio.img files"
+d4d99c014e083931c13b85fa1e452cb2c08bc541 Revert "looks like a binary got broke during pushing.removing and will add b
+9e9c01e805c3a50395cb84fa043c4a9c8e359103 Revert "adding radio.versions.img back... hopefully it don't get broke this 
+9760e012f24179d7d9589ae61aa3099e5db80456 adding radio.versions.img back... hopefully it don't get broke this time
+5afd309f14cddb39aae0aac742857be83d3fd9c0 looks like a binary got broke during pushing.removing and will add back
+2ee737ef0f5ee83847b3a239fa468875c4a7e8bd storage_list.xml: misc update
+c2bc6c921cd3d06bc5861ed7dd5aea8a5dd6c0b0 BoardConfig.mk: misc tweaks and updates
+4417cc4ee5f39f573c46c72b732e541a0dea50f2 device.mk: misc tweaks and updates
+31ffaefd9b31d8a73a844209f1f62d92e510b26a init.shamu.rc: misc tweaks and updates
+5ff569f705dc0cfea2a4b055b7deb9f3a4c06180 liblights.c: a few tweaks to try and even out the occasional color mismatch 
+ffc7f21ceb973d8096b40c206846be476d6bae00 Adding radio.img files
+0923e9c0adfd485d2c4003103f3c50e7963c7b4e Fix and enable VoLTE...so they say...
+b5a9efa0d54268d370d706ab59ddf03a6378ab7d fstab.shamu: Disable forced encryption
+87ee37c73413fd880f20697424a171ef6a552e4a sepolicy: reverting sepolicies
+4c037a17a6ebf749e2546c2e0a0892fe7eac43aa boardconfig.mk: drop USE_CLANG_PLATFORM_BUILD
+1a1775324eaf826583d2562bdea142d7cd265010 sepolicy:damn shit snuck in there again
+e1d3d8228feae91a560a7c0ec49dd94a292b0b73 Merge branch 'master' of https://android.googlesource.com/device/moto/shamu 
 f7acf54fa761da7234ad97d252eee7661b9f33d9 misc updates
 7a23f4ca08044c80345aa745accb4df7b563ef7c sepolicy updates
 ce92ff93a64140029fbde0b693de25e27e0dc248 Move system.prop defines to device.mk
