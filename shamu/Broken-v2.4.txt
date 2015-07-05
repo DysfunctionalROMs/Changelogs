@@ -78,6 +78,7 @@ a9948a740a926b59c55350b550e7e1fe7a3bc0ca Trying to fix this shit
 ee8152d921f6bb4bb4a406f6c809c83665169267 Merge tag 'android-5.1.0_r1' into android-5.1
 
 project kernel/motorola/shamu-lz/
+67463e4f053ee9c2428ce8abeaee1b68a525b878 Merge branch 'master' of https://android.googlesource.com/kernel/msm into lp
 7aa8869c808afcb543e549ceeb1aece3e017c5e3 defconfig: Enable ESP match target
 5eb15ec3804f52e18c1d582f4358e27d16768694 Add config for TEE
 9301d7c7d8c08927eef544301a7a9f6cf4075970 Update BRANCH= in build.config
