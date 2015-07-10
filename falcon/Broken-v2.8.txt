@@ -1,0 +1,20 @@
+
+project device/motorola/falcon/
+778a148 falcon: Use correct frontend for compress-voip-call
+8886f2a change kernel
+
+project device/motorola/msm8226-common/
+696279c update util for broken  I could swaer I had already done this
+5720039 Revert "Revert "msm8226-common: Remove unnecessary vold permission""
+577ef71 msm8226-common: Correctly start ril-daemon1
+7df2a08 msm8226-common: Update proprietary files
+
+project kernel/motorola/msm8226/
+afc28fc Revert "msm-camera: move target checks to userspace"
+6197e16 Revert "ALSA: compress: change the way sample rates are sent to kernel"
+7d4a80f udp: fix behavior of wrong checksums
+
+project vendor/motorola/
+5f8543b thea: Update proprietary files
+4ade7ad titan: Update proprietary files
+3301b94 msm8226-common: Update proprietary files
