@@ -1,0 +1,106 @@
+project device/qcom/sepolicy/
+8ec7650 sepolicy: add permissions to set system property
+7cdd716 sepolicy: add rule to support tcm write on dpmwrapper socket
+3816812 sepolicy: allow dpmd to create self socket and netlink socket.
+a72efaa cnd: Allow nims to be removed
+6e0f4bc Sepolicy: add rule to support ATP feature
+677614c sepolicy: Allow time_daemon to use POSIX clocks
+
+project external/sepolicy/
+563c152 Define types for userdata and cache block devices.
+
+project frameworks/base/
+cba011e Return: Smart Pulldown [1/2]
+1dba310 Fix Smart Pulldown
+cfc09df Fix that Smart Pulldown for good..Once and for all
+f8a045a Power Menu: Add soft reboot and make screenshot a toggle [1/2]
+576e12e alarmmanager: Reduce calls to elapsedRealtime()
+8d12e89 Fix a GL error leak issue
+ec754fa KillProcessGroup on background thread
+d8a9a38 Fix overflow/underflow problem in comparison
+99cd5f2 Fix bug regarding the comparator sorts Alarms into increasing time order.
+c825e3d am: Fix delayed GC merge damage, again
+113cd7e fix build
+3b56074 [ActivityManager] Fix index OOB when updating visible.
+90936c8 Kill process asynchronously on updateOomAdjLocked.
+802463c Run BatteryCallback on CpuTracker thread.
+4608e86 Fix in effectCallback to avoid sending callbacks to dead objects
+1b93427 Close race condition in binderDied()
+8744c0f Bluetooth: Adding synchronization to handle multiple threads
+fbf74e9 MediaScanner: Detect folders
+baa5b1b MultiSelectListPreference.java should deal with onRestoreInstanceState method
+5f2dc59 SystemUI: better choice for heads up snooze icon
+56fc265 SystemUI: fix updating keyguard insecure lock icon
+c04c6e5 [1/2] Non-intrusive InCall UI switch
+9de2e64 Fix build for heads up icon change
+dfa0b26 PowerManager: Don't wake up device when charger is plugged/unplugged (1/2)
+7f35807 ProximityWake : Add support for checking proximity when waking device
+99ef0a1 power: Fix locking for wakeup proximity check and other display wake fixes
+61b8e96 SystemUI: fix keyguard charging text not showing
+88f682d Hide public API modifications
+1d276ce fix CTS DisplayTest.testGetMetrics()
+022d5d7 Density scaling: scale compatibility apps, wm command support
+e6ebed8 Density scaling: return device's default density
+2fbbbe1 density: do not apply to virtual displays
+2a24610 Privacy Guard: Add option to disable notification (1/2)
+be2fe5a Launch app privacy settings when tapping on PG notification (1/2)
+faf6742 Frameworks: Do not show privacy guard notification on lockscreen
+
+project frameworks/native/
+18e6531 SF: Reduce resync samples without present
+9b28157 surfaceflinger: use Mutex timedLock instead of tryLock loop
+
+project hardware/libhardware/
+1d03c03 Fingerprint: Add getNumEnrollmentSteps [2/2]
+
+project hardware/qcom/fm/
+12b49ee Automatic translation import
+
+project packages/apps/Dialer/
+4f26088 Add back in-call vibration features (2/2)
+6c627b3 Call Vibration Settings: Fix preference key name
+fe3d3a9 Dialer: Add call waiting vibrate option
+
+project packages/apps/InCallUI/
+b24646c Add back in-call vibration features (1/2)
+00a5fc8 Fix call tracking.
+05c6b6e InCallUI: Bring back vibrate on call waiting
+
+project packages/apps/Mms/
+2ab00f4 Fixing some color calls for better themeing Thanks to @daveyannihilation for the assist
+ff6f33c Some renaming I missed
+9c1d83c This ain't cyanogen
+
+project packages/apps/Settings/
+124247d Power Menu: Add soft reboot and make screenshot a toggle [2/2]
+43fb77a Make lockscreen shortcuts a fragment
+9d65fb5 Disable Lockscreen visualizer by default
+7dd3a79 Put lockscreen shortcuts into Security settings
+fe0971a Move collapse up to qs
+81b6eae Move brightness slider up to qs
+633cfc3 Disable all power menu options by default...
+a2d73a9 Add button in "hidden" settings to flip "VoLTE Provisioned" flag
+6aafb8b Revert "Put lockscreen shortcuts into Security settings"
+0d7ba5d We are BROKEN!!!!!
+8c20c54 PowerManager: Don't wake up device when charger is plugged/unplugged (2/2)
+8438ca0 Settings: Add proximity wake option
+4e1b739 Set "Prevent accidental wake-up" to off by default and a few other fixes for display wake
+d7a22dc Settings: change "doze" to "ambient display" to avoid confusion
+2d3cc67 Settings: use WindowManager to set custom DPI
+df33097 Privacy Guard: Add option to disable notification (2/2)
+5d85dd5 Launch app privacy settings when tapping on PG notification (2/2)
+65995d8 Fix build for DPI changer code
+
+project packages/services/Telephony/
+968dba8 [2/2] Telephony: Non-intrusive InCall UI switch
+
+project platform_manifest/
+c1b235d drop a couple toolchains.
+
+project system/core/
+b708e9f Provide better advice on using gdb with debuggerd on crashed applications.
+cfb0561 Mutex: add timedLock() method
+
+project vendor/broken/
+794b457 v2.8
+fa60b16 Hide that damn layers icon

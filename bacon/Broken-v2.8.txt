@@ -1,0 +1,3 @@
+project device/oppo/msm8974-common/
+e1205f1 Revert "msm8974: Update WiFi configuration"
+e5d10a6 msm8974: Disable QCOM HEVC decoders
