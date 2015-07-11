@@ -1,0 +1,9 @@
+
+project device/asus/flo/
+363b5d3 Rmove useless bool
+2974b8c Enable VOIP+SIP on Flo Credits to @InkSlinger666
+
+project kernel/asus/flo/
+443b019 intelli_plug: add performance boost option
+5e9431d intelli_plug: add perf_boost sysfs entry and clean up permissions
+

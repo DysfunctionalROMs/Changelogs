@@ -1,0 +1,10 @@
+
+project device/lge/hammerhead/
+1690edf Disable until further notice
+60da637 Remove useless overlays
+e9e2a26 msm8974: Don't need to copy FFMPEG config anymore
+
+project kernel/lge/hammerhead/
+b1cfb7a intelli_plug: add performance boost option
+3e0b7b7 intelli_plug: add perf_boost sysfs entry and clean up permissions
+
