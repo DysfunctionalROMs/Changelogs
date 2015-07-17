@@ -1,0 +1,103 @@
+
+project art/
+9446dfa dex2oat: Add a --compile-pic option
+543a958 Improve dalvik cache pruning
+8751333 AArch64: Fix incorrect use of preceding LIR.
+
+project build/
+63ecca3 Build ID for r6
+df14e4a Really include drawables for all densities.
+ae25d2d Fix Brunch
+b4896da minnow_max: search for cm.mk in additional directories
+412749c definitions.mk: look for definitions.mk in device/*/build also
+b6711dc "You're system is now being Broken"
+
+project device/qcom/sepolicy/
+4fe09e3 Seandroid: Add policy for dts configurator and notifier nodes
+
+project frameworks/base/
+61b8e96 SystemUI: fix keyguard charging text not showing
+88f682d Hide public API modifications
+1d276ce fix CTS DisplayTest.testGetMetrics()
+022d5d7 Density scaling: scale compatibility apps, wm command support
+e6ebed8 Density scaling: return device's default density
+2fbbbe1 density: do not apply to virtual displays
+2a24610 Privacy Guard: Add option to disable notification (1/2)
+be2fe5a Launch app privacy settings when tapping on PG notification (1/2)
+faf6742 Frameworks: Do not show privacy guard notification on lockscreen
+b4e4f17 SystemUI: Show operator name UI after getting valid operator name
+1c74b7d Clean up keyguard carrier text handling.
+956d126 Mark persistent apps as such when the ProcessRecord is created
+6775023 Add Asset management support for fonts.
+e74deb7 Do not paint shadow if outside of the clip area
+d6bb9e2 Make Bitmap_createFromParcel check the color count. DO NOT MERGE
+8aa5c70 Remove implementation of deprecated method.
+1cffe53 DO NOT MERGE Don't take flags when creating app widget config activity.
+44923e7 perf: Per-app performance profiles
+9e64ef3 PowerManagerService: Fix arm64 build
+b0d97f1 PowerManagerService: fix line to long after 64 bit compatibility changes
+44e831c SystemUI: Add new dimens values for expanded status bar padding
+d2ee59f systemui: Fix ClassCastExceptions
+2326c57 SlimDim [1/2] modified highly for our source
+84c55ba QS: Performance profile tile [2/2] Based on CM code but trimmed some of the fat
+8fa586d SlimDim: listen for touches in navbar empty areas also
+
+project frameworks/native/
+93fe89f Tuning compiler thread count for optimal application install times
+06e56db Revert "Add OMX_AUDIO_CodingAPE and OMX_AUDIO_CodingDTS"
+469fde2 Remove gamma correction from color correction shader
+434e2ba SF: Skip render-to-texture for color transforms
+eab6c34 Revert "Revert "Add OMX_AUDIO_CodingAPE and OMX_AUDIO_CodingDTS""
+
+project hardware/libhardware/
+62520f1 audio: Notify amplifier HAL of device enable/disable
+
+project packages/apps/ContactsCommon/
+1879b34 Fix dialer name ordering options not being respected on first load.
+
+project packages/apps/Settings/
+d7a22dc Settings: change "doze" to "ambient display" to avoid confusion
+2d3cc67 Settings: use WindowManager to set custom DPI
+df33097 Privacy Guard: Add option to disable notification (2/2)
+5d85dd5 Launch app privacy settings when tapping on PG notification (2/2)
+65995d8 Fix build for DPI changer code
+3d8e894 Slim : Stripped down performance profiles Settings from CM
+6ec4fdc Settings: Lets remove Performance tab tile if no overlays are set
+2227e46 SlimDim  [2/2] modified highly for our source
+367dbfb QS: Performance profile tile [1/2] Based on CM code but trimmed some of the fat
+
+project packages/services/Telephony/
+0bfcf6f Fix missed calls notifications not shown after you call someone
+
+project platform_manifest/
+fa9c3a4 r6
+fcc41dd Update chains
+427fcd5 our own fw/av
+b9364fa Change default 4.8 chains back to stock
+b5c9d50 line the chains up right this time
+197bd13 Update SM5.1, remove arm64 6.0
+07ab1d6 trim the chains
+
+project prebuilts/gcc/linux-x86/arm/arm-eabi-4.9/
+addfce3 7-15-15
+
+project prebuilts/gcc/linux-x86/arm/arm-eabi-5.1/
+b17c3a1 7-15-15
+
+project prebuilts/gcc/linux-x86/arm/arm-eabi-6.0/
+cb48cc9 7-15-15
+
+project prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/
+dd1f1e3 7-15-15
+
+project prebuilts/gcc/linux-x86/arm/sabermod-arm-linux-gnueabi-5.1/
+c8a9c91 push
+
+project system/core/
+a6627db Add Wileyfox VID
+e29e857 Add Wileyfox VID part 2
+
+project vendor/broken/
+cbdaf76 v2.9
+7cdbef6 killing trlte
+920fad4 add lt033g
