@@ -1,0 +1,105 @@
+
+project device/oneplus/bacon/
+5033a8e lets try Uber 6.0
+9ddcbc6 Change back to saber 5.1 for a bit
+5eb41ed Use Uber 5.1
+
+project device/oppo/msm8974-common/
+db39a94 Unlock performance profiles bool
+ac4b545 msm8974: Move QC MT call speedup config to Telecomm
+
+project kernel/oneplus/AK-OnePone-Reborn/
+b93d176 msm: vidc: replace resurrect_fw with unload_fw
+7f86520 msm: vidc: Error handling when core is in bad state
+21f4e08 spi_qsd: Fix DMA errors
+37b7d27 bacon: Enable TASK_DELAY_ACCT
+80a8864 ak_bacon_defconfig: enable TASK_DELAY_ACCT
+13e48ab bacon/find7: Enable CONFIG_USB_NET_DM9601
+cf745cb udp: fix behavior of wrong checksums
+02f2e40 ak_bacon_defconfig: enable USB_NET_DM9601
+df09a3d Kernel Version: AK.276.OPO.CM12.1
+bd2850d video: mdss: Revert all display tuning code
+0b0ee92 video: mdss: LiveDisplay driver
+16f016d msm8974: Update DT for new LiveDisplay driver
+4dd61b9 msm: mdss: add support for LP2 low power state
+ea82cf3 msm: mdss: swap flags for LP1 and LP2 modes
+82f5725 msm: mdss: fix issues with transition from LP3 to LP2
+9c661b2 msm: mdss: fix transitions from low power mode to off
+b2d1f79 bacon: Update defconfig
+269b260 ak_bacon_defconfig: update config last CM12.1 - 20150712
+4ce8482 Kernel Version: AK.277.OPO.CM12.1
+82c2e25 msm: ADSPRPC: Initialize hlist node pointers
+00a41a6 USB: dwc3: ep0: Use WARN_ON_ONCE to fix message flooding issue
+73897c0 wlan: Properly initialize abort scan completion variable.
+0365c24 writeback: Do not sort b_io list only because of block device inode
+6e4a1cc Kernel Version: AK.278.OPO.CM12.1
+833c74b find7: Enable TASK_DELAY_ACCT
+481c5f9 cgroup: remove synchronize_rcu() from cgroup_attach_{task|proc}()
+6faa700c lowmemorykiller: fix typo into test_task_flag routine
+7a4b173 Revert "power: Remove wakeup reason API and clients"
+8b9aa79 Power: Report suspend times from last_suspend_time
+a57889c ARM: gic: ignore non-wakeup interrupts when reporting wakeup sources
+40840d4 irq_flow_handler_t now returns bool
+3cc23f0 gpio: msm-common: Add wakeup reason logging
+a8166c8 gpio-msm: remove logging of wakeup reason
+b00efc8 Revert "gpio-msm: remove logging of wakeup reason"
+3af41c0 PM: wakeup_reason: add functions to query and clear wakeup reasons
+b330891 PM: wakeup_reason: add functionality to log the last suspend-abort reason.
+bdc102e Revert "suspend: Return error when pending wakeup source is found."
+fa0f5f7 power: log the last suspend abort reason.
+21d92c9 PM: wakeup_reason: add check_wakeup_reason() to verify wakeup source irq
+3801410 PM: wakeup_reason: correctly deduce wakeup interrupts
+795b0c1 PM: wakeup_reasons: fix race condition
+9543282 wakeup: Add last wake up source logging for suspend abort reason.
+149042d PM: Replace WARN_ON on timeout with one line print
+d4a985f Power: Report total suspend times from boot in suspend_since_boot
+518dc25 PM: wakeup_reasons: disable wakeup-reason deduction by default
+87dedb3 POWER: Add an API call to log wake wakeup reason
+e4a85ea nick kvfree() from apparmor
+484b2c7 Revert "msm: vidc: Fix timestamp for EOS buffer"
+764b1f1 cm: Update bacon/find7 defconfigs
+5a8a130 ak_bacon_defconfig: added DEDUCE_WAKEUP_REASONS
+a7372c9 Kernel Version: AK.279.OPO.CM12.1
+f4ec30a video: mdss: Fix locking issues with new LiveDisplay driver
+4c3b72e trace: memkill: trace LMK and OOM kills
+737619a mm, oom: normalize oom scores to oom_score_adj scale only for userspace
+6212373 oom: remove deprecated oom_adj
+2c63b06 mm, oom: fix badness score underflow
+cfe477c mm, oom: fix and cleanup oom score calculations
+bf785a7 mm, oom: do not schedule if current has been killed
+2dbc0e9 mm, oom: fix potential killing of thread that is disabled from oom killing
+bfb0999 mm, oom: introduce helper function to process threads during scan
+be72052 mm, memcg: introduce own oom handler to iterate only over its own threads
+f8eef79 mm, oom: reintroduce /proc/pid/oom_adj
+37490fd mm, oom: reduce dependency on tasklist_lock
+f98a299 mm, oom: allow exiting threads to have access to memory reserves
+bf61136 mm, oom: change type of oom_score_adj to short
+6021f68 mm, oom: fix race when specifying a thread as the oom origin
+3f95ffa oom: use N_MEMORY instead N_HIGH_MEMORY
+73b49c2 mm, oom: cleanup pagefault oom handler
+ba82750 mm, oom: remove redundant sleep in pagefault oom handler
+9e418bf mm/oom_kill: remove weird use of ERR_PTR()/PTR_ERR().
+a00a9a9 oom_kill: change oom_kill.c to use for_each_thread()
+799120f5 oom_kill: has_intersects_mems_allowed() needs rcu_read_lock()
+0e057d4 oom_kill: add rcu_read_lock() into find_lock_task_mm()
+1b06e9e mm, oom: prefer thread group leaders for display purposes
+de86b86 mm, oom: base root bonus on current usage
+d3adf27 trace: allow memkill tracing to be selectively enabled
+7c3ce283 OOM, PM: OOM killed task shouldn't escape PM suspend
+ce4f4ca mm, memcg: move all oom handling to memcontrol.c
+d73a170 Revert "lowmemorykiller: Account for highmem during kswapd reclaim"
+58d3159 staging: android: lowmemorykiller: implement task's adj rbtree
+056cb6a lowmemorykiller: Account for highmem during kswapd reclaim
+a82560e staging: android: lmk: Tune up
+6e28462 lowmemorykiller: enhance debug information
+1c9512a mm, oom: make dump_tasks public
+70b4cb0 staging:android:lmk: read rb tree root with spinlock
+466052d drivers:lmk: Fix double delete issue
+91364ba drivers:lmk: Fix null pointer issue
+28d9164 ak_bacon_defconfig: enable LMK_ADJ_RBTREE
+5e92a3c android: lmk: base.c: Fix merge error
+6cc6899 Kernel Version: AK.280.OPO.CM12.1
+
+project vendor/oppo/
+36faa1e msm8974: Update blobs
+6a93ad8 msm8974: Update blobs
