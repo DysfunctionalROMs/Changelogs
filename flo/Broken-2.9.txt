@@ -1,0 +1,28 @@
+
+project device/asus/flo/
+612639b Flo: Enable performance profiles
+5a6f087 Ambient display update
+
+project kernel/asus/flo/
+ab2e273 Revert "msm-sleeper: save max freq"
+203e3b0 Revert "Max screen off frequency (default 1026MHz)"
+9220a85 cpufreq: ondemand: Boost CPU frequency only for touch input
+92fc4d0 cpufreq: ondemand: Fix update_sampling_rate race with hotplug
+2fd931b cpufreq: ondemand: Fix hotplug deadlock with store_powersave_bias
+b0d1adf cpufreq: ondemand: add input_boost interface
+671bab7 cpufreq: ondemand: Use interruptible wait to not affect load average
+b051f6b cpufreq: Move get_cpu_idle_time() to cpufreq.c
+16f78e3 cpufreq: Move get_cpu_idle_time() to cpufreq.c
+62dbace msm: rq_stats: Use cpufreq API to get the current frequency
+4e021e2 msm: rq_stats: Fix wrong usage of cpufreq_quick_get()
+ec7a475 msm: rq_stats: Calculate load based on current freq limit
+f8790f6 drivers: cpufreq: Send a uevent when governor changes
+abc1a28 cpufreq: Fix broken uevents for cpufreq governor and cpu devices
+514a201 Add cpufreq_notify_utilization
+6000c13 msm-sleeper: CPU hotplug driver
+bbe4cfb defconfig: Enable msm_sleeper
+ccd373d cpufreq: interactive: upstream updates
+5ffc794 Relocated msm_sleeper to hotplug directory
+5f35356 cpufreq: ondemand: upstream updates
+0f0e5dd Revert "Relocated msm_sleeper to hotplug directory"
+

@@ -1,0 +1,33 @@
+
+project device/lge/hammerhead/
+4d0f250 Ambient display updates
+21ab141 Hammerhead: Enable performance profiles Modified from their original home for broken
+
+project kernel/lge/hammerhead/
+30eb6c2 cpufreq: ondemand: Boost CPU frequency only for touch input
+fc4e94f cpufreq: ondemand: Fix update_sampling_rate race with hotplug
+4c611d6 cpufreq: ondemand: Fix hotplug deadlock with store_powersave_bias
+0333504 cpufreq: ondemand: add input_boost interface
+51c9bbc cpufreq: ondemand: Use interruptible wait to not affect load average
+80bf920 cpufreq: Move get_cpu_idle_time() to cpufreq.c
+5b15cb2 cpufreq: Move get_cpu_idle_time() to cpufreq.c
+4fd6a2a msm: rq_stats: Use cpufreq API to get the current frequency
+db696ca msm: rq_stats: Fix wrong usage of cpufreq_quick_get()
+746e61f msm: rq_stats: Calculate load based on current freq limit
+dfcd9baf drivers: cpufreq: Send a uevent when governor changes
+88a13e0 cpufreq: Fix broken uevents for cpufreq governor and cpu devices
+7b76442 Add cpufreq_notify_utilization
+426f6e4 msm-sleeper: CPU hotplug driver
+522213f MSM_Hotplug: Special version modded by neobuddy89
+7ab72cb msm: Add bricked hotplug
+da4fc5b msm_hotplug: Remove cpuboost dependencies
+0ef7d26 bricked_hotplug: Remove cpuboost dependencies
+c7e6957 Disable msm_hotplug by default
+b05a686 defconfig: Enable various hotplug options and turbo boost
+9fa0aad Hotplugs: Add powersuspend drivers
+297a4c1 cpufreq: interactive: upstream updates
+b7ceaca Relocated all hotplug options to one central location
+1cbbb55 Revert "Relocated all hotplug options to one central location"
+cc28394 Remove extra hotplugs Having extra hotplug options is just ridiculous. Dafuq was I thinking?
+a9edb77 Fix enable turbo boost derp
+
