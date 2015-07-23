@@ -1,0 +1,68 @@
+project device/motorola/falcon/
+71e9b06 change TC
+94fa431 fix new tool chain call
+
+project device/motorola/msm8226-common/
+7df2a08 msm8226-common: Update proprietary files
+f3bfdb2 enable performance profiles
+adb8b56 Fix performance profiles
+
+
+project kernel/motorola/msm8226/
+2e73fb6 fix intellilug merge derp
+8456e77 Squash intelli_plug: intelligent hotplug cpu driver with eco mode
+6107b16 makefile: flags galore(graphite and other misc flags)
+331b728 shut up unwind
+cc08409 fix build error for intelliplug and enable it
+6a81fc8 Fix warnings spam with gcc5
+4bde62c gcc5: ARM: 8158/1: LLVMLinux: use static inline in ARM ftrace.h
+08221ca gcc5: gpu: msm: fix 5.0 compile
+9fb5f33 gcc5: sound/soc/codecs/wcd9xxx-mbhc.c fix warning: initialization discards 'const' qualifier from pointer target type
+a5f10cc gcc5: drivers/video/msm/mdss/mdss_mdp_pp.c: fix warning: logical not is only applied to the left hand side of comparison
+024f385 gcc5: drivers/video/msm/mdss/mdss_mdp_pp.c: fix warning: comparison of constant '15' with boolean expression is always false
+830cb09 gcc5: drivers/staging/prima/CORE/MAC/src/pe/sch/schBeaconGen.c: fix warning: passing argument 2 of 'vos_mem_compare' discards 'const' qualifier from pointer target type
+0b58571 msm: vidc: update format during downscaling
+b0d8f8d wlan: prima: Fix GCC 5.1.0 Build
+19bc734 wlan: prima: Fix GCC 5.1.0 Build issues with WDI_ProcessResponse
+e5bfeb2 lib: unlzo: Fix GCC 5.1.0 Build
+71897a5 arm: msm: mmi-pinmux: Fix GCC 5.1 Build
+7899cd8 modified: kernel/sched/sched.h
+4abe61b final fixes for  5.1 tool chain compilation
+637f3dd initial s2w dt2w code import from @showp1984
+45ca792 sweep2wake/doubletap2wake: adapt for falcon_umts (aka Moto G)
+b4ebfe2 mdss:mdss_dsi_panel.c: add s2wake/dt2wake screen on/off hooks
+39cd32b s2w: remove all s2sonly code
+5684fd9 s2w: Add bidirectional sweep2sleep
+320bf3f sweep2dim: reduce/raise kcal via sweep2sleep gestures
+2c8abc3 s2d: send kcal through new function also turn off display if kcal is <= 0
+4127215 s2d: Don't send kcal if we're turning off display, or if we're max.
+681a291 s2d: Record original kcal, if it's max, do not update.
+e7a5941 s2d: assign to sysfs in android_touch + cleanup
+a076cb8 s2d: assign to sysfs in android_touch + cleanup
+0299f1c s2d: dont flag the kcal boost if we're writing it later on anyway
+e40afe0 s2w: Code cleanup
+8e94150 s2w: Use s2s-only (s2w_switch == 2) properly
+48ee5c9 s2w: Adjust left->right definitions
+180f025 s2d: rewrite kcal setting, allow s2d with s2w
+537bd5d S2W, DT2W: Modify to use Powersuspend
+a9cd5ee doubletap2wake: Add user selected feather radius
+c90f67e s2w/dt2w: implement Pocket mode and deep sleep
+9858a7d s2w/dt2w: separate PocketMode specific code THX to Alin23!!!
+82bb0c2 dt2w: improve accuracy of single touch detection
+0c4a192 proximity: power off the sensor if dt2w/s2w is disabled
+15bdfc4 enable things
+d538610 fix build error
+280c16e fix errors
+c9bee0c Add BFQ/SIO/FIOPS/ZEN/VR IO Schedulers
+a49b1a0 enable govenors
+edfc9dd Simple GPU Algorithm: Initial coding for devfreq based Adreno Drivers
+4bd0996 msm8226: overclock GPU to 533MHz
+047d716 Sound Control 3.2: Initial Port to MSM8226 Socs
+3260165 Sound Control: expose direct register manipulations to userspace
+809428d Sound Control: expose direct register manipulations to userspace
+5572bbe Sound Control: Misc clean up for newer WCD9xxx SOCs
+d8dc492 Sound Control: let register lock be dependent on different hw revisions
+3cd2ece fix  merge derp
+
+project vendor/motorola/
+5e11fdd msm8226-common: Update widevine libs
