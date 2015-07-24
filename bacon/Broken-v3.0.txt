@@ -1,0 +1,572 @@
+
+project device/oppo/msm8974-common/
+bb234cf msm8974: Update WiFi configuration
+2982550 msm8974: Update WiFi configuration
+38258a4 msm8974: Enable FIOPS by default
+0589c7c msm8974-common: Remove unused symlinks
+c4abc79 msm8974: Enable AIG and MBDRC for stereo recording path
+7d13543 msm8974: Enable adaptive LMK
+56e4c14 msm8974: bandaid wifi drops during sleep
+
+project hardware/qcom/audio-caf/msm8974/
+aac6549 compress offload: use new sample rate representation.
+
+project kernel/oneplus/AK-OnePone-Reborn/
+7d8853a fs/namei.c: fix potential memory leak in path_lookupat
+ed38278 Kernel Version: AK.217.OPO.CM12.1
+a5d5d77 ASoC: msm: Correct RTAC mutex lock
+6a68861 msm: mdss: Align the shared memory length to PAGE_SIZE
+5e59914 msm: mdss: isolate cleanup of pipes within kickoff
+f195916 msm: mdss: refactor pipe buffer handling
+e682fd8 msm: mdss: check for ctl path before handling commit
+1cef926 msm: mdss: Display prepare unblock for writeback path
+c5473a7 msm: mdss: Use correct target z order while validating overlay
+453fc1e msm: mdss: add proper locking for buffer lists
+69f9b97 Kernel Version: AK.218.OPO.CM12.1
+22a37f3 fastcharge: qpnp-charger: Charge level interface
+0fc654f fastcharge: qpnp-charger: remove "mA" from sysfs
+ae72ada fastcharge: qpnp-charger: updated to the latest v1.1
+a4a0013 ak_bacon_defconfig: enable CHARGE_LEVEL
+d94b190 Linux 3.4.107
+63b13c9 Kernel Version: AK.219.OPO.CM12.1
+58ffe3b fastcharge: qpnp-charger: remove mA from sysfs phase II
+9a9a479 decompressor: add LZ4 decompressor module
+5e17214 VFS: Make more complete truncate operation available to CacheFiles
+604f968 msm8974: fs: Transparent compression support
+779e726 msm8974: Enable transparent compression
+d07803c crypto: msm: change dev_err messages to dev_warn for reaper worker
+a7faddf qcedev: msm: Remove gating of zero length packets for authentication
+cca9e9b crypto: msm: Compilation flag in  Kconfig For FIPS
+6e99074 msm: vidc: Update the clock state variable before unprepare clocks
+d59751e qseecom: avoid buffer over-write when copying app_name
+7779264 msm: mdss: un map dsi transmit buffer properly
+f7468ed msm: mdss: rotator: replace work_pending with work_busy
+b319b83 spi_qsd: Add core message queue feature
+acfa1eb spi_qsd: Initialize wait queue
+93bb36f spi_qsd: Add support for multiple BAM descriptors
+3adf80c spi_qsd: Fix bug in multi-xfer bam mode transaction
+8022a22 spi: spi_qsd: Prevent transfer grouping
+5b0ba2f wcnss: avoid removing pm_qos request when already removed
+1074242 soc: qcom: bam_dmux: Sync SSR with disconnect/reconnect
+f362ed1 msm_fb: display: validate input args of mdp4_argc_process_write_req
+1a4ecb3 msm: vidc: Add support to read venus version through debugfs
+ed56a9e mmc: core: Fix mmc clk scale down during writes.
+9eb289b msm: mdss: fix ret value during error case
+66ebd91 kernel: Restrict permissions of /proc/iomem.
+4afbff7 wcnss: configure iris into cxo mode
+1edc76c wcnss: configure IRIS clock to 19.2Mhz
+8ee5dc3 wcnss: reset IRIS before reading IRIS revision register
+55382e4 msm: thermal: Add RT priority to kernel thermal threads
+3762775 msm: thermal: Optimize locking in thermal frequency mitigation thread
+e6d376b msm: thermal: Add RT priority to kernel hotplug thread
+5d7754e msm8974: Adjust qcrypto device name
+3ff5b61 ak_bacon_defconfig: enable FS_TRANSPARENT_COMPRESSION
+0b8801e Kernel Version: AK.220.OPO.CM12.1
+06f3c43 lib/int_sqrt.c: optimize square root algorithm
+327ee70 mmc: toggleable software crc
+a4dd48f PM / cpuidle: System resume hang fix with cpuidle
+5e5ef52 power: qpnp-bms: add a delay for timing requirement
+0179f5e platform: qpnp-power-on: choose correct s2 control registers
+80be120 power: qpnp-charger: wake up upon fast charge after resuming
+56c42b7 power: qpnp-charger: allow vinmin to be lowered to 4.0 V
+be13340 msm: hotplug: Do not skip the platform init for boot core
+4c5b748 soc: qcom: rq_stats: Pass correct cpu id to update_average_load function
+9b35f6f android: binder: use GPF_HIGHUSER flag since binder is designed for userspace
+2e5655a Kernel Version: AK.221.OPO.CM12.1
+eb6e263 sched/fair: Optimize find_busiest_queue()
+8cb4b62 sched/fair: Optimize cgroup pick_next_task_fair()
+e23aca0 block: Disable IO Stats
+040131f sched/fair: Implement fast idling of CPUs when the system is partially loaded
+83b3b66 sched: Change rq->nr_running to unsigned int
+6f1bf70 sched/fair: Let minimally loaded cpu balance the group
+f024dab sched/fair: Add some serialization to the sched_domain load-balance walk
+c560d4e sched/fair: Propagate 'struct lb_env' usage into find_busiest_group
+d76f75a sched/fair: Revert sched-domain iteration breakage
+f9db337 sched/fair: Improve the ->group_imb logic
+4cfebc6 sched: Remove stale power aware scheduling remnants and dysfunctional knobs
+91fe9ba sched: Improve scalability via 'CPU buddies', which withstand random perturbations
+98dd0cf workqueue: fix hang involving racing cancel[_delayed]_work_sync()'s for PREEMPT_NONE
+4efbc2a5 ak_bacon_defconfig: remove SCHED_MC & SCHED_SMT
+8bf7851 Kernel Version: AK.222.OPO.CM12.1
+a8feb65 leds-qpnp: change WLED switch frequency mask
+3b82734 spmi: use more appropriate name for spmi devices
+ba6b776 mdss: Change kickoff timeout to 300ms
+87040b0 mdss: Change kickoff timeout to 300ms - phase 2
+6b2e22f PM / sleep: unregister wakeup source when disabling device wakeup
+72f29af staging: ion: shrink highmem pages on kswapd
+2ad8246 Kernel Version: AK.223.OPO.CM12.1
+890cdba cpufreq: interactive: set cpu_load calculation on current frequency
+1c545bb input: touchscreen: Cleanup & fix find7 ifdefs
+15b7aa2 power: Cleanup & fix find7 ifdefs
+b9f4192 nfc: pn544: Update from oppo 4.4 source
+7c1e939 leds-qpnp: reduce WLED max brightness to 255, as dictated by led-class
+17bf169 Update qpnp-pin to read display_status
+4ab65ed video: mdss_mdp_pp: Check mutex state prior blindly locking it
+673284e Kernel Version: AK.224.OPO.CM12.1
+6324bec Revert "staging: Remove the Android logger driver"
+4fdd2ed ak_bacon_defconfig: re-enable ANDROID_LOGGER
+606163d Kernel Version: AK.225.OPO.CM12.1
+8c2b594 qseecom: Sync with LA.BF.1.1.1_rb1.18
+8cd3a31 net: wireless: Sync with LA.BF.1.1.1_rb1.18
+9a51335 cfg80211: Sync with LA.BF.1.1.1_rb1.18
+be8af4c ak-bacon-build: rebuild with Ubet 4.9 TC
+a155094 Kernel Version: AK.226.OPO.CM12.1
+77eb2ed selinux: call WARN_ONCE() instead of calling audit_log_start()
+7bf044a SELinux: use ARRAY_SIZE
+e7db9ca SELinux: possible NULL deref in context_struct_to_string
+4a5a48d selinux: simple cleanup for cond_read_node()
+b889149 selinux: fix a possible memory leak in cond_read_node()
+f8bd404 selinux: no recursive read_lock of policy_rwlock in security_genfs_sid()
+3f1b048 selinux: conditionally reschedule in mls_convert_context while loading selinux policy
+54fa6a3 selinux: conditionally reschedule in hashtab_insert while loading selinux policy
+ecd20aa SELinux: Reduce overhead of mls_level_isvalid() function call
+a54a07a selinux/nlmsg: add XFRM_MSG_NEWSPDINFO
+4abcd32 selinux/nlmsg: add XFRM_MSG_GETSPDINFO
+ce4276c selinux/nlmsg: add XFRM_MSG_[NEW|GET]SADINFO
+0674374 selinux/nlmsg: add XFRM_MSG_REPORT
+5e611f2 selinux/nlmsg: add XFRM_MSG_MIGRATE
+b448d04 selinux/nlmsg: add XFRM_MSG_MAPPING
+6a2530c selinux: add SOCK_DIAG_BY_FAMILY to the list of netlink message types
+0a42e10 SELinux: allow default source/target selectors for user/role/range
+1215481 SELinux: add default_type statements
+c5abf3a SELinux: Update policy version to support constraints info
+6b49283 security: lsm_audit: add ioctl specific auditing
+d1b78c6 SELinux: per-command whitelisting of ioctls
+8924539 SELinux: use deletion-safe iterator to free list
+475abff Kernel Version: AK.227.OPO.CM12.1
+cd2eb32 cpufreq: limiter: update driver to v3.6
+a224507 Kernel Version: AK.228.OPO.CM12.1
+23d42e4 ak_bacon_defconfig: disable for now GOV_SMARTMAX & GOV_YANKACTIVE
+7d05080 net: llc: use correct size for sysctl timeout entries
+0765522 mdss: update from oppo
+9a209ca Kernel Version: AK.229.OPO.CM12.1
+af06449 ak_bacon_defconfig: added LZ4 stuffs
+293a225 initrd: fix lz4 decompress with initrd
+421aced lib/decompress_unlz4.c: always set an error return code on failures
+b1a8192 Kernel Version: AK.230.OPO.CM12.1
+de66772 mmc: sdhci-msm: Add Samsung 64G search after tune quirk
+870a737 ak_bacon_defconfig: enable SIMPLE_GPU_ALGORITHM
+a867138 ak_bacon_defconfig: disable GOV_SIMPLE_ONDEMAND
+e2f2a74 Revert "drivers: notifier: enable it by default"
+67bd671 drivers: notifier: switch to backlight solution
+f8a97bd Kernel Version: AK.231.OPO.CM12.1
+5f51276 Revert "ak_bacon_defconfig: disable for now GOV_SMARTMAX & GOV_YANKACTIVE"
+b0a06de Kernel Version: AK.232.OPO.CM12.1
+8bd3e7e Revert "cpufreq: interactive: Add max_freq_hysteresis feature"
+82b6c92 cpufreq: interactive: Add max_freq_hysteresis feature
+b74888d cpufreq: interactive: Make window alignment optional
+a2db89e cpufreq: interactive: Exercise hispeed settings at a policy level
+d5c286d cpufreq: interactive: Record hispeed_validated_time in timer function
+ed1a91e cpufreq: interactive: Honor changed minimum frequency
+7f39a3a cpufreq: interactive: Consider changed min limit a frequency boost
+4d63ad8 cpufreq: interactive: Honor boosted state in several timer calculations
+15c2d8f cpufreq: interactive: validate above_hispeed_delay
+efe46c1 cpufreq: interactive: free above_hispeed_delay on exit
+30fb814 cpufreq: interactive: Replace obsolete strict_strtoul calls.
+57e3ac7 cpufreq: interactive: Rearm governor timer at max freq
+f9e9c15 cpufreq: interactive: calculate load before freq change
+9ff53af Kernel Version: AK.233.OPO.CM12.1
+bc2ad93 lib: lz4: Set ARM_EFFICIENT_UNALIGNED_ACCESS
+d630175 msm: thermal: merged intelli thermal v2.0
+bc4fc48 msm: thermal: Prevent mitigation if not required
+85da3c2 Kernel Version: AK.234.OPO.CM12.1
+dce8952 cpufreq: smartmax: adjust tunable to @gianton profile
+b116605 nf: IDLETIMER: Adds the uid field in the msg
+b8ee7a7 seccomp: Replace BUG(!spin_is_locked()) with assert_spin_lock
+e536f1f Kernel Version: AK.235.OPO.CM12.1
+b768061 Revert "ASoC: es325: Import Oppo Audience ES325 driver"
+d258533 SELinux: ss: Fix policy write for ioctl operations
+7d50c75 ak_bacon_defconfig: enable ZRAM and company II
+c13a36a Kernel Version: AK.236.OPO.CM12.1
+4e110ed gcc5: gpu: msm: fix 5.0 compile
+07cc452 gcc5: ARM: 8158/1: LLVMLinux: use static inline in ARM ftrace.h
+c00f49b gcc5: fix warnings spam with gcc5
+8c24b42 gcc5: msm: camera_oppo: fix warnings with GCC 5.0
+8a8ae50 gcc5: ak-bacon-build: back to the future
+950ccf7 gcc5: makefile: if -O3 disable array-bounds false positive
+6d5e53a gcc5: sound/soc/codecs/wcd9xxx-mbhc.c fix warning: initialization discards 'const' qualifier from pointer target type
+1b97ce4 gcc5: arm: enable cortex_a15 optimization
+64a750b gcc5: drivers/staging/prima/CORE/MAC/src/pe/sch/schBeaconGen.c: fix warning: passing argument 2 of 'vos_mem_compare' discards 'const' qualifier from pointer target type
+8cb4143 gcc5: drivers/staging/prima/CORE/HDD/src/wlan_hdd_wmm.c: fix warning: logical not is only applied to the left hand side of comparison
+ce65de6 gcc5: drivers/video/msm/mdss/mdss_mdp_pp.c: fix warning: logical not is only applied to the left hand side of comparison
+a2c7bb8 gcc5: drivers/video/msm/mdss/mdss_mdp_pp.c: fix warning: comparison of constant '15' with boolean expression is always false
+2f8d571 ak-bacon-build: compile with the new Uber 5.1 Toolchain
+7845ab1 Support GCC 5.0
+cf83af3 Update GCC 4.0
+13b739f oppo: i2c: drop nfc freq to 19.2 MHz
+c01801a msm8974: usb: dts: Set the usb max speed to high
+611beb6 msm8974: usb: dwc3: Set the max speed
+909eb9a Kernel Version: AK.237.OPO.CM12.1
+baddd8c mutex: Move mutex spinning code from sched/core.c back to mutex.c
+edd8c41 mutex: Make more scalable by doing less atomic operations
+1db73b1 mutex: Queue mutex spinners with MCS lock to reduce cacheline contention
+0905cd3 mutex: Back out architecture specific check for negative mutex count
+f82d932 klist: use same naming scheme as hlist for klist_add_after()
+a573cd7bf cpufreq_stats: do not remove sysfs files if frequency table is not present
+3b04c78 ipv4: fix NULL checking in devinet_ioctl()
+1689e80 ftrace: Disable function tracing during suspend/resume and hibernation, again
+2d50f69 Disable -fconserve-stack on ARM v2
+2d8d54d ./Makefile: tell gcc optimizer to never introduce new data races
+991c809 fs: Add a missing permission check to do_umount
+4c757f3 fs/namei.c: fix: warning: 'old_path.*' may be used uninitialized in this function
+1fb5918 USB: storage: ene_ub6250: fix warning for the frame size
+a99fa1d Kernel Version: AK.238.OPO.CM12.1
+c61b9a7 video: mdss: Report PCC values from pp registers
+8dbd610 ipv4: Missing sk_nulls_node_init() in ping_unhash().
+2a7695e ARM: add .gitignore entry for sha256-core.S
+d493749 arm: crypto: Add optimized SHA-256/224
+c5c7bd3 ak_bacon_defconfig: cleaned and enable SHA256_ARM
+b1d557b crypto: arm/aes update NEON AES module to latest OpenSSL version
+53c56e9 ak_bacon_defconfig: enable MMC_BLOCK_DEFERRED
+d2a7fae Kernel Version: AK.239.OPO.CM12.1
+5de9b25 ARM: dts: A0001: Update Truly panel init sequence
+817aee1 Kernel Version: AK.240.OPO.CM12.1
+3f07435 msm: msm_hotplug: Add MSM hotplug driver
+edd724b msm: msm_hotplug: disable by default
+272f620 msm: intelli_hotplug: Add Intelli Hotplug driver
+d3675e1 ak_bacon_defconfig: enable INTELLI_HOTPLUG & MSM_HOTPLUG
+5c091d4 Kernel Version: AK.241.OPO.CM12.1
+821716d Revert "cpufreq: smartmax: adjust tunable to @gianton profile"
+e556b3d fs: f2fs: bring up to date - 2015-04-23
+d8907be msm: mdss: KCAL: Queue changes when panel is powered off
+53aa284 msm: mdss: KCAL: Apply default values on boot
+96ad64c msm: mdss: KCAL: Read values from MDP registers wherever possible
+2f10507 Kernel Version: AK.242.OPO.CM12.1
+a1a7c96 Revert "msm: mdss: KCAL: Read values from MDP registers wherever possible"
+c4b7fe3 prima: Update to LA.BF.1.1.1_rb1.20
+3eb3172 wlan: Synchronize cancel remain on channel and ROC expiry.
+e9f7d29 wlan: Fix for dead lock during cancel ROC.
+0b69556 Kernel Version: AK.243.OPO.CM12.1
+2f95974 ARM: dts: msm: update the DSI PHY lane configuration settings
+cb3ab73 mmc: core: update host->card after getting RCA for SD card
+3d6dacc msm: camera: add check for csid_cid to prevent of overwrite memory
+ebb29df msm: camera: ispif: Validate vfe_intf parameter
+09e13e5 msm: sps: Squashed commit of upstream changes
+407b02b mdss: dsi: fix potential race conditions in mdp busy wait
+9590621 mdss: fb: wait for idle only on last fb release
+0e5858f msm: mdss: Adjust fence timeouts
+032cf99 msm: mdss: update max fence wait timeout for all acquire fence
+bb2aa24 cm: Disable CONFIG_SUSPEND_TIME
+1a837ab ak_bacon_defconfig: disable SUSPEND_TIME
+70746e3 Kernel Version: AK.244.OPO.CM12.1
+5fd4c12 cpufreq: interactive: Ramp up directly if cpu_load exceeds 100
+e4b0241 ipv6: Limit mtu to 65575 bytes
+94c7f75 net: loopback: set default mtu to 64K
+d687e12 Kernel Version: AK.245.OPO.CM12.1
+8e9cdca synaptics: Update firmware to 14001227
+371fbfc ARM: dts: A0001: Update Truly panel commands
+7443b96 sched: Update cpu load after task_tick
+ad617ae sched: Remove one division operation in find_busiest_queue()
+dfaaef1 Kernel Version: AK.246.OPO.CM12.1
+5ca333c cpuidle: Make it clear that governors cannot be modules
+1e94191 cpuidle: remove cpuidle_unregister_governor()
+9538057 cpufreq: ondemand: updated to the latest @myfluxy branch
+5d2a048 ak_bacon_defconfig: enable ONDEMAND
+c3f056fa kernel: use the gnu89 standard explicitly
+068dea9 Kernel Version: AK.247.OPO.CM12.1
+a44d75e msm8974-oppo: Update gpiomux config from oppo 4.4 source
+9eba627 clock-8974: Update from oppo 4.4 source
+3a21163 nfc: Remove p61 nfc driver
+344c92e msm: camera: isp: Validate input parameter for vfe_write and vfe_read
+c4bd442 ASoC: wcd9xxx: Add check for buffer overflow
+b7ef7cd diag: dci: Send mode reset command to the apps processor
+f9c52a6 diag: dci: Mutex protect the list while traversal and node deletion
+a6cbef3 diag: Prevent suspend in Memory Device mode
+e1f1ad9 diag: Release wakeup sources properly
+5c0ed47 diag: Update SSIDs, event ids and log codes
+0d1116e rpm_log: Fix file_read error
+a132406 msm: smp2p: Use correct macro structure
+a9b62cb drivercore: Avoid adding devices without pm_ops to dpm list
+71f62ef PM: Move disabling/enabling runtime PM to late suspend/early resume
+d796019 msm: sps: Support low memory condition in SPS driver
+d04ba4e msm: bam: Use memset_io instead of memset
+8de8f35 msm: sps: update the checking of free slots
+03a7ebe msm: rpm-smd: Read RPM acks before entering system sleep
+ec3a55b qcom: rpm-smd: Force smd channel update in interrupt lock context
+abb5d10 msm: rpm-smd: Increase the max outstanding sleep set messages to 24
+6c682ec msm: mdss: Grouping enable and prepare calls for dsi link clocks
+00e462d wcd9xxx: Avoid wrong enabling of buck for HPH,LO concurrency
+3a187e1 ASoC: msm: qdsp6v2: fix for pcm_write failure during voip
+ee1ba00 wcnss: handle CBC complete event from firmware
+9b3f085 PM / devfreq: Fix devfreq_remove_device() to improve the sequence of resource free
+abcdeb2 PM / devfreq: Workaround cpufreq REMOVE_POLICY versus hotplug lock race
+ea2d65e PM / devfreq: Refactor Cache HWmon governor to be more generic
+206cda8 PM / devfreq: cache_hwmon: Move IRQ handling to device drivers
+7fbbd50 PM / devfreq: cache_hwmon: Use array for reporting monitor stats
+2bb6a5e PM / devfreq: cache_hwmon: Also print low mrps for debugging
+4b84cd6 PM / devfreq: governor_cpufreq: Output device name in debug print
+fe54721 PM / devfreq: Add timeout feature for cpufreq governor
+2f33550 PM / devfreq: Fix error handling in governor_cpufreq
+6722d40 PM / devfreq: governor_cpufreq: Rewrite locking to avoid deadlocks
+f4e65ef msm: Remove auxdata mapping for msm sdcc devices
+9fcd9e5 ARM: dts: msm: Remove device tree bindings that use msm_sdcc driver
+e39fb47 prima: Update to LA.BF.1.1.1_rb1.22
+41dcb96 lowmemorykiller: Don't count swap cache pages twice
+f51731c ion: return a fresh sg_table from ion_map_dma_buf
+bcc2fb1 PM: Fix a bug in dpm_suspend_late()
+2d6f720 irqchip: gic: Mask PPIs during disable_percpu_irq()
+a1d2e1f msm: reorder init calls in board's init_machine handler
+1d57a40 alarmtimer: squashed cm12.1 commits - 20150518
+b6a96e8 staging: android-alarm: Switch from wakelocks to wakeup sources
+82e806f alarmtimer: squashed cm12.1 commits - 20150518 - phase II
+de7327b drivers: lpm-levels: Provide API to set wake up time from suspend
+47483a7 Revert "synaptics: Update firmware to 14001227"
+cf2e143 drivers/platform/msm/sps/sps_bam.c: fix: warning: 'count' may be used uninitialized in this function
+83ac8c2 Kernel Version: AK.248.OPO.CM12.1
+b239d29 suspend: Return error when pending wakeup source is found.
+fa30841 mmc: core: Avoid infinite retries of failed mmc command
+fdfeed5 mmc: block: Fix an invalid use of req->cmd_flag in DISCARD operation
+3a05e1b mmc: core: invoke low power mode if card is not present
+7b74dde mmc: core: enhance card removal judgement for slow removal
+ada4c04 decompressors: group XZ_DEC_* symbols under an if XZ_BCJ / endif
+35a691b decompressors: drop dependency on CONFIG_EXPERT
+4d7e9e3 decompressors: make the default XZ_DEC_* config match the selected architecture
+bb55833 lib/xz: add comments for the intentionally missing break statements
+8c14739 Makefile: sort list of defconfig targets in make help output
+f8430d2 ak_bacon_defconfig: disable MSM_RTB
+0b6cfe3 thermal: msm8974-tsens: Add missing include for no-debugging cases
+d9c512c Kernel Version: AK.249.OPO.CM12.1
+c5a6ac6 smd_pkt: Add sanity check to avoid unregistering the driver twice
+364a6ca msm: rpm_smd: Use spin_lock_irqsave in work function
+54b4431 cpufreq: interactive: Reschedule timer if min_freq is reduced
+c4b7baa Kernel Version: AK.250.OPO.CM12.1
+1e2d42a selinux: enable per-file labeling for debugfs files.
+a629e33 ipv6: fib: fix potential NULL pointer dereference
+e1fc84b Kernel Version: AK.251.OPO.CM12.1
+9cda8ba selinux: enable genfscon labeling for sysfs and pstore files
+aff1260 Kernel Version: AK.252.OPO.CM12.1
+f8d8f54 net/unix: sk_socket can disappear when state is unlocked
+550dd8d New Build Breakage in branch: kernel-m-dev-tegra-flounder-3.10 @ 1960706
+b59cc03 neigh: Better handling of transition to NUD_PROBE state
+9b96922 msm: thermal: Limit the emergency mitigation messages
+576ac81 msm: thermal: fix build error after apply limit to thermal logs
+0d91ce1 Kernel Version: AK.253.OPO.CM12.1
+4dd66a8 Revert "qce50: Update clock vote for improved performance"
+b297b5a Kernel Version: AK.254.OPO.CM12.1
+58012bf Revert "mm: Increase MIN and MAX default readahead sizes"
+5922ffb msm: kgsl: Ratelimit fence error messages
+80bcd2e msm: kgsl: fix Ratelimit fence error include
+32017ef arm/dt: msm8974: Lower GPU voltage constraints
+e5f8c68 Kernel Version: AK.255.OPO.CM12.1
+834d8e2 wlan: Set peer staId for management frame.
+63ffd2d wlan: Ini param to allow back ground scan in TDLS.
+8c10b96 msm: mdss: fix potential crash when sending backlight DCS commands
+6d0739b msm: mdss: disable dsi status check when display is off
+fcd303e msm: mdss: remove unnecessary lock in checking DSI status
+80afe44 Kernel Version: AK.256.OPO.CM12.1
+cdd1583 Revert "cpufreq: interactive: Reschedule timer if min_freq is reduced"
+a2eb5da synaptics: Use per-panel firmware loading
+f9567fd Kernel Version: AK.257.OPO.CM12.1
+6530686 PM: Enable asynchronous noirq resume threads to save the resuming time
+52cc04f synaptics: Fix find7 compilation
+7a7405f msm: mdss: Fix Iommu page fault for splash logo enabled feature
+934e151 Revert "ak_bacon_defconfig: disable MSM_RTB"
+0ee3910 Kernel Version: AK.258.OPO.CM12.1
+e0c50c2 Revert "cpufreq: interactive: Ramp up directly if cpu_load exceeds 100"
+f1b27dd cpufreq: interactive: Reschedule timer if min_freq is reduced
+94cfd59 Kernel Version: AK.259.OPO.CM12.1
+634d9be mmc: disable software crc - 30% boost
+266d9e2 workqueue: use new hashtable implementation
+836e5e3 workqueue: new hashtable: fix find_worker_executing_work() brekage from hashtable conversion
+724a7f0 workqueue: Introduce new flag WQ_POWER_EFFICIENT for power oriented workqueues
+4aa1d77 workqueue: Add system wide power_efficient workqueues
+1db8351 workqueue: fix build error after power efficient merge
+37eca5c workqueue: block: queue work on power efficient wq
+a4c1fc6 workqueue: phylib: queue work on system_power_efficient_wq
+63bc664 workqueue: asoc: pcm: Use the power efficient workqueue for delayed powerdown
+664529f workqueue: regulator: core: Use the power efficient workqueue for delayed powerdown
+b644c5d workqueue: asoc: jack: Use power efficient workqueue
+cf0fec9 workqueue: timekeeping: move clock sync work to power efficient workqueue
+053c9fb workqueue: fbcon: queue work on power efficient wq
+bb2202e workqueue: asoc: compress: Use power efficient workqueue
+ec875df workqueue: net/neighbour: queue work on power efficient wq
+b242719 workqueue: net: wireless: move regulatory timeout work to power efficient workqueue
+f837ebf workqueue: net: rfkill: move poll work to power efficient workqueue
+b936c1f workqueue: usb: move hub init and LED blink work to power efficient workqueue
+83653a5 Kernel Version: AK.260.OPO.CM12.1
+7962587 block: Make CFQ default to IOPS mode on SSDs
+34089ed block: Update to BFQv7r8
+8f2f641 msm: mdss: reset pixel extension flag if validation fails
+727825d Kernel Version: AK.261.OPO.CM12.1
+ef216fc fs: take i_mutex during prepare_binprm for set[ug]id executables
+878989d prima: Update to LA.BF.1.1.1.c3-02800-8x74.0
+393ffb7 Kernel Version: AK.262.OPO.CM12.1
+b3f050d PM: devfreq: Fix show available freqs
+816117d msm: kgsl: check for NULL pointer access
+42262e0 msm8974pro: gpu: set initial power level to 200Mhz
+14fadbf devfreq: gpu: added simple time_in_state stats
+46687bc Kernel Version: AK.263.OPO.CM12.1
+9fe5096 msm: kgsl: Bump the GPU frequency for long blocks of processing
+8079c7f msm: kgsl: Fix nice level for higher priority GPU start thread
+b7b6e89 Kernel Version: AK.264.OPO.CM12.1
+cb769a9 staging: alarm-dev: Drop pre Android 1.0 _OLD ioctls
+ecdc70b staging: alarm-dev: Refactor alarm-dev ioctl code in prep for compat_ioctl
+a4942a7 rtc: alarm: Add power-on alarm feature
+a3f990e qpnp-rtc: clear alarm register when rtc irq is disabled
+857b31b rtc: alarm: init power_on_alarm_lock mutex in alarmtimer_rtc_timer_init
+8f91100 alarm : Fix the race conditions in alarm-dev.c
+43de6b2 Revert "alarmtimer: set power off alarm to be triggered on time"
+6e08627 staging: alarm-dev: information leak in alarm_ioctl()
+f093294 Kernel Version: AK.265.OPO.CM12.1
+fabf042 block: sio & zen: set fifo batch to 16 to reduce overload on eMMC and CPU.
+fc8a184 USB: android: Fix memory leak in mass_storage_function_init()
+eeffd97 workqueue: block: remove WQ_POWER_EFFICIENT from kblockd
+d1b531a Kernel Version: AK.266.OPO.CM12.1
+af56ecb ARM: dts: A0001 Truly panel: Fix Mura
+9932fe2 Linux 3.4.108
+60db0f5 ak_bacon_defconfig: update kernel version
+bd6ffbd Kernel Version: AK.267.OPO.CM12.1
+0e18b24 Revert "msm: simple gpu Algorithm: fix val may be used uninitialized in this function"
+94e83e9 Revert "msm: simple gpu Algorithm: Initial coding for devfreq based Adreno Drivers"
+92f9024 ak_bacon_defconfig: revert SIMPLE_GPU_ALGORITHM
+8a52f0b drivers: state_notifier: Implement suspend_defer_timer
+af21c88 msm: hotplug: Clean-up hotplug drivers
+5d0ea46 drivers: state_notifier: enable by default
+317432f devfreq: adreno_idler: Introduce Adreno idler for devfreq-based devices
+9fdd265 drivers: state_notifier: Export suspend status
+f81b1aa devfreq: adreno_idler: Clean up & Use state notifier helper
+dd6fcb1 ak_bacon_defconfig: enable ADRENO_IDLER
+d28df63 devfreq: adreno_idler: enable at boot by default
+9ec4f66 Kernel Version: AK.268.OPO.CM12.1
+78a6dd8 Revert "ak_bacon_defconfig: enable ZRAM and company II"
+a383c37 Revert "ak_bacon_defconfig: enable ZRAM and company"
+353235e Kernel Version: AK.269.OPO.CM12.1
+8e3720c ak_bacon_defconfig: disable FS_TRANSPARENT_COMPRESSION
+8f5028c ASoC: Avoid wrong map/unmap of ocmem
+cb34b0ad msm: vidc: removed the async v4l2 event for session unsupported
+104faa6 Revert "msm8974pro: gpu: set initial power level to 200Mhz"
+e281df0 Revert "mmc: disable software crc - 30% boost"
+48b2f93 Revert "msm: mdss: enable splash logo for msm8974 devices"
+d687331 drivers: state_notifier: switch to backlight solution
+51b5e49 Kernel Version: AK.270.OPO.CM12.1
+da1298f nohz: Reduce overhead under high-freq idling patterns
+39e77ad mm: slub: Default slub_max_order to 0
+971abbe Kernel Version: AK.271.OPO.CM12.1
+eded966 cpufreq: interactive: Replace strict_strtoul with kstrtoul
+2440fe4e cpufreq: interactive: call __cpufreq_driver_target() for cur frequency
+c89643f drivers: usb: keyboard/mouse: Use Android device as USB keyboard/mouse
+2bec919 drivers: usb: keyboard/mouse: Added Boot mode patch
+e6e43f2 ARM: dts: msm: Update adsp heap memory size
+2e35323 spi: spi_qsd: Add multi-ee support
+84b3dd2 spi: spi_qsd: Reduce latency for non-shared cores
+c1eb3de Kernel Version: AK.272.OPO.CM12.1
+e4d4729 msm8974pro: regulator: set retention and ldo voltages to the minimum values supported
+1faab43 msm8974pro: regulator: switch from warn to info for voltage debug
+22af1b2 msm8974pro: dts: cpufreq: reverted to 268Mhz underclock step
+b12f4c5 Disable -fconserve-stack on ARM v2
+2324673 ./Makefile: tell gcc optimizer to never introduce new data races
+db22dc9 block: disable entropy contributions for nonrot devices
+8220106 mmc: clk_scaling: add sysfs for avoiding scale down in write
+bc783af Kernel Version: AK.273.OPO.CM12.1
+c4062f7 writeback: Fix occasional slow sync(1)
+73debc9 Sync with KitKat charge standard 3000mah battery
+cd57501 Update QCOM charger values from OPPO source
+3fa50c4 mmc: improve recovery behavior when SDCC is jammed
+820c312 mmc: sdhci: fix catchall timeout calculation
+dc417a2 mmc: sdhci: fix voltage transition recovery
+f325360 mmc: sdhci: don't spew on CRC errors
+5f8b7e0 mmc: sdhci: ignore interrupts when the clock is off
+c42ca70 mmc: sdhci: handle long transfers more intelligently
+58fac6a Kernel Version: AK.274.OPO.CM12.1
+5003be5 msm: mdss: Avoid calling wake_up_all() twice in display thread
+2018eb9 crypto: msm: remove wakeup lock in qcrypto driver
+b3e96e1 Revert "android: binder: Change binder mutex to rtmutex."
+eb04359 wlan: Fix Static analysis error.
+e173c83 wlan: Fix NULL pointer dereference in hdd_set_tdls_scan_type
+a80a9ce wlan: Logging Improvements in WDA .
+aee45fb wlan: Fix memory leak errors in HDD & WDA
+52fb00a qseecom: Change pr_info messages to pr_debug
+4ce6d47 qseecom: add mutex protection for unloading app in qseecom_release
+11fd4f3 Kernel Version: AK.275.OPO.CM12.1
+57aed54 msm: vidc: replace resurrect_fw with unload_fw
+eb3abfc msm: vidc: Error handling when core is in bad state
+561e458 spi_qsd: Fix DMA errors
+9457729 bacon: Enable TASK_DELAY_ACCT
+5c2e7e9 ak_bacon_defconfig: enable TASK_DELAY_ACCT
+2344fad bacon/find7: Enable CONFIG_USB_NET_DM9601
+46312f0 udp: fix behavior of wrong checksums
+63fb91d ak_bacon_defconfig: enable USB_NET_DM9601
+6a62e3d Kernel Version: AK.276.OPO.CM12.1
+5e9a1de video: mdss: Revert all display tuning code
+38c318d video: mdss: LiveDisplay driver
+3d98d89 msm8974: Update DT for new LiveDisplay driver
+87ac7fe msm: mdss: add support for LP2 low power state
+95f90ae msm: mdss: swap flags for LP1 and LP2 modes
+0e1cfa7 msm: mdss: fix issues with transition from LP3 to LP2
+cac908c msm: mdss: fix transitions from low power mode to off
+b877074 bacon: Update defconfig
+14d574c ak_bacon_defconfig: update config last CM12.1 - 20150712
+142ce37 Kernel Version: AK.277.OPO.CM12.1
+e2aa77e msm: ADSPRPC: Initialize hlist node pointers
+b25311a USB: dwc3: ep0: Use WARN_ON_ONCE to fix message flooding issue
+659e159 wlan: Properly initialize abort scan completion variable.
+d736ae4 writeback: Do not sort b_io list only because of block device inode
+3a4775d Kernel Version: AK.278.OPO.CM12.1
+f34c325 find7: Enable TASK_DELAY_ACCT
+337de99 cgroup: remove synchronize_rcu() from cgroup_attach_{task|proc}()
+5dddfd0 Revert "power: Remove wakeup reason API and clients"
+7ab0d8c Power: Report suspend times from last_suspend_time
+7c92a15 ARM: gic: ignore non-wakeup interrupts when reporting wakeup sources
+62faa63 irq_flow_handler_t now returns bool
+bb558fb gpio: msm-common: Add wakeup reason logging
+04e6db7 gpio-msm: remove logging of wakeup reason
+a48e30b Revert "gpio-msm: remove logging of wakeup reason"
+3caf1e1 PM: wakeup_reason: add functions to query and clear wakeup reasons
+6ae84b8 PM: wakeup_reason: add functionality to log the last suspend-abort reason.
+8a53eb8 Revert "suspend: Return error when pending wakeup source is found."
+0fbc140 power: log the last suspend abort reason.
+5ddad2b PM: wakeup_reason: add check_wakeup_reason() to verify wakeup source irq
+224fc7a PM: wakeup_reason: correctly deduce wakeup interrupts
+676bca9 PM: wakeup_reasons: fix race condition
+2a801a3 wakeup: Add last wake up source logging for suspend abort reason.
+27cd497 PM: Replace WARN_ON on timeout with one line print
+d711530 Power: Report total suspend times from boot in suspend_since_boot
+f90143f PM: wakeup_reasons: disable wakeup-reason deduction by default
+03e4fd2 POWER: Add an API call to log wake wakeup reason
+2f9647b nick kvfree() from apparmor
+78503b1 Revert "msm: vidc: Fix timestamp for EOS buffer"
+595998e cm: Update bacon/find7 defconfigs
+302933c ak_bacon_defconfig: added DEDUCE_WAKEUP_REASONS
+99610db Kernel Version: AK.279.OPO.CM12.1
+21bac50 video: mdss: Fix locking issues with new LiveDisplay driver
+af8bc60 Kernel Version: AK.280.OPO.CM12.1
+292d9c7 msm: vidc: flush work handler before unloading firmware
+aa17b06 msm: kgsl: Make global memory statistics atomic
+ead66d3 video: mdss: Add new features and improve LiveDisplay
+f6043b9 msm8974: Update DT for new LiveDisplay features
+17a18c9 Kernel Version: AK.281.OPO.CM12.1
+98d5ad5 msm: mdss: DSI read support for more than 2 bytes
+57a35c3 msm: mdss: Minimize cases of BL lock in update backlight
+22e9a8b mm: reorder can_do_mlock to fix audit denial
+d4d55da Kernel Version: AK.282.OPO.CM12.1
+6bf0360 video: mdss: Cache LiveDisplay RGB settings when display off
+1c7d8ab cfq-iosched: fix the setting of IOPS mode on SSDs
+b6cf005 Kernel Version: AK.283.OPO.CM12.1
+ce2e6945 mm: prevent to write out dirty page in CMA by may_writepage
+399aa72 dma-contiguous: Re-order the error handling sequence
+eefc6ff cma: Add 100ms delay before retrying for CMA allocation
+1f8206d cma: Increase number of retries for allocation
+49c02ae ARM: DMA: ensure that old section mappings are flushed from the TLB
+7d0c852 Revert "Revert "mm: add cma pcp list""
+1228310 mm: vmpressure: allow in-kernel clients to subscribe for events
+7e06577 mm: Add notifier framework for showing memory
+5a62795 lowmemorykiller: use for_each_thread instead of buggy while_each_thread
+2c3ecd1 lowmemorykiller: enhance debug information
+0640cdd lowmemorykiller: Dump out slab state information
+ea7711c lowmemorykiller: Run the lowmemory notifier when killing
+6cf6acb lowmemorykiller: Do proper NULL checks
+a731f22 Kernel Version: AK.284.OPO.CM12.1
+be0dd7c lowmemorykiller: adapt to vmpressure
+8e65aed video: mdss: Fix dual-DSI issue in LiveDisplay
+ca98efc Kernel Version: AK.285.OPO.CM12.1
+17e3a98 mm, oom: make dump_tasks public
+c875c21 staging: android: lowmemorykiller: skip dying or exiting task
+40696f9 drivers: lowmemorykiller: implement task's adj rbtree
+7ca6839 lowmemorykiller: set TIF_MEMDIE before send kill sig
+cd0263c staging:android:lmk: read rb tree root with spinlock
+ba62aa1 drivers:lmk: Fix double delete issue
+6a1bbef kernel: support task's adj rbtree
+a7ed246 fs: support task's adj rbtree
+eb54d05 lmk: wrap the lmk code with config
+c50fbb6 ak_bacon_defconfig: enable LMK_ADJ_RBTREE
+15dad80 Kernel Version: AK.286.OPO.CM12.1

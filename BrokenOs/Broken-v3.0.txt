@@ -1,0 +1,50 @@
+project frameworks/base/
+d3093ac Revert "SlimDim: listen for touches in navbar empty areas also"
+3e500be Hide msim 'no-sim' icons
+76ab178 Fix for launching wifi setting screen from statusbar.
+63c1c4f Use 24dip of height for statusbar - M style
+3996a64 SystemUI: Disable useless logspam when dragging down the statusbar
+913b41f msim: unbreak Carrier label
+6fe5261 Broken logo in the statusbar [1/2]
+0746e7e Broken logo color settings [1/2]
+
+project frameworks/opt/cards/
+84c80b5 fix card header title vertical centering
+
+project frameworks/opt/telephony/
+91db33d Generate transaction Ids for RetrieveConf - This is required to be able to backup and restore received MMS
+15d8fea Send SMS over 1x when on eHRPD/LTE and active voice call
+c5e6d22 Update GSM/CDMA getState API to consider state of the IMS phone as well.
+2e49cee CdmaLteServiceStateTracker: allow forcing reading eri from xml
+
+project packages/apps/BrokenCenter/
+ce93df7 Fixing links to new github
+17ad4fc Fix a few more calls for randomness
+
+project packages/apps/PackageInstaller/
+db3d35e PackageInstaller: Show current & new version
+
+project packages/apps/Settings/
+21b2337 Fix bug with Onboot (SELinux switch) and SetupWizard
+47c688e Fix the empty carrier label option on msim devices
+322942a Anti-Piracy Support [Settings][1/2]
+3c6b4ac Broken logo in the statusbar [2/2]
+61a6b95 Broken logo color settings [2/2]
+
+project packages/services/AntiPiracy/
+9813566 Anti-piracy support: initial commit
+823c269 Create README.md
+e365c05 update readme
+
+project platform_manifest/
+387eb34 Anti-Piracy Support [manifest][2/2]
+
+project prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9/
+c0371ef Update gold to build #2098274.
+
+project vendor/broken/
+6d83d90 milestone motherfuckers
+be35140 Setup MILESTONE versioning
+9817504 add klte
+b769b92 added herc
+9281795 Renaming zf2 in lunch menu
