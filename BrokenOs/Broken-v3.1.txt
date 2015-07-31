@@ -1,0 +1,134 @@
+
+project build/
+9fa8ab1 arm64: Enable Cortex A53 Errata 843419, 835769 ldflags
+25f6941 AArch64: Addressing Cortex-A53 erratum 835769
+0a44ed5 tools:releasetools:Use timestamp from build.prop while building system.img
+2f471f9 build: Fix device detection for a few of the envsetup commands
+e7511e0 build: Fix image creation for F2FS-only configuration
+0a9fca4 releasetools: Add support for LZMA in blockimgdiff
+242bf37 otasigcheck: Extract the key
+c3c65bd build: Add the factorypackage target
+a666c54 build: Add IGNORE_SUBDIR to clear vars.
+8e2181a build/core: Create means of ignoring subdir layer for packages.
+
+project device/qcom/common/
+75f0197 power: Additional changes for 8994
+
+project external/tinyalsa/
+633edf2 tinyalsa: Use kernel headers when available
+
+project external/wpa_supplicant_8/
+c9d2173 eap_peer: Make the QMI EAP proxy a standalone lib
+
+project frameworks/av/
+028eef4 camera: add ability for a device to specify MAX_CAMERAS
+7877472 cameraservice: Resolve message vs start/stop preview races
+4709154 audiopolicy: Fix DTS Eagle dependence on kernel
+facd7cc libstagefright: Fix LPA default min duration
+
+project frameworks/base/
+5d1e4c2 [1/4] Base: wifi: Allow configuration of country code for wifi
+bc1b1f4 Implement SOFTAP new requirement in framework
+6e68a33 Screen pinning improvements
+44e4fd4 Add alternate WebView provider package
+c2344ef Use isolated thread to perform onStart()
+03d08e6 Avoid ANR loop because of queued-up ANR runnables
+7b5736b Add Process IOWAIT info to ANR dump
+3d6c04d Barrier only messages shouldn't prevent the idle handlers from running
+a27cc34 backup: Fix a system server crash
+01668be Avoid AsyncTask ThreadPool leak in RecentTaskLoaser
+256d590 DO NOT MERGE Fix JNI global references leak in AudioEffect
+5a51cd3 Remove memory leak in PersistentDataBlockService jni
+2fe0267 ActivityManagerService: Don't export 'system' process in running app list
+4523ddf Allow sending vendor- or device-specific commands to the camera HAL.
+e5a0571 camera: Unbreak the extended face detection code
+f6bc0f0 Duplicate strings
+facf6c4 Fix screen pinning on devices without navbar
+3c47bc7 Observer DEV_FORCE_SHOW_NAVBAR in LockTaskNotify
+44c299a Update DEV_FORCE_SHOW_NAVBAR constant.
+3917e66 Settings: Move DEV_FORCE_SHOW_NAVBAR load to loadSecureSettings.
+8b0ebbd Observer DEV_FORCE_SHOW_NAVBAR in LockTaskNotify and send it to secure ...Plenty of changes by me.. Since a new WindowManagerPolicy is being created in LockTaskNotify, the init() method is never called and therefore the SettingsObserver in PhoneWindowManager is never created and started.  This causes hasNavigationBar() to always return false when hardware keys are disabled.
+b10d282 SystemUI : Make navbar back,recent not re-assignable
+1dd2efa Revert "NavBar tile [1/2]"
+9f98a22 Revert "Adblocker [1/2]"
+c1cbeab Rotation related corrections
+c74ee8d SystemUI: remove duplicate PhoneStatusBar variables
+4d2df2a WifiTile: Fix wifi toggle state in detail view
+4bd5852 Mobile data tile: open network settings
+78fa431 CellularTile: Fix secondary button doesn't work and change single click behavior
+
+project frameworks/native/
+909ed2c Revert "Add OMX_AUDIO_CodingAPE and OMX_AUDIO_CodingDTS"
+
+project frameworks/opt/net/wifi/
+4d83d2a [2/4] Opt: wifi: Allow configuration of country code for wifi
+
+project frameworks/opt/telephony/
+a33becf [4/4] opt: telephony: Allow configuration of country code for wifi
+
+project frameworks/webview/
+bd84f0c frameworks/webview: Disable dex-preopt.
+
+project hardware/intel/common/libmix/
+c07c47a libmix: use kernel headers when available
+
+project hardware/intel/common/libstagefrighthw/
+d85765a libstagefrighthw: use kernel headers when available
+
+project hardware/intel/common/libva/
+4c50dbf libva: use kernel headers when available
+
+project hardware/intel/common/omx-components/
+5023ab3 omx-components: use kernel headers when available
+
+project hardware/intel/common/utils/
+594edb9 utils: use kernel headers when available
+
+project hardware/intel/common/wrs_omxil_core/
+5c148f4 wrs_omxil_core: use kernel headers when available
+
+project hardware/intel/img/hwcomposer/
+6ffa91f hwcomposer: use kernel headers when available
+
+project hardware/intel/img/libdrm/
+a20f655 libdrm: use kernel headers when available
+
+project hardware/intel/img/psb_video/
+7b3a8b1 psb_video: use kernel headers when available
+
+project hardware/qcom/audio-caf/msm8974/
+2db9368 hal: Add support for Samsung dual-SIM implementation
+
+project hardware/ril/
+5510a26 ril: Support non-QCOM_HARDWARE multi-sim devices
+
+project packages/apps/Settings/
+9c7337c [3/4] Settings: wifi: Allow configuration of country code for wifi
+54572a0 Nav switch is secure
+63cfd2b Revert "NavBar tile [2/2]"
+9d0b612 Revert "fix adblocker build error"
+da21cc0 Revert "AdBlocker 1/3"
+
+project platform_manifest/
+96506b4 Our wpa-suplicant
+8b9fadd Add intel repos for ZF2
+60954b0 ffs
+ef9fdee our tinyalsa
+470317e our ril
+
+project system/core/
+0a5409f adbd: Add intel style super-speed support
+91deb85 init: Allow devices to use user-space tools to set ro.serialno
+
+project system/vold/
+7d6e856 Change lseek to lseek64
+
+project vendor/broken/
+df59078 Broken: Add some app-specific performance settings
+4bba894 cm: Update properties and libs for stagefright-plugins
+9dac1e4 v3.1
+5aae4fa Updating LatinIME libs..Thanks to slim
+0546672 Revert: Adblocker
+3894106 Add 64-bit devices support to chromium prebuilt script
+639decd Add X86 device support to chromium prebuilt
+adf4fb2 Comment out Im Broken playing in build

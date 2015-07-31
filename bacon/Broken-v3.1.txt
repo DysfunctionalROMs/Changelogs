@@ -1,0 +1,10 @@
+project device/oppo/msm8974-common/
+d459a0a wifi: Enable EAP-SIM
+7e0096f msm8974: Get rid of ctrl_interface=/data/misc/wifi/sockets
+
+project kernel/oneplus/AK-OnePone-Reborn/
+c35a476 synaptics: Update find7 touchscreen firmware
+7644099 Kernel Version: AK.287.OPO.CM12.1
+
+project vendor/oppo/
+de19fc2 Add eap-proxy implementation lib
