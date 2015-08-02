@@ -1,0 +1,7 @@
+
+project device/lge/hammerhead/
+5b3c6e4 Update broken.dependencies
+77e4958 Switching back to stock dpi
+
+project kernel/lge/hammerhead/
+d6e0ed9 Rename kernel

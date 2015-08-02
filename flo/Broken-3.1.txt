@@ -1,0 +1,6 @@
+
+project device/asus/flo/
+25587bc Update broken.dependencies
+
+project kernel/asus/flo/
+0e71f71 Rename kernel
