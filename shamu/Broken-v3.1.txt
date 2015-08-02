@@ -1,0 +1,13 @@
+project device/moto/shamu/
+a714a06596780e32820112c1d2a54d42fc2303b1 build.prop updates and tweaks found from various sources.
+461cb054ce8876103800ee66d4e4609332d72c38 Add stock browser back in
+217c2ef418dc59aaf1eeea68d691abdd10a8dc68 overlay-cm: Removed redundecies and merged missing values into base overlay
+964cd7cbd04b212c39045b43cee8ab4a3c037b74 Dropping shamu layout
+a2f565889d0a9101906b9514aff256209c22da33 Dropping cmhw since wake gestures and vibrator control in in the kernel
+9e2693ab276c1899db93cadc76e01785b3272118 init.shamu.rc: Add hardware, wake gestures, and vibrator tunables
+
+project kernel/motorola/shamu-lz/
+2c50340137e308a4b0dc9b3d8da37e6777458fa9 Dropped most debugging calls The kernel is pretty stable so at this point, I
+34f41f23a150ddf17e9ca8d384722609b6351e34 drv2605: create correct sysfs for vibrator to allow user control
+7789af563260d9829e76b4def56a9bf24398eb0a Revert "Set lionheart as default governor" Appearently, Shamu wants to boot 
+9dc0a80395f166294141c5d1c3d3e5c3ad4abbaf Set lionheart as default governor

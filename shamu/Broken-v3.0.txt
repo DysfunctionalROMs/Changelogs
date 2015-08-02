@@ -1,0 +1,15 @@
+project device/moto/shamu/
+966a973f3a11ec9e43acea1a780ecd1b6461eb61 enable VoLTE for AT&T users... and maybe more
+c2505ad6bbd9212925de033b0d10644e60d7a75c Merge branch 'lp5.1' of https://github.com/BrokenROM/device_moto_shamu into 
+9383bd4063bef92283b47b35cded42c204d3783a add remainder of kernel parameters
+
+project kernel/motorola/shamu-lz/
+b5d086f7dc28e89393dc29667530eb9c46b75d90 Updating shamu-lz_defconfig
+cfe9cd09d89f194f643f204c4c5b31597d6e576f Update version number
+ae835cde499103556effe5ef2c9da6b626df009b PAGE_CAHCE_SIZE, PAGE_SIZE and VMALLOC: bump to 4096
+6e52c46e650683ec7441ad5cc633c2e95c8a797b iosched: added FIOPS and set it as default i/o scheduler
+bec162be77e5a55734b8ab639a1634588ddd8c39 cpufreq:adding lionheart gov
+672af045d30853f7609ac1fc1d43c8ca263153d9 vm_max_readahead: bumped to 4096
+ad592ca6227c9633ba30dade20d7f7912fabef45 sysctl.h:Initial LZ mods
+dfd7392a2cc9a19b0f4e14a0d08919d260f072b3 shamu-lz_defconig
+
