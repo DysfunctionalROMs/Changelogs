@@ -1,0 +1,41 @@
+
+project device/motorola/falcon/
+06f0b8e remove old tc from dependencies
+82a5342 falcon: fstab: Mark cache and userdata as "formattable"
+212a00c falcon: Add device specific hooks to ramdisk
+
+project device/motorola/msm8226-common/
+9f0f186 msm8226-common: Enable FIOPS by default
+fdff562 msm8226-common: rootdir: update performance profiles
+573e751 msm8226-common: overlay: update Brightness and Vibrator
+c0edceb msm8226-common: overlay: update framework base
+39fd68b msm8226-common: overlay: disable call noise suppression
+db4dd14 msm8226-common: add titan/thea modem symlinks
+72be484 msm8226-common: overlay: remove Bluetooth
+f6bef10 msm8226-common: Set correct titan/thea sensor permissions
+5815359 msm8226-common: config: remove NFC
+360b5dc msm8226-common: Enable new sample rate representation
+62daf52 msm8226-common: Enable 12k and 24k sampling rates in offload path
+6f3d638 msm8226-common: rootdir: update interactive
+c4ccd01 Revert "msm8226-common: rootdir: update interactive"
+3069373 rootdir: Import device specific hooks
+228bd52 msm8226: rootdir: remove nfc leftovers
+06e1430 msm8226-common: Use prebuilt libOmxVdecHevc
+eafc00a msm8226-common: Remove duplicate kernel cmdline parameter
+5b9abf8 msm8226-common: Misc makefile cleanup
+1aa0c7f msm8226-common: Remove CRDA
+0212c8e msm8226-common: set minimum brightness
+69de725 msm8226-common: enable config_enableWifiDisplay
+
+project kernel/motorola/msm8226/
+13527f6 PM: devfreq: Fix simple_ondemand crashing on startup
+9a3c61d Revert "Revert "ALSA: compress: change the way sample rates are sent to kernel""
+547f87f ALSA: compress: remove the sample rate check
+6e7a795 ALSA: compress: update comment for sample rate in snd_codec
+8247d94 ALSA: compress: update struct snd_codec_desc for sample rate
+009a914 ALSA: compress: add num_sample_rates in snd_codec_desc
+86eeee6 ASoC: wcd9306: Wait for enough time for Line PAs to get settled
+bca2463 wlan: remove CONFIG prefix from CONFIG_ENABLE_LINUX_REG flag
+69fa113 msm8226: defconfig: Enable linux regulatory feature
+7f50097 android: drivers: workaround debugfs race in binder
+84c06d6 fs: take i_mutex during prepare_binprm for set[ug]id executables
