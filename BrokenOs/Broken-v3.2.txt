@@ -1,0 +1,160 @@
+
+project build/
+954e1a2 Squashed commit for chromium_prebuilt (2/3)
+c592a43 Change wording of chromium not found message
+aad1db8 build: kernel: Remove link on warning to CyanogenMods Wiki
+4310fdc Fix chromium prebuilt to work with the build script
+08d43b0 Setup daily and weekly changelogs
+e9f3a94 Remove duplicate CTS tests from libcore cts packages.
+81bbe4a "LMY48I"
+54e99bf Revert old prebuilt chromium
+24d854b Add PRODUCT_PACKAGES for Google's prebuilt WebView
+7f8af5e Verbage update
+7b33fdb Last verbage update
+
+project device/qcom/sepolicy/
+945ba77 sepolicy: Add context label for '/persist/display/*'
+9504302 sepolicy: Add sepolicy rules for display clients
+e49fdac sepolicy: Add SELinux policy rule for pp daemon socket calls
+42083e1 sepolicy: allow mm-pp-daemon to use binders in user variant
+31c0e80 sepolicy: allow mm-pp-daemon to have access to sysfs_graphics
+
+project external/bluetooth/bluedroid/
+e3a2d2f Bluetooth losing HF connection to car-kit after 5 seconds
+
+project external/sepolicy/
+de08cf3 sepolicy: Remove profiles from context, moved to broken vendor
+
+project frameworks/av/
+41a165b audiopolicy: Make sense of concurrency properties
+ebec6b9 libmedia: AudioTrack offload only for STREAM_MUSIC
+f4803f7 libmedia: Enable TrackOffload for more usecases
+489c258 libstagefright: use SW AAC encoder for HE-AAC format
+fb7a1b6 httplive: Check for bandwidth switch only for variant playlists
+5a8b0c6 httplive: Check for NULL playlist in postPrepared
+a7b2a27 httplive: Adjust seek time to last video IDR time
+f6ff604 audiopolicy: Fix for isStateInCall() do not return proper status
+addbe5d libstagefright: Fix crash in convertMetaDataToMessage
+d90a375 nuplayer: Fix incorrect state handling while shutting down a decoder
+d120470 Add some sanity checks
+12ba02c Add AUtils::isInRange, and use it to detect malformed MPEG4 nal sizes
+3619f14 HDCP: buffer over flow check -- DO NOT MERGE
+e39be32 IOMX: Add buffer range check to emptyBuffer
+6838faa IOMX: Enable buffer ptr to buffer id translation for arm32
+0a95632 audio effects: fix heap overflow
+
+project frameworks/base/
+607ed33 Hide subs label on KeyGuard
+fcc862d Remove pointless notification drawer network info label in MSIM mode.
+8caca7c Fix LiveDisplay notification.
+5c6ac5c livedisplay: Fix outdoor mode detection
+4535810 livedisplay: Fix issue where settings weren't applied
+a89be88 livedisplay: Round values up
+def3ed4 Status bar: Custom notification- and system icon color (part 2):
+89f0b50 Revert "Add alternate WebView provider package"
+b7bd1bc MediaPlayer: Add multi SIM ringtone support
+aea2f6c Revert CAF's default system sound settings
+9c12129 MediaScanner: Add support for default ringtones per sim
+44e0ff4 Speed up Statusbar and Activity Manager
+a942567 Fix GPS for old GPS HALs
+0a2278c Guard in short-circuit evaluations for stringSplit methods.
+57b0e86 base: check nullability of ConnectivityManager#getNetworkCapabilities()
+ae949e6 pm: remove stale permissions
+8b4593d qs: initialize day temperature in livedisplay tile
+e1c409b autobrightness: Fix the brightness dialog is not work when first enable auto-backlight
+6f83865 CaptivePortal : Ensure uri is not null
+f32a6b4 animateNoDamage failed to remove from current frame list
+36ff1f2 Fix NPE in JobStore when jobs.xml is empty.
+131092a Idle Job Start During SCREEN_ON or DREAMING_STOPPED
+d921527 DO NOT MERGE Backport of limited jank-tracking metrics
+8250840 Revert "DO NOT MERGE Backport of limited jank-tracking metrics"
+aa76e37 Lockdown AM.getRunningAppProcesses API with permission.REAL_GET_TASKS
+d26c5a4c Prevent system uid component from running in an app process
+13219c4 DO NOT MERGE Change to add STK_PERMISSION for stk related commands.
+dd6dd9f SystemUI: visualizer state improvements
+8165a39 SystemUI: dynamically generate visualizer color
+d6980aa SystemUI: workaround for visualizer flash on track change
+3a4a37c SystemUI: be more event driven in keyguard visualizer
+a8a73e3 SystemUI: don't launch visualizer before we are attached
+0b33432 SystemUI: Fix FC when mHandler is null
+bcd661f SystemUI: dismiss brightness slider on screen off
+c559c8a Should reset mDismissKeyguard on keyguard secure change
+6f91675 Rewrite Keyguard Visualizer
+52971dc Use Google Webview
+9a24088 [ActivityManager] Refactor broadcast and reduce deliver delay.
+1196f78 Fix keyguard wallpaper issues
+ebd1ead SystemUI: fix keyguard unlock drawable not updating
+35b76d9 WallpaperManagerService: use a single file observer
+4a3d70e SystemUI: more keyguard visualizer tweaks
+f1e9279 qs: fix NPE in visualizer tile
+5bc0d05 policy: Show a simple dialog about optimizing apps
+58e6e16 Fix visualizer not showing up on lockscreen and many other changes Signed-off-by: Aldrin Holmes (CallMeAldy) <aldrin.holmes20@gmail.com>
+acd6544 frameworks: add keyguard wallpaper functionality to WallpaperManager SHOULDVE BEEN DONE FIRST Adapted for cm-12.
+40271f3 Revert "[ActivityManager] Refactor broadcast and reduce deliver delay."
+6e32b4e Finishing touches to work lockscreen wallpaper
+7964164 Add alternate WebView provider package
+b89e422 Lock screen: Fix akku status text color:
+843595d PackageManager: return for required system integrated components to prevent breakage
+29fb4bc Do not check mHomePressed on HOME in interceptKeyBeforeDispatching
+5d8c061 Wait until the Keyguard is drawn to dismiss the boot dialog.
+ac9d0bc NavigationBarView: Set buttonWithTagVisibility for Search
+42a8ef9 SystemUI: Fix nav bar transparency when enabling software keys
+7e7be93 third part apps can disable the secret lockscreen
+
+project frameworks/native/
+57972fc SF: Enable context priority
+9c6acf8 sf: Restrict GPU tile render feature to MAX_LAYER_COUNT
+
+project frameworks/opt/telephony/
+2763dff DO NOT MERGE Change to add STK_PERMISSION for stk related commands.
+
+project frameworks/webview/
+64ea34a Fix arm64 and add support for x86
+f09fa8a Update WebView
+
+project hardware/intel/img/libdrm/
+354b8f3 libdrm: Add drmModeAddFB2 needed by Z00A's hwcomposer blob
+
+project packages/apps/Settings/
+8a096ef Changing about device banner.. Thanks to D-Fuse
+96741b3 Expand on the original settings commit to expose dashboard categories
+3a51710 WallpaperSettings: Lockscreen wallpaper
+
+project packages/apps/Stk/
+16ce5f5 DO NOT MERGE Change to add STK_PERMISSION for stk related commands.
+
+project packages/services/AntiPiracy/
+467d72a Update readme
+935923a Update readme
+1a69d11 AntiPiracyInstallreceiver: Move the toast out of package check loop
+cc9cdbe Update readme
+5407289 Update readme
+95d1449 Add Z market to the list
+17a45cc Add cracked play store that gives refunds without uninstalling
+464e7b9 Add mobilism market
+
+project packages/services/Telephony/
+e739171 DO NOT MERGE Change to make STK related intents protected.
+
+project platform_manifest/
+0e5efdd backtrack aosp webview
+731603b Manifest: Update to android-5.1.1_r9
+5d33f84 track wallpaper picker
+8b4b999 Track prebuilt webview
+
+project system/core/
+28b6ab1 init: Add a "starting" state for services
+3f7e019 slim : fix mismerge
+
+project vendor/broken/
+ba4122b Squashed commit for chromium_prebuilt (1/3)
+d22556d slim : move profile service_contexts to vendor
+8997ad6 3.2
+d9fabc6 Add Chromium prebuilt and fixup device specific OUT dir [2/2]
+9fe9455 Update Nova Launcher apk
+293d1db Add 64-bit devices support to chromium prebuilt script
+645583c Add X86 device support to chromium prebuilt
+4cf70c2 Build WallpaperPicker
+4b65871 Revert old prebuilt chromium
+3ce9d09 vendor_aicp: ATT Nextgenphone APN's
+c95c77a Removed prebuilt chromium from the script

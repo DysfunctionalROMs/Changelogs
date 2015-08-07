@@ -1,0 +1,27 @@
+project kernel/oneplus/AK-OnePone-Reborn/
+ef4ad4e Revert "Revert "Revert "mm: add cma pcp list"""
+0255ee3 bacon: Update defconfig
+a78bd9c ak_bacon_defconfig: merge latest CM12.1 20150802
+ed309fc Kernel Version: AK.288.OPO.CM12.1
+180852e Backlight fixes from oppo kernel source
+6f3dab8 Kernel Version: AK.289.OPO.CM12.1
+9b8c4de video: mdss: livedisplay: disable RGB if KCAL is enabled
+b1799ca android: drivers: workaround debugfs race in binder
+4f7d7fc Kernel Version: AK.290.OPO.CM12.1
+d13199f PM / Wakeup: Use rcu callbacks for better performance
+de1510a mmc: add support for scheduling mmcqd on idle CPU
+d37134d arm/dts: bacon: Schedule mmcqd on idle CPU
+f2bd5af msm: msm_bus: Use RT mutexes for bus transactions
+3449434 mm: compaction: reset cached scanner pfn's before reading them
+00a99b5 mm: compaction: detect when scanners meet in isolate_freepages
+55f5d9d mm/compaction: make isolate_freepages start at pageblock boundary
+1489aa8 mm/compaction: fix wrong order check in compact_finished()
+ed0599d kernel: Replace timeconst.pl with a bc script
+ef1ecd3 Revert "Revert "msm: mdss: enable splash logo for msm8974 devices""
+02a557c msm: mdss: Prevent backlight update during continuous splash
+ea82406 msm: mdss: Fix check for backlight update during continuous splash
+c644d4e arm: irq: Tone down kernel logging
+2581973 Update kernel/.gitignore
+1e944f0 msm: cpufreq: Break early if target_freq is current freq
+0e174bc msm: mdss: New AK fucking logo - 20150807
+e0f70d0 Kernel Version: AK.291.OPO.CM12.1
