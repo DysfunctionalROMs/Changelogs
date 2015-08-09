@@ -3,6 +3,7 @@ Now using o3 optimizations (Not a commit on github, just a flag I use when compi
 136e3ec7c3e36041c04ea58025329ea9f49c5f51 device.mk: fix typo
 
 project kernel/motorola/shamu-lz/
+5a88ff3c26a4a4bdeea4a76f32801c66cf849ed9 trigger: switch to battery-charging-blink-full-solid to enable led to pulse 
 92cb0f3f86e8b80151e462f917d24d4def7e9065 clock-krait-8974.c: Raise the voltage just a touch
 e0bb5e4d7b9d426a33bd300ea99e282dbb8eb8af GPU gov: change default to simple_ondemand
 6763a7d0d9446855a495589ed82cc14c9e98d429 Makefile adjustments
