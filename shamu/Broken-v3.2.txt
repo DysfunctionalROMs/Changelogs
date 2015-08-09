@@ -1,0 +1,10 @@
+project device/moto/shamu/
+136e3ec7c3e36041c04ea58025329ea9f49c5f51 device.mk: fix typo
+
+project kernel/motorola/shamu-lz/
+92cb0f3f86e8b80151e462f917d24d4def7e9065 clock-krait-8974.c: Raise the voltage just a touch
+e0bb5e4d7b9d426a33bd300ea99e282dbb8eb8af GPU gov: change default to simple_ondemand
+6763a7d0d9446855a495589ed82cc14c9e98d429 Makefile adjustments
+8f530213c7c68987a763ff92607a997ac311d887 Revert "power: max17042: Enable Empty Learning feature."
+2651ccf49a1aa69b9f35975c8c8aab076cc5ddbb touchscreen: increase wakeup delay
+309e05c152c7b69998722e2b7d5c220ca53e7286 Enable timer trigger.
