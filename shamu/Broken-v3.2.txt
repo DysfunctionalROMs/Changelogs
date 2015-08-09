@@ -1,4 +1,5 @@
 project device/moto/shamu/
+Now using o3 optimizations (Not a commit on github, just a flag I use when compiling)
 136e3ec7c3e36041c04ea58025329ea9f49c5f51 device.mk: fix typo
 
 project kernel/motorola/shamu-lz/
