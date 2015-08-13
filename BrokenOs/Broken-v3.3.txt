@@ -1,0 +1,80 @@
+
+project build/
+54e99bf Revert old prebuilt chromium
+24d854b Add PRODUCT_PACKAGES for Google's prebuilt WebView
+7f8af5e Verbage update
+7b33fdb Last verbage update
+8f00946 "LMY48J"
+c77b38c roomservice: use force-sync when adding projects with roomservice
+
+project frameworks/av/
+4c271d5 DO NOT MERGE: Lock drm plugin API calls globally, not per MediaDrm instance
+
+project frameworks/base/
+6e32b4e Finishing touches to work lockscreen wallpaper
+7964164 Add alternate WebView provider package
+b89e422 Lock screen: Fix akku status text color:
+843595d PackageManager: return for required system integrated components to prevent breakage
+29fb4bc Do not check mHomePressed on HOME in interceptKeyBeforeDispatching
+5d8c061 Wait until the Keyguard is drawn to dismiss the boot dialog.
+ac9d0bc NavigationBarView: Set buttonWithTagVisibility for Search
+42a8ef9 SystemUI: Fix nav bar transparency when enabling software keys
+7e7be93 third part apps can disable the secret lockscreen
+d074bee RRO: idmap: fix sorting of overlays.list
+c60278e fix systemui fcs after visualizer changes for msim
+daabf9e PackageManager:  add preenabled services list to be launched at boot
+2f53286 SystemUI: Lockscreen shortcut customization
+2eaa1eb Add torch action for screen off gestures (credits to slim)
+69fc9e8 Revert "Changing Broken boot imagery"
+7e043ac Fixing back lockscreen icon tint
+ab6ee96 Revert "SystemUI: Lockscreen shortcut customization" FOR NOW
+4f956c3 Make MANAGE_DOCUMENTS permission signature|system
+2430f56 frameworks/base: Fix ContentService JNI leaks
+58cff9a frameworks/base: synchronize surface control object access.
+835ee28 AppOps: fix delete ops wrongly matched issue
+4362670 Fix StrictMode violation during getDefaultApn()
+b04e86f SystemUI: hide navigation bar faster in SetupWizard
+75aa9d1 Density scaling: scale compatibility apps, wm command support
+fd77b62 Change the text colour on the ram manager dark or light dependent on theme
+
+project packages/apps/Dialer/
+3971f7a Checkboxes to switches
+
+project packages/apps/Settings/
+3a51710 WallpaperSettings: Lockscreen wallpaper
+17c5ab7 Settings : Lockscreen shortcuts
+fedbe77 Settings : Add ability to disable a lockscreen shortcut
+a1c73f6 Add back torch to screen off gestures
+25f7592 Rearrange lock screen
+cd8c513 Revert "Settings : Add ability to disable a lockscreen shortcut"
+5833937 Change lockscreen shortcuts to Icons
+8ba713a Settings: Accessibility - We want consistence...change from CheckBoxPreference to SwitchPreference
+d6e1abf yRevert "Change lockscreen shortcuts to Icons"
+34c2216 Revert "Settings : Lockscreen shortcuts"
+
+project packages/services/AntiPiracy/
+cc9cdbe Update readme
+5407289 Update readme
+95d1449 Add Z market to the list
+17a45cc Add cracked play store that gives refunds without uninstalling
+464e7b9 Add mobilism market
+0f7893b Update readme (required commits list)
+
+project packages/services/Telephony/
+7b1862a Checkbox -> Switches
+4ebf574 Fix Phone > Settings > Call Settings FC on MSIM
+
+project platform_manifest/
+5d33f84 track wallpaper picker
+8b4b999 Track prebuilt webview
+485e0ea Update manifest to android-5.1.1_r10
+
+project vendor/broken/
+4cf70c2 Build WallpaperPicker
+4b65871 Revert old prebuilt chromium
+3ce9d09 vendor_aicp: ATT Nextgenphone APN's
+c95c77a Removed prebuilt chromium from the script
+4d214ae Add Amaze file browser to source
+eb863ba V3.3
+0a6f2ea Versioning system clean up
+cb2768a unlock the dpi beast

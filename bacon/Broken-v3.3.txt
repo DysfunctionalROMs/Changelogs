@@ -1,0 +1,25 @@
+project hardware/qcom/audio-caf/msm8974/
+de834a9 hal: enable amplifier earlier
+6de5451 hal: only open the amplifier once
+7ae1440 post_proc: fix crash in offload effect bundle during stop output
+d48c970 post_proc: explicitly disable virtualizer module if strength is 0
+
+project kernel/oneplus/AK-OnePone-Reborn/
+1e944f0 msm: cpufreq: Break early if target_freq is current freq
+0e174bc msm: mdss: New AK fucking logo - 20150807
+e0f70d0 Kernel Version: AK.291.OPO.CM12.1
+487fe62 Revert "msm8974pro: dts: cpufreq: enable middle steps for CPU frequencies"
+6683ec2 msm: vidc: Handle max clients error from video hardware
+01a7ea2 msm: kgsl: Disable index reg dump during snapshot
+e1c791f mm: vmscan: support complete shrinker reclaim
+4a125f8 Kernel Version: AK.292.OPO.CM12.1
+6f3fce5 msm: mdss: Move LCD 5V EN gpio enable out of loop
+e574031 ARM: 8387/1: arm/mm/dma-mapping.c: Add arm_coherent_dma_mmap
+c3d01a8 ARM: mm: use inner-shareable barriers for TLB and user cache operations
+e53ffab ARM: 7919/1: mm: refactor v7 cache cleaning ops to use way/index sequence
+0db536d ASoC: msm: qdsp6v2: remove flush wait queue
+542d155 ASoC: msm: qdsp6v2: add error handling on write done during partial drain
+e228725 ASoC: msm: qdsp6v2: fix incomplete playback issue for non-gapless formats
+2588b56 SoC: msm: qdsp6v2: Enable gapless for pcm offload
+a9cd03c video: mdss: Implement PCC combining for LiveDisplay
+fdfebb5 Kernel Version: AK.293.OPO.CM12.1
