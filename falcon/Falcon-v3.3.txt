@@ -1,0 +1,4 @@
+project device/motorola/msm8226-common/
+530071c msm8226-common: Remove deprecated egl.cfg
+79d1190 msm8226-common: Remove loglevel
+5fc8a0c return to stock DPI
