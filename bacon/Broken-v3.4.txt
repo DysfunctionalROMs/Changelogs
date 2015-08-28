@@ -1,0 +1,30 @@
+project device/oneplus/bacon/
+0ee8398 bacon: update fingerprint
+08ec19b dex2oat ART
+6382ffb Disable block for now
+d93706e damn AK changing their shit....
+
+project device/oppo/common/
+9e22127 Run it back to slim utils
+d113862 Revert "Run it back to slim utils"
+
+project device/oppo/msm8974-common/
+49370ef msm8974: Remove deprecated egl.cfg
+
+project kernel/oneplus/AK-OnePone-Reborn/
+a065696 ARM: dts: oppo: Disable spi0
+998a032 ARM: dts: oppo: Remove unused devices & cleanup
+bcb48a8 ARM: dts: oppo: Clean up LEDs configuration
+7fdba00 bacon/find7: Disable KS8851 ethernet
+74f48c9 msm: oppo: Fix GPIO configuration when not selecting KS8851
+1fc9129 ARM: dts: oppo: Move shineled to x9007/a0001
+053c844 bacon: Disable PIC1503_FASTCG
+e636d67 Revert "misc: shineled: Update driver for Find7S"
+af9ce06 find7: Update defconfig
+1c1814c ak_bacon_defconfig: update defconfig 20150823
+990cb90 synaptics: Remove dead code
+5b56344 synaptics: Remove earlysuspend
+10431a1 ak-bacon-build: rename kernel version to CM
+e4b510d Kernel Version: AK.302.OPO.CM12.1
+1004ed0 cpufreq: zzmoove: scaling/zz_get_next_freq:
+a1e0e44 Kernel Version: AK.303.OPO.CM12.1

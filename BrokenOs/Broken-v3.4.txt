@@ -1,0 +1,184 @@
+
+project art/
+0f3e7f4 Revert "ART: Check for exceptions from unresolved classes"
+
+project build/
+2409ffe Set metadata on bootzip
+6ee5114 Apply correct, optimized mfpu compiler flag for ARMv7-A Cortex CPUs
+321ad95 Allow -mcpu=cortex-a15 for clang
+0e6226a Don't use -Wl,--fix-cortex-a8 for Cortex A7, A9, A15, Krait or Denver
+51aebf1 build: Enable A53 errata workarounds on targets that need it
+4c00709 derp a )
+
+project device/qcom/sepolicy/
+c3984a4 sepolicy: allow mm-pp-daemon to set debug property
+
+project external/wpa_supplicant_8/
+0d20059 Advertize cross connection p2p ie's to WLAN AP on a non p2p interface
+4d074da WPS: Configure the priority for the WPS networks.
+0d59b24 WPS: Extra validation step for HTTP reader
+e18bbb3 WPS: Check maximum HTTP body length earlier in the process.
+7547d16 EAP-pwd peer: Make sure in_frag_pos is cleared to zero on allocation.
+37026a4 eap_peer: add more qmi dependencies with qmi proxy
+9209ea2 Revert "eap_peer: add more qmi dependencies with qmi proxy"
+
+project frameworks/av/
+6f97075 stagefright: Update makefile for Exynos variants.
+c2299dd stagefright: Add support for Exynos hardware audio decoding
+79d15b0 stagefright: Add libhwc to exynos include paths
+8556ee4 libmedia: Increase framecount in Track Offload
+2e3ce93 libstagefright: Add support for NV21 color format
+a7e01ee stagefright: Update makefile for Exynos variants.
+61a6ce2 stagefright: Add support for Exynos hardware audio decoding
+b69320a stagefright: Add libhwc to exynos include paths
+1db1e76 stagefright: Exynos4 MPEG4 decoder should set native color format.
+4e5c959 stagefright: Correct Exynos4 stride alignment
+ef56087 mediaplayerservice: reset mBytesWritten in AudioSink flush and stop
+197ed24 soundpool: reuse channel for same sample if available
+6cfdd32 soundpool: update sample rate when reusing audiotrack
+c0324e5 stagefright: Remove deprecated Exynos platform variant logic
+be5aca4 Revert "stagefright: Remove deprecated Exynos platform variant logic"
+
+project frameworks/base/
+27b6d9e Add back increasing ring feature (1/3)
+4b1d176b base: wifi priorities
+cdc1033 [1/2] base: allow unlinking ringer with notification volume
+a5e0f19 Removed a duplicate
+4fd76bd Frameworks: Keyguard - Add user configurable shortcuts
+105ea80 Add double tap option to lockscreen shortcuts
+8102d9b Frameworks: add ability to send a custom intent after keyguard is finished
+584d9a7 Keyguard: don't refresh ui when screen off
+7a2b1bd Keyguard: Adding null check for dateformat
+8fa5d30 Keyguard: increase clickable area of pin-entry backspace button
+9f928e3 duplicate
+97d8cf7 Try to fix battery text
+df4b337 Fix battery level text for 5.1 for us with no header colors
+be484db Streamline optimizing screen a little
+239cc38 Frameworks: add ability to change the color in battery saver mode (1/2)
+9e42f19 Change color of drawn gesture to white
+9bf58a5 Notifications with icon==0 ARE FINE WITH US
+4694620 Remove some useless debug spam.
+52777ea make switch to last app animation snappier
+ed44cda Delate the padding in statusbar when using battery text
+ab4bb65 some changes to battery padding
+a56de5f Add new power icon by Bryan Owens aka DJDarkknight96
+c60d818 Fix the sound icon colors for settings
+f7b0aba Double tap to sleep anywhere on the lock screen (1/2)
+
+project frameworks/native/
+6555aab binder: Update makefile for Exynos variants
+0526281 binder: Update makefile for Exynos variants
+
+project frameworks/opt/net/wifi/
+e13fb67 Fix memory leak in WifiNative
+1a94e2d wifi: wifi priorities
+7d6f158 Silence verbose Wifi logging
+71c38ba Revert "aggressively blacklist WifiConfiguration for the purpose of switching network"
+0cf87f4 wifi: broadcast bssid change event
+fc3c8be Wifi: Disable PNO (if enabled) only when the scan is allowed to trigger
+038ee6d Wifi: Screen state to set/reset mEnableBackgroundScan
+2cd824b Wifi: Reduce the frequency of scans in disconnected state and display ON
+2f72aa7 WiFi : Enable saved profiles, before PNO is issued
+16d2c00 Wifi:Set framework disconnected state scan interval when P2P connected
+61b32dd wifi: do not adjust wifi score when WQE is enabled
+014473f Wifi: set mConnected true before start monitor thread
+48f1b4b WiFi:Configure the priority for the profiles obtained by WPS connection
+
+project frameworks/webview/
+1ba2ebd arm: update to 45.0.2454.48
+
+project hardware/qcom/audio-caf/msm8916/
+79ec707 audio_hal: increase written frames size when HAL is in SSR
+5795c09 hal: ensure EC reference is disabled before enabling
+5fb5911 hal: allow to get render position for non-offload use cases
+db526d2 hal: Fix voice session setup failure
+256bdda compress offload: use new sample rate representation.
+4d8c8b2 hal: Tell Huawei acdb loader which files to load
+
+project hardware/qcom/audio-caf/msm8974/
+ec3df43 hal: Genericize dual-SIM voice_extn implementation
+4ec87c1 hal: Tell Huawei acdb loader which files to load
+
+project hardware/qcom/bt/
+a921354 Bluetooth: load btaddr from NV if QCOM_BT_USE_BTNV is set
+
+project hardware/ti/omap4/
+34b26e3 camera: add support for espresso
+
+project packages/apps/LockClock/
+2c4513e Automatic translation import
+118f539 Automatic translation import
+
+project packages/apps/Settings/
+3456fe6 Add back increasing ring feature (2/3).
+072492a settings: wifi priorities
+6366e73 Its our SystemSettingSwitchPreference
+2d76561 Fix InitD "the right way"....
+400e43b settings: Fix livedisplay settings
+c830a85 Add visualizer for weak and gesture
+0e8bd39 add lockscreen to manifest
+83e9eed Settings: add switches for dashboard items
+60f27b7 Settings: add ability to change the color in battery saver mode (1/2)
+0a7f242 Settings: SlimOTA
+1e89ce0 Try to fix ota fc
+d8e4751 Bye Bye BrokenCenter
+cc400cb Forward port System App Remover from KitKat.
+879dcb0 System app remover: add priv-app apps to list
+29e5608 Fix system app remover to work in 5.1
+034e48b Forward port System App Remover (part 2)
+a362dd4 Double tap to sleep anywhere on the lock screen (2/2)
+e8d9468 Settings: fix mobile network switch being unchecked
+
+project packages/apps/SlimOTA/
+8a7c2aa Initial import
+a540fe0 Making it broken
+
+project packages/services/Telecomm/
+d6706b4 Add back increasing ring feature (3/3).
+
+project packages/services/Telephony/
+526f8d6 Fix Phone > Settings > Call Settings FC on MSIM and add flip to msim Fix Phone > Settings > Call Settings > Sub Settings fc as well Added Non-intrusive switch Add Proxmimity Speaker Add Blacklist Switch checkboxes to switches
+
+project platform_manifest/
+0b3831f manifest: add new omap4 hardware repo for current device  support
+dbe40db remove an empty repo
+ce01353 add OTA repo
+
+project prebuilt/
+e0957c7 Add Linaro 4.9 15.05
+
+project system/core/
+11c2cd7 healthd: Add secondary backlight path support
+e9bf3ba init: Add support for gzipped firmware files
+c536c57 Prevent integer overflow when allocating native_handle_t
+f1ff458 Fixed init.rc to make init.d work
+
+project vendor/broken/
+b312bf0 add d850 to lunch
+3c3eca9 Fixing ATT NEXTGEN apns & removing redundant ATT PHONE apn
+02f817f Add Sprint & International LG G3
+f1b1545 Make some edits till shit comes back
+6c26ec9 Unlock google services bool
+36b00a3 Unlock enable services configs
+6a8e351 Uncomment some needed packages
+a3ef041 Unlock wallpaperpicker for lockscreen
+e44dc63 3.4 that shit
+1dc72a6 Updated for making init.d work
+120994c Updated to fix a variable name setrenice
+0209df3 Updated 11battery fix
+6d74244 Updated 12touch fix
+361b511 Updated 13minfree fix
+329f5b5 Updated 14gpurender fix
+9fa59b9 Updated 15sleepers fix
+dc3c893 Updated 16journalism fix
+bc20594 Updated 17sqlite3 fix
+c4cd806 Updated 18wifisleep fix
+abc10eb Updated 19iostats fix
+ad70783 Updated 20setrenice fix
+86f2c77 Updated 21tweaks fix
+1ee2caa Updated 24speedy_modified fix
+6bc18f6 Updated 25loopy_smoothness_tweak fix
+32264a6 Updated 98tweaks fix
+ae37a0b Updating sepolicy rules
+c8cd7d1 Change the postfix date setup for zip
+6bd3d37 BrokenOTA
