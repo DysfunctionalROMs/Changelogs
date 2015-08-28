@@ -1,0 +1,10 @@
+
+project device/motorola/falcon/
+3a425bd falcon: Specify GMS client id
+
+project device/motorola/msm8226-common/
+93f1e86 msm8226-common: Fix audio effects configuration
+f84d6ff msm8226: rootdir: get rid of nfc leftovers again....
+
+project vendor/motorola/
+d0d7a8e Condor : Use Prebuilt libOmxVdec
