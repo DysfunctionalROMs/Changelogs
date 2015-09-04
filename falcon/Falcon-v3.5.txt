@@ -1,0 +1,120 @@
+
+project device/motorola/msm8226-common/
+90c0716 msm8226-common: rootdir: update tcp values
+847c82a msm8226-common: configs: fix call recording
+ba7da4f msm8226-common: Change configuration for USB charge only mode
+f49ea9a msm8226-common: don't set LCD brightness during offline charge
+2fe7fe5 Enable the option to check proximity sensor when deciding whether to turn the screen on
+
+
+project kernel/motorola/msm8226/
+e8b035d [backport] Hotplug thread infrastructure
+83a11ab softirq: Use hotplug thread infrastructure
+0d6c3ca rcu: Yield simpler
+aba9b9e rcu: Use smp_hotplug_thread facility for RCUs per-CPU kthread
+f063f9f msm: Fix high load average from uninterruptible waits
+348edbc Input: Send events one packet at a time
+4e0f404 mach-msm: disable kernel-side mpdecision
+115a37c cpufreq: Introduce new relation for freq selection
+c949294 cpufreq: implement cpufreq_quick_get_util()
+19c1b22 msm: msm_rq_stats: Add hotplug enable toggle
+7c9c916 mm: lower swappiness
+5c7e9db msm:rq_stats: Register for Cpufreq policy notification
+a0ba2d8 power: msm_battery: increase battery check interval from 5 to 15 seconds
+8b074c0 msm_rq_stats: Enable it for bricked hotplug
+7cc0dbe drivers: notifier: add state notifier driver
+328ac7b msm: bricked: add Bricked Hotplug driver
+301f067 drivers: state_notifier: Implement suspend_defer_timer
+b0a033d drivers: state_notifier: Export suspend status
+d02b758 irq: ratelimit is useless
+4d9785c bricked_hotplug: Merge Updates
+9ba3d18 cpufreq: cpu-boost: Export cpu boost status
+9e98a39 Update defconfig
+27b1c2d cpufreq: introduce BioShock governor for 3.4.X
+b47e5ea cpufreq: Add Lionheart, Smartmax and Dancedance Governors
+85c31f0 cpufreq: smartmax: adapt for falcon
+64db434 block: zen: Optimize usage for android
+8cdbf24 xz: Optimize Sfck Compression
+53fa5ec block: Disable add_random
+92873f9 block: deadline: Optimize for non-rotational
+547cd17 enable new govenors
+5fd4019 bricked_hotplug: Remove wakeup_boost
+d36a99e Revert "rcu: Use smp_hotplug_thread facility for RCUs per-CPU kthread"
+2cc0290 Revert "rcu: Yield simpler"
+8a5572b Revert "softirq: Use hotplug thread infrastructure"
+c5cfe97 Revert "[backport] Hotplug thread infrastructure"
+250001a Revert "block: zen: Optimize usage for android"
+01c72f2 cpufreq: Move get_cpu_idle_time() to cpufreq.c
+f215b48 cpufreq: fix interactive build
+0501352 v3.4.43
+3a04c62 v3.4.44
+91d4798 v3.4.45
+cfac40f v3.4.46
+1ee1f8c v3.4.47
+59f67ab v3.4.48
+2809796 v3.4.49
+694ce98 v3.4.50
+1ffe0a7 v3.4.51
+4f4c585 v3.4.52
+48f29c8 v3.4.53
+4cf9b73 v3.4.54
+911bf14 v3.4.55
+6d34af5 v3.4.56
+9df81a5 v3.4.57
+929e9f8 v3.4.58
+3bb382f v3.4.59
+2eaefdf v3.4.60
+ba19522 v3.4.61
+9dd9f90 v3.4.62
+c079054 v3.4.63
+f4e3f24 v3.4.64
+94f5c6f v3.4.65
+ad27ca6 v3.4.66
+344f990 v3.4.67
+4f26a64 v3.4.68
+f00f73d v3.4.69
+0c1da01 v3.4.70
+c53f511 v3.4.71
+c85fb4d v3.4.72
+635e010 v3.4.73
+ab265c2 v3.4.74
+a7d95dc v3.4.75
+427f7997 v3.4.76
+250e19a v3.4.77
+aa95e74 v3.4.78
+970560a v3.4.79
+8ba1457 v3.4.80
+731784b v3.4.81
+75c815b v3.4.82
+d3eb5cd v3.4.83
+dc587c4 v3.4.84
+184ca75 v3.4.85
+39e3658 v3.4.86
+ea094c4 v3.4.87
+cc88f3d v3.4.88
+666e4cc v3.4.89
+3a78380 v3.4.90
+be508a1 v3.4.91
+dfbfc17 v3.4.92
+879f44c v3.4.93
+73ed18e v3.4.94
+54bc30c v3.4.95
+5b76aef v3.4.96
+d003ba5 v3.4.97
+20222ce v3.4.98
+f65a8ab v3.4.99
+2e40ce2 v3.4.98
+d9ac012 v3.4.99
+83c66a5 v3.4.100
+e7e8a35 v3.4.101
+6ca7a80 v3.4.102
+4c10cb6 v3.4.103
+e1a7220 v3.4.104
+a0e9839 v3.4.105
+ac13566 v3.4.106
+a17d42e v3.4.107
+e66c11c v3.4.108
+54e0876 net: ipv6: Amend ipv6_recv_error usage
+c752438 fix build errors
+7731aaa update local version
+
