@@ -1,0 +1,14 @@
+
+project device/oppo/msm8974-common/
+b027757 dexpreopt: Only use boot dexpropt
+
+project kernel/oneplus/AK-OnePone-Reborn/
+4776527 ASoC: msm: qdsp6v2: Correct buffer size alignment while memory map
+da90839 synaptics: Fix find7s HW version checks
+bb6bbb2 Partially revert "clock-8974: Update from oppo 4.4 source"
+12715c9 Kernel Version: AK.304.OPO.CM12.1
+66926ca Merged AK Config with CyanogenMod
+d322145 cyanogenmod_bacon_defconfig: marking the Kernel for localversion
+eb6b2b2 ak_bacon_defconfig: enable USB_SERIAL_CP210X
+1d28915 bacon_defconfig: merged with latest AK
+d3f1907 Revert "ak_bacon_defconfig: enable USB_SERIAL_CP210X"

@@ -1,0 +1,51 @@
+project frameworks/base/
+e3aa226 Lockscreen shortcut customizations, (1/2):
+a4affb2 SettingsProvider: turn off mobile data roaming by default
+1119a31 Fix the cell standby mobile radio active issue
+21b2193 Show icon of package associated with Toast
+d4ae063 Fix Android API exceptions
+3571370 change default font
+8a8a8ad Tweak animations a bit (already had it, just dropped the 0) Conflicts: 	services/core/java/com/android/server/wm/WindowManagerService.java
+2985039 [1/2] SystemUI: Add time-context headers to the notification header
+a047868 SystemUI: time-context header fixes
+6981b8f Missing import
+2f366cc Add support for Samsung extended AGPS
+dc4fa4b FWB: Toast icon switch (1/2)
+
+project hardware/libhardware/
+0f42a6c libhardware: Add POWER_HINT_LAUNCH_BOOST for PowerHAL
+
+project packages/apps/Settings/
+91e0db0 Lockscreen shortcut customizations, (2/2):
+6b59df8 Tear down "Other mods" and relocate, Setup selinux switch to be tappable in "About"
+142ba71 Fix mobile networks dashboard category appearing on devices without telephony support
+f77122d Settings: remove mobile networks menu if ro.radio.noril is set
+3de467e [2/2]Settings: Add time-context headers to the notification header
+c6ce86e Settings: Toast icon switch (2/2)
+
+project packages/apps/SlimOTA/
+c087938 use ro.broken.device
+3d8cb1a BrokenOTA icons
+
+project platform_manifest/
+8940cd8 kill brokencenter
+a3e6409 update toolchain for N9 and add toolchain for ZF2
+
+project prebuilts/gcc/linux-x86/aarch64/aarch64-linux-gnu-5.2/
+8c94ead push chain
+
+project prebuilts/gcc/linux-x86/arm/arm-eabi-4.9/
+0f1ee28 9-1-2015 - 4.9.4 UBERTC Snapshot
+
+project prebuilts/gcc/linux-x86/arm/arm-eabi-6.0/
+becca30 9-1-2015 - 6.0.0 UBERTC Snapshot
+
+project prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/
+d354031 9-1-2015 - 4.9.4 UBERTC Snapshot
+
+project prebuilts/gcc/linux-x86/x86/x86_64-linux-gnu-5.2/
+a22bfa1 push toolchain
+
+project vendor/broken/
+dfcf315 kill brokencenter
+8e094e2 v3.5
