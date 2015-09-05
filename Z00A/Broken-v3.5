@@ -1,0 +1,68 @@
+
+project device/asus/Z00A/
+083bc53 dex2oat ART
+95bf5f4 Show Wakeup Options: On charging and prevent accidental 2t2w on pocket
+98fd511 Broken-Deathly
+
+project device/asus/mofd-common/
+6e2831c mofd-common: Remove dlmalloc
+77b09df mofd-common: audio: Disable audio offloading
+07e4110 mofd-common: audio: Collect the audio configuration into audio/
+2b23042 mofd-common: wifi: Remove redundant file
+edbeebc mofd-common: wifi: Move calibration files to proprietary
+178c463 oppo-common: gestures: obey "Prevent accidental wakeup" option
+97dcec1 update proximity wake overlays
+a5751e4 mofd-common: Fix wpa_supplicant.conf derp
+e7400f7 Revert "oppo-common: gestures: obey "Prevent accidental wakeup" option"
+6d06b7b Not having it on by default
+93ed90a Move Wakeup Options to device
+0e5bb6e Build Kernel with SM 5.2 TC
+07bfd41 Build Broken-Deathly
+
+project device/qcom/common/
+82f8e00 power: Enable 4+0 core config for display off cases
+a1d7228 Adding init for msm8909
+
+project frameworks/base/
+e3aa226 Lockscreen shortcut customizations, (1/2):
+a4affb2 SettingsProvider: turn off mobile data roaming by default
+1119a31 Fix the cell standby mobile radio active issue
+21b2193 Show icon of package associated with Toast
+d4ae063 Fix Android API exceptions
+3571370 change default font
+8a8a8ad Tweak animations a bit (already had it, just dropped the 0) Conflicts: 	services/core/java/com/android/server/wm/WindowManagerService.java
+2985039 [1/2] SystemUI: Add time-context headers to the notification header
+a047868 SystemUI: time-context header fixes
+6981b8f Missing import
+2f366cc Add support for Samsung extended AGPS
+dc4fa4b FWB: Toast icon switch (1/2)
+
+project hardware/libhardware/
+0f42a6c libhardware: Add POWER_HINT_LAUNCH_BOOST for PowerHAL
+
+project kernel/asus/moorefield/
+4768fca netfilter: xt_IDLETIMER: Revert to retain the kernel API format.
+0176dac nf: IDLETIMER: time-stamp and suspend/resume handling.
+5db68c1 block: Make CFQ default to IOPS mode on SSDs
+be7c40a cfq-iosched: fix the setting of IOPS mode on SSDs
+538194e bcmdhd: Increase number of src/dst ip/ports the driver can track
+7aa2b9c import 2.20.40 kernel source
+579fab0 almk: Include number of free swap pages in other_free
+c0a3289 Prepare code in SFI source for CPU OC
+ff04202 Added Overclocking to Intel ATOM processors Still experimental, is done by manipulating the SFI Frequency table transfer to the cpufreq structures (added 2 more entries at the very top). Net increase is 166MHz
+090be84 Added UC code, cleaned up OC code
+02a3b39 Fix issue that UC states won't be used
+d389731 CPU UC: possible hotfix Possibly the control word needed to be -0x101 instead of -0x100
+d273d2a Fix warnings spam with gcc5
+3830b94 gcc5: ARM: 8158/1: LLVMLinux: use static inline in ARM ftrace.h
+3554a44 gcc5: gpu: msm: fix 5.0 compile
+8bd7144 gcc5: sound/soc/codecs/wcd9xxx-mbhc.c fix warning: initialization discards 'const' qualifier from pointer target type
+35d8d41 gcc5: drivers/video/msm/mdss/mdss_mdp_pp.c: fix warning: logical not is only applied to the left hand side of comparison
+6832065 gcc5: drivers/video/msm/mdss/mdss_mdp_pp.c: fix warning: comparison of constant '15' with boolean expression is always false
+f8e0a50 gcc5: drivers/staging/prima/CORE/MAC/src/pe/sch/schBeaconGen.c: fix warning: passing argument 2 of 'vos_mem_compare' discards 'const' qualifier from pointer target type
+056fded wlan: prima: Fix GCC 5.1.0 Build
+2d7e6d2 wlan: prima: Fix GCC 5.1.0 Build issues with WDI_ProcessResponse
+223fb42 lib: unlzo: Fix GCC 5.1.0 Build
+5233149 arm: msm: mmi-pinmux: Fix GCC 5.1 Build
+6627cd3 final fixes for  5.1 tool chain compilation
+27cb13d Broken-Deathly and building with 5.2 SM TC
