@@ -1,4 +1,3 @@
-
 project device/asus/Z00A/
 083bc53 dex2oat ART
 95bf5f4 Show Wakeup Options: On charging and prevent accidental 2t2w on pocket
@@ -18,6 +17,8 @@ e7400f7 Revert "oppo-common: gestures: obey "Prevent accidental wakeup" option"
 93ed90a Move Wakeup Options to device
 0e5bb6e Build Kernel with SM 5.2 TC
 07bfd41 Build Broken-Deathly
+7280bec sensors: enable virtual sensors
+83c68a4 mofd: diable RS_DRIVER override
 
 project device/qcom/common/
 82f8e00 power: Enable 4+0 core config for display off cases
@@ -66,3 +67,41 @@ f8e0a50 gcc5: drivers/staging/prima/CORE/MAC/src/pe/sch/schBeaconGen.c: fix warn
 5233149 arm: msm: mmi-pinmux: Fix GCC 5.1 Build
 6627cd3 final fixes for  5.1 tool chain compilation
 27cb13d Broken-Deathly and building with 5.2 SM TC
+b4b05c7 ARM: realview: fix sparsemem build
+8e74cbe MIPS: Fix sched_getaffinity with MT FPAFF enabled
+ae9f0e1 MIPS: Make set_pte() SMP safe.
+5b2b974 fsnotify: fix oops in fsnotify_clear_marks_by_group_flags()
+d52c597 drm/radeon/combios: add some validation of lvds values
+1575b1e ipr: Fix locking for unit attention handling
+8b570f0 ipr: Fix incorrect trace indexing
+0847453 ipr: Fix invalid array indexing for HRRQ
+152ddb2 xhci: fix off by one error in TRB DMA address boundary check
+63ced32 USB: sierra: add 1199:68AB device ID
+cd15c9c md: use kzalloc() when bitmap is disabled
+aa1f2f7 md: use kzalloc() when bitmap is disabled
+c38d66c ipmi: fix timeout calculation when bmc is disconnected
+818105a mfd: sm501: dbg_regs attribute must be read-only
+99eba36 perf/x86/amd: Rework AMD PMU init code
+4f6746d sparc64: Fix FPU register corruption with AES crypto offload.
+53e47fd sparc64: Fix userspace FPU register corruptions.
+b3f68b0 x86/xen: Probe target addresses in set_aliased_prot() before the hypercall
+261ce21 xen/gntdevt: Fix race condition in gntdev_release()
+03e3819 crypto: ixp4xx - Remove bogus BUG_ON on scattered dst buffer
+309b8db rbd: fix copyup completion race
+4151bad iscsi-target: Fix iscsit_start_kthreads failure OOPs
+502fa30 ALSA: hda - fix cs4210_spdif_automute()
+69d78be ipc: modify message queue accounting to not take kernel data structures into account
+543b096 ocfs2: fix BUG in ocfs2_downconvert_thread_do_work()
+1893981 md/raid1: extend spinlock to protect raid1_end_read_request against inconsistencies
+f772047 sg_start_req(): make sure that there's not too many elements in iovec
+06dd2ad ARM: Fix !kuser helpers case
+0258318 ARM: Fix FIQ code on VIVT CPUs
+b3a5a9c ARM: 7819/1: fiq: Cast the first argument of flush_icache_range()
+b468656 signalfd: fix information leak in signalfd_copyinfo
+e60f28c signal: fix information leak in copy_siginfo_to_user
+dab50ff signal: fix information leak in copy_siginfo_from_user32
+95b641b kvm: x86: fix kvm_apic_has_events to check for NULL pointer
+a167255 md/bitmap: return an error when bitmap superblock is corrupt.
+0823f6c Linux 3.10.87
+ee2ae44 Regen broken_zenfone2_defconfig
+e5163f7 Switch to Local version
