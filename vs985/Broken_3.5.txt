@@ -1,3 +1,7 @@
+3.5
+No device/kernel changes
+
+3.4
 project device/lge/g3-common/
 6e1ef44 g3: Use hardware crypto accelerator for ODE
 e4443f0 g3: enable streaming av offload
