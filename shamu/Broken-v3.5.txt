@@ -1,0 +1,11 @@
+project device/moto/shamu/
+6c94f5d80a912a814dca2f057eaf8c84b1327a94 Missing pieces for VOIP calling (Does it work properly now?)
+78a5519fd72daaa8d789d4a03dbe39f769c5669d Remove duplicate
+e1db870eb5fa1bcb91e3c340ebf263fc5e3a97ae Revert "PRODUCT_PROPERTY_OVERRIDES: set ro.telephony.get_imsi_from_sim=true.
+62d89463b7fe84c94603b90f5cac84bc0ada794a shamu: introduce a much less crippled liblights
+66351bac5530f6b2554383ff2be82eda066a96a8 Attempt to enable/fix VOIP
+7097910f48c54ca77dfd8448eedcb54e832b66a9 oops
+2c4368d19ad1303949d151adbbd54185ee789a11 build.prop: removing duplicates
+
+project kernel/motorola/shamu-lz/
+No changes
