@@ -1,0 +1,138 @@
+
+project build/
+a2b4e18 releasetools: Fix the bug in symlink deletion.
+ec82fe2 build: allow using host flex binary
+67b5310 releasetools: Fix the bug when deleting files.
+414f233 LMY48P
+
+project external/skia/
+fc079b3 DO NOT MERGE Prevent integer wrap around for malloc size when creating a SkRegion
+
+project frameworks/av/
+2bed09b Revert "DO NOT MERGE: Lock drm plugin API calls globally, not per MediaDrm instance"
+98f4616 DO NOT MERGE: Lock drm plugin API calls globally, not per MediaDrm instance
+1d14657 Revert "DO NOT MERGE: Lock drm plugin API calls globally, not per MediaDrm instance"
+
+project frameworks/base/
+62043e4 Weather Temprature Status Bar Icon 1/2
+c8fda84 FWB: Statusbar weather color (1/2)
+c586d94 SystemUI: Status bar weather font style (1/2)
+b205d4f FWB: statusbar weather temperature placement (2/2)
+dbc7b1c Fix left weather temp padding
+a8b6aa0 systemUI: carrier first, weather second
+8a96ad0 More weather font styles 2/2
+0cf9bef Status bar weather: Add BOLD ITALIC to font style (1/2)
+a063e24 FWB: Make all 14 font variants available to Weather (2/2)
+e5a0b2a Fix font type not refreshing on placement change
+9a0fc4f FWB: Statusbar clock font style (1/2)
+f9d5148 Status bar clock: Add BOLD ITALIC to font style (1/2)
+698f94e FWB: Make all 14 font variants available to Statusbar Clock (1/2)
+630b274 Hide carrier label completely on keyguard
+ca768d1 Make weather icon changes restart systemui and shuffle shit into a cleaner order
+8537ccc Tighten up statusbar padding
+dced587 Weather and hide carrier lable for msim
+4560230 SystemUI: long press lock screen lock icon to sleep (1/2)
+85d388a SystemUI: Change long press lock screen lock icon to TORCH (1/2)
+f46c3ae SystemUI: reset to QS panel if task manager was visible last
+9e51c25 Status bar carrier: don't show Emergency text if no sim is installed
+cb8fdd3 Battery Mode tile: Remove on devices that don't support it
+3cc2ca4 mess with layout , and reenable lockscreen keyguard carrier
+07e95b7 Sick of this keyguard carrier label
+d94e221 Tired of this string on my busted sim
+a090cb6 Prevent insanely long passwords from crashing SystemUI
+8d74e45 DO NOT MERGE: Ensure that unparcelling Region only reads the expected number of bytes
+ba331ba Check that the parcel contained the expected amount of region data. DO NOT MERGE
+59113d4 Them sneaky fucking nulls
+
+project frameworks/native/
+df7703c Disregard alleged binder entities beyond parcel bounds
+
+project frameworks/opt/telephony/
+24bf0fa Externally-reported Moderate severity vulnerability in SMS: Apps can bypass the SMS short code notification prompt
+
+project frameworks/webview/
+f45e7ca Update all the things!
+
+project hardware/libhardware/
+0f42a6c libhardware: Add POWER_HINT_LAUNCH_BOOST for PowerHAL
+
+project packages/apps/BrokenWalls/
+53678e3 Broke that bitch
+56bc8f0 Update README.md
+35cd1b8 Update README.md
+c4d5fae Adding a fuckton of new walls
+
+project packages/apps/Mms/
+6b081fe Forward port Templates functionality
+b9ebcca Bring back QuickMessage, Unicode stripping, TimeStamps and Add to Calendar
+35da15d Bring back Split SMS
+63be858 Port "Fix cropping on MMS inline thumbnails"
+945a153 Remove text/plain for ACTION_SEND
+05c070b Fix SMS sending.
+02dc91e Fix up receiver declaration.
+f8cf5a3 Bring back layout color abstraction
+3030637 Option to delay SMS Sending
+aacab42 Don't recycle messages by default.
+6da4680 Pager fix on multiple messages.
+bccbb19 Prevent popup window from closing
+6c1c415 mms: update theme to material
+18e3dcb Ability to pinch zoom in/out
+3ea0d93 Mms: new launcher icon by Sven R.
+456026f Mms: Because I am a material girl
+f9838d0 Fix ripple on fab
+a89953f Use material delete icon
+8fef867 Updated status bar notification icons
+0e7080a Match count per thread to message per thread
+f67f553 More materialization
+c9c98e7 Expose hard coded background and text colors for compose activity.
+54ddfe6 Expose hard coded background colors from layouts for search activity.
+e857a80 Bye checkboxes. Hello sexy switches
+a9c90e7 This ain't cm
+d1806c3 Moving custom bits to their proper place
+fafcf17 Going dark because material sucks
+0c4ead9 Blacklist (5/9)
+225bc6d Mms: Add missing mdpi/hdpi drawables
+b61de71 Fixing some color calls for better theming Thanks to daveyannihilation for the assist
+6080ef7 Fixing QM mark as read This stuff was accidentally removed with this commit: f67f5535cf3501065408d9c609158511d863dcd7
+89b80cd Mms: fix quick message layout on 320dp
+
+project packages/apps/Settings/
+f099d20 Tint msim icon
+fa5f9cd Use new BrokenWalls package
+502601a German Translations Strings
+576798c Build fix
+11fdf9f Dem damn translations
+688c6f2 Weather Temprature Status Bar Icon 2/2 and a fuckton of shufflin by me Change-Id: I3761e20c0bdf58e098eaab41eeef5e56f4a3c6d9
+2a6684f Settings: Status bar weather font style (2/2)
+0012fc1 Settings: Statusbar weather color (2/2)
+5cc5ab2 Settings: statusbar weather temperature placement (1/2)
+d39bd64 More weather font styles 1/2
+3f6b78f Status bar weather: Add BOLD ITALIC to font style (2/2)
+b91c96c Settings: Make all 14 font variants available to Weather (1/2)
+21f6266 Settings: Statusbar clock font style (2/2) credits to daxxmax <> used from AICP gerrit Brokenify
+7795cc3 Settings: Make all 14 font variants available to Statusbar Clock (2/2)
+e54c2bd Fix array issues for styles
+c284971 Broken Home string
+4662f60 Rearrange clock settings
+bc692fb Settings: long press lock screen lock icon to sleep (2/2)
+1bce780 Settings: Change long press lock screen lock icon to TORCH (2/2) adapted for our lockscreen
+6101d95 Fix fc for sim lock options
+771f484 Lets stop the dumbass questions about Advanced Display settings
+
+project platform_manifest/
+a3e6409 update toolchain for N9 and add toolchain for ZF2
+445bf01 track new BrokenWalls repo
+de1c259 manifest: Add Candy Linaro 4.9.3 GCC Toolchain
+5ee1c2b  Manifest: Update to android-5.1.1_r16
+
+project prebuilts/gcc/linux-x86/aarch64/aarch64-linux-gnu-5.2/
+8c94ead push chain
+
+project system/security/
+8806c13 Fix unchecked length in Blob creation
+
+project vendor/broken/
+2e28a8c New Brokenwalls
+57bbda1 3.6
+ebe4390 Put shit (prebuilt apks) in the right place
+884bc85 These fuckers and their NINJA's

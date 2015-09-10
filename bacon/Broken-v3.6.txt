@@ -1,0 +1,29 @@
+
+project device/oneplus/bacon/
+454068f update kernel repo
+1908ffc bacon: update fingerprint
+1744cac bacon: support f2fs /data and /cache
+bacd73a bacon: Enable 12k and 24k sampling rates in offload path
+b0d6e93 bacon: remove discard android does this automatically
+
+project device/oppo/common/
+396ccc2 oppo-common: gestures: obey "Prevent accidental wakeup" option
+61ed45f oppo-common: Clean up CMHW
+8f74f67 Edit devicehandler to remove bool calls we dont support
+
+project device/oppo/msm8974-common/
+b027757 dexpreopt: Only use boot dexpropt
+b8c8d82 oppo_msm8974-common: support f2fs volumes
+0a7b716 msm8974: Reenable migration notifier
+a7749c7 msm8974: Enable new sample rate representation
+5f7dd5a msm8974: Enable BFQ after system is ready
+8f2b0d4 msm8974: Remove TARGET_USES_C2D_COMPOSITION
+6a18322 msm8974: Decommonize button overlays
+3bda619 Revert "msm8974: Decommonize button overlays"
+6f81880 Revert "Remove curl - now in vendor/cm/common_full.mk"
+2d50531 Unneeded overlay
+
+project kernel/oneplus/AK-OnePone-Reborn/
+eb6b2b2 ak_bacon_defconfig: enable USB_SERIAL_CP210X
+1d28915 bacon_defconfig: merged with latest AK
+d3f1907 Revert "ak_bacon_defconfig: enable USB_SERIAL_CP210X"
