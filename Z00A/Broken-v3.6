@@ -1,0 +1,123 @@
+project device/asus/Z00A/
+98fd511 Broken-Deathly
+
+project device/asus/mofd-common/
+0e5bb6e Build Kernel with SM 5.2 TC
+07bfd41 Build Broken-Deathly
+7280bec sensors: enable virtual sensors
+83c68a4 mofd: diable RS_DRIVER override
+
+project kernel/asus/moorefield/
+27cb13d Broken-Deathly and building with 5.2 SM TC
+b4b05c7 ARM: realview: fix sparsemem build
+8e74cbe MIPS: Fix sched_getaffinity with MT FPAFF enabled
+ae9f0e1 MIPS: Make set_pte() SMP safe.
+5b2b974 fsnotify: fix oops in fsnotify_clear_marks_by_group_flags()
+d52c597 drm/radeon/combios: add some validation of lvds values
+1575b1e ipr: Fix locking for unit attention handling
+8b570f0 ipr: Fix incorrect trace indexing
+0847453 ipr: Fix invalid array indexing for HRRQ
+152ddb2 xhci: fix off by one error in TRB DMA address boundary check
+63ced32 USB: sierra: add 1199:68AB device ID
+cd15c9c md: use kzalloc() when bitmap is disabled
+aa1f2f7 md: use kzalloc() when bitmap is disabled
+c38d66c ipmi: fix timeout calculation when bmc is disconnected
+818105a mfd: sm501: dbg_regs attribute must be read-only
+99eba36 perf/x86/amd: Rework AMD PMU init code
+4f6746d sparc64: Fix FPU register corruption with AES crypto offload.
+53e47fd sparc64: Fix userspace FPU register corruptions.
+b3f68b0 x86/xen: Probe target addresses in set_aliased_prot() before the hypercall
+261ce21 xen/gntdevt: Fix race condition in gntdev_release()
+03e3819 crypto: ixp4xx - Remove bogus BUG_ON on scattered dst buffer
+309b8db rbd: fix copyup completion race
+4151bad iscsi-target: Fix iscsit_start_kthreads failure OOPs
+502fa30 ALSA: hda - fix cs4210_spdif_automute()
+69d78be ipc: modify message queue accounting to not take kernel data structures into account
+543b096 ocfs2: fix BUG in ocfs2_downconvert_thread_do_work()
+1893981 md/raid1: extend spinlock to protect raid1_end_read_request against inconsistencies
+f772047 sg_start_req(): make sure that there's not too many elements in iovec
+06dd2ad ARM: Fix !kuser helpers case
+0258318 ARM: Fix FIQ code on VIVT CPUs
+b3a5a9c ARM: 7819/1: fiq: Cast the first argument of flush_icache_range()
+b468656 signalfd: fix information leak in signalfd_copyinfo
+e60f28c signal: fix information leak in copy_siginfo_to_user
+dab50ff signal: fix information leak in copy_siginfo_from_user32
+95b641b kvm: x86: fix kvm_apic_has_events to check for NULL pointer
+a167255 md/bitmap: return an error when bitmap superblock is corrupt.
+0823f6c Linux 3.10.87
+ee2ae44 Regen broken_zenfone2_defconfig
+e5163f7 Switch to Local version
+cdd9ac9 Revert "Switch to Local version"
+cd53f0b Return of Host
+0274496 android: drivers: workaround debugfs race in binder
+8972e61 Reset zram to 6830384 (HTC msm8960 kernel prior to patching up)
+d82db83 Staging: Fixes string split across lines in zsmalloc zsmalloc-main
+da8b906 staging/zsmalloc: Fixed up incorrect formatted comments
+bbb28c7 staging: zsmalloc: access page->private by using page_private macro
+17358ff staging: zsmalloc: Rename page_mapcount_reset
+38ae5c4 zsmalloc: add Kconfig for enabling page table method
+27879b7 zsmalloc: add more comment
+574967e Revert "staging: zram: Add auto loading of module if user opens /dev/zram."
+70aee8a Staging: zram: Fix variable dereferenced before check
+54d67c9 Staging: zram: Fix access of NULL pointer
+f05abfb Staging: zram: Fix memory leak by refcount mismatch
+5f004e0 zsmalloc: move it under mm
+3483611 zsmalloc: add copyright
+4e54f20 zram: promote zram from staging
+a148640 zram: add copyright
+5ef225d zram: fix race between reset and flushing pending work
+0919da4 zram: delay pending free request in read path
+f285736 zram: remove unnecessary free
+17bef1e zram: use atomic operation for stat
+dae144c zram: introduce zram->tb_lock
+51bd769 zram: remove workqueue for freeing removed pending slot
+04f500a zram: remove zram->lock in read path and change it with mutex
+cdcbff7 zram: avoid null access when fail to alloc meta
+be0c0e8 zram: drop `init_done' struct zram member
+1395ccc zram: do not pass rw argument to __zram_make_request()
+4c456e7 zram: remove good and bad compress stats
+ebeb128 zram: use atomic64_t for all zram stats
+5a8866c zram: remove zram stats code duplication
+50eb6fb zram: report failed read and write stats
+933a053 zram: drop not used table `count' member
+528701b zram: move zram size warning to documentation
+8cd59b1 zram: delete zram_init_device()
+9bae014 zram: introduce compressing backend abstraction
+2825369 zram: use zcomp compressing backends
+e7479bc zram: factor out single stream compression
+ec815b0 zram: document failed_reads, failed_writes stats
+16ff577 zram: add multi stream functionality
+5cdb5c6 zram: add set_max_streams knob
+1194417 zram: make compression algorithm selection possible
+83f1bee zram: add lz4 algorithm backend
+774f16f zram: move comp allocation out of init_lock
+670f00d zram: return error-valued pointer from zcomp_create()
+fdad1be zram: propagate error to user
+0ada55f zram: use scnprintf() in attrs show() methods
+c1d666d zram: support REQ_DISCARD
+b70b15b zram: correct offset usage in zram_bio_discard
+ec9f66e zram: revalidate disk after capacity change
+2f724d7 zram: avoid lockdep splat by revalidate_disk
+ef8155c zram: rename struct `table' to `zram_table_entry'
+48c32d5 zram: remove unused SECTOR_SIZE define
+aa33b37 zram: use size_t instead of u16
+47202d8 zram: replace global tb_lock with fine grain lock
+80e4a6c zram: fix incorrect stat with failed_reads
+ac4859b decompressor: add LZ4 decompressor module
+91a18d1 lib: add support for LZ4-compressed kernel
+964f2e0 lib: add lz4 compressor module
+9e73b52 lib/lz4: correct the LZ4 license
+083f5f1 lz4: fix compression/decompression signedness mismatch
+ab914db lz4: ensure length does not wrap
+b533668 lz4: fix another possible overrun
+827e256 lz4: add overrun checks to lz4_uncompress_unknownoutputsize()
+134084b zram: switch to lz4 as default commpressor
+e4bca67 Revert "staging: zsmalloc: Rename page_mapcount_reset"
+23ad38a defconfig: regenerate & enable LZ4 compression for zram
+3ffc7ae Power: Add quickwakeup
+da66684 Fixed paths
+9b4609e Quickpower: Add suspend_again function
+
+project vendor/asus/
+e004f55 mofd-common: enable virtual sensors
+
