@@ -1,0 +1,5 @@
+project kernel/lge/mako/
+5e331ac flo: disable android logger
+c3d3185 Added sweep2wake and doubletab2wake from bricked kernel
+9c319ff Need these on, don't need these
+a847f52 Versioning

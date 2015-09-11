@@ -1,0 +1,26 @@
+project kernel/lge/g3/
+56fc206 cpufreq: zzmoove: update to 1.0 beta 7a
+c4c63b2 Defconfigs: disable bioshock as it errors
+cda3956 ./Makefile: tell gcc optimizer to never introduce new data races
+68df54b qseecom: Save appname in qseecom when loading app by kernel client
+570646c qseecom: avoid buffer over-write when copying app_name
+ea6f129 cpufreq: cpu-boost: Add unified hotplug and wake boost
+13a7ccf cpufreq: cpu-boost: Export cpu boost status
+001c0b7 cpufreq: cpu-boost: Export wakeup_boost
+280c694 cpufreq: cpu-boost: Tune min interval for input boost
+99d423e kernel: use the gnu89 standard explicitly
+9128c8c msm: msm_rq_stats: Add hotplug enable toggle
+a704a68 MSM_Hotplug: Special version modded by neobuddy89
+2689f36 msm: Add Intelli Hotplug Driver
+dc2250b msm: Add bricked hotplug
+d268f97 msm: fix state duplicate definition
+082b5b7 msm: msm_rq_stats: Tone down mpdecision
+38ea502 MSM: Tweaks, fixes and cleanup
+9e00e49 Configure Powersuspend
+3d96305 Defconfigs: enable hotplugs
+11d735f update extraversion
+1028f98 block: zen: Optimize usage for android
+9064959 Defconfigs: disable badass governor for now
+project vendor/lge/
+14a3ab8 g3: add radish blob
+2d88583 v4xx: add radish blob
