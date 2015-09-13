@@ -1,0 +1,6 @@
+project device/moto/shamu/
+No changes
+
+project kernel/motorola/shamu-lz/
+74d12fe7371b31f1bdb4d2cfc7ed064bfa925fb8 Update version
+97e8895119cdb9723f113eb6c9a34d906265d5f3 Merge tag 'android-m-preview-2_r0.7'
