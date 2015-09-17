@@ -1,0 +1,95 @@
+
+project build/
+e3f5911 Add darwin support for f2fs host tools
+8e7a48a build: Allow QC platforms to share/customize HAL variants
+5cd3651 Adding msm8909 as a QCOM board platform
+ff41df7 build: kernel: arm64 uses Image.gz as the target
+
+project external/sepolicy/
+44301a4 Add policy to SELinux to allow ViPER4Android in enforcing mode
+
+project frameworks/av/
+613cdc2 audiopolicy: Never use low-latency audio for ringtones
+4d97392 audiopolicy: Fix the incall fix
+d2612cc Media: Make media support DRM file's playing
+e299e7c frameworks/av : Drm media file uses mm-parser sniffer
+7d3722f libmedia: Add 1440p camcorder quality
+
+project frameworks/base/
+ff5ff51 systemui: Fix the keyguard issues
+8996f3a Forward port "Add option to hide AlarmClock Icon in StatusBar" [2/2]
+1a5b2ce [1/3] base: alarms and no interrupt zen mode and bring back an import for alarm icon statusbar allow to exclude alarms from no interruptions
+699b649 Fix return to task when single task activity is brought to front
+3d22343 zygote: fix memory leak when fork process
+860b0ba Add basic support for VorbisComment DATE tags
+72ae18f Fast loadInverse() implementation for the common case
+e25101f binder: adjust GC interval for binder ops
+5bbba94 msim: Fix saving default sim from select SIM dialog (1/2)
+5cd7e13 Add ability to ignore interruptions while active media playback [1/2]
+d06ccb0 [1/2] Slim Recent App Sidebar
+c810dd7 CamcorderProfile: Add 1440p camcorder profile
+571d68d StrictMode: Disable all strict mode functions when disable prop is set Strict mode can still be used to produce red border flashes even when the disable property is set, among other things.
+
+project hardware/libhardware/
+2eb7781 amplifier: add set_parameters method
+a4b99b7 fingerprint: add generic set_parameters
+
+project hardware/qcom/display-caf/msm8916/
+1e93f5e hwcomposer: Add support to specify dynamic FPS when idle
+
+project packages/apps/ContactsCommon/
+03accc4 Add a checkable QuickContactBadge.
+
+project packages/apps/DeskClock/
+93f00ab Forward port "Add option to hide AlarmClock Icon in StatusBar" [1/2]
+
+project packages/apps/LockClock/
+4bdff09 LockClock : Ensure configuration screen doesn't crash on orientation
+db50ca9 Automatic translation import
+52d0cb8 LockClock: Force ltr on clock display.
+
+project packages/apps/Mms/
+78a406b Mms: Port custom notification vibrations
+0632b12 Per conversation notification settings/ringtones
+3b584c9 Moving some more custom bits
+6e649b1 Set notification color.
+e7e0737 Fix hint text color in quick popup with light theme
+675834e Use CheckableContactBadge.
+
+project packages/apps/Settings/
+6acb2ba System app remover: add priv-app apps to list
+c18dba3 Fix system app remover to work in 5.1
+47f5763 Add a few more protected apps for remover
+cbf853e [3/3] Settings: alarms and no interrupt zen mode
+ce34917 LCD Density: Input DPI value instead choosing it from the list
+e17cc68 Add ability to ignore interruptions while active media playback [2/2]
+9a35777 Fix mediascanner on boot sticking
+7181ea0 [2/2] Slim Recent App Sidebar
+04fda35 Clean up a few things
+410fd2e Remove selinux switch and all files associated
+
+project packages/apps/SnapdragonCamera/
+df9396e SnapdragonCamera: Fix reversed video flash-mode icons
+
+project packages/services/Telecomm/
+d1a160b msim: Fix saving default sim from select SIM dialog (2/2)
+
+project packages/services/Telephony/
+e321e2a Telephony: Make voicemail notifications dismissable
+
+project platform_manifest/
+2c95232 our deskclock
+c737264 update lockclock branch
+
+project system/core/
+c008afd Fix build break for multiple definition
+
+project vendor/broken/
+ca116ff Its fucking official, not release
+2354e62 Kill a few prebuilt apks (omniswitch,Viper,LockClock)
+d52ec3a Kill some livewallpaper shit
+141ef15 Massive APN update from Slim ALL CREDIT TO THEM @Josue Rivera @Nicholas Flintham @Anthony King and anyone else who committed anything...
+0a0d610 add yet another g3 variant
+3b076bc Kill the dpi shrinker in favor of new dpi option
+2084f90 3.7
+328ba87 Just cause it bothered me

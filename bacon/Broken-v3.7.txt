@@ -1,0 +1,111 @@
+project device/oneplus/bacon/
+bfc08e8 Broke it
+98e38dd Add unofficial build id
+c93bfe3 bacon: Disable low-latency audio
+9c92453 bacon: audio: Enable speaker
+74d8ebe bacon: Update proprietary files
+fde4c09 bacon: Remove camera wrapper
+1ff0850 bacon: Disable BLE vendor extensions
+f780bb1 bacon: Set optimal for BLE configuration
+49c3124 fstab: persist partition does not need trimming
+bce56be bacon: Add power HAL from AOSP hammerhead tree
+16b91a7 bacon: power: Remove unneeded/incompatible features
+e9a781c bacon: power: Override input boost when writing low-power maxfreq
+1de81b2 bacon: power: Play nicely when default maxfreq is 1958MHz
+c552b4e Revert "bacon: power: Play nicely when default maxfreq is 1958MHz"
+cd8b17a bacon: audio: Enable speaker for speaker-and-headphone route
+bcba1fb bacon: Enable LZMA-compressed update packages
+db9f317 bacon: Enable 12k and 24k sampling rates in offload path
+e8194f7 bacon: Increase earphone speaker volume
+fa4564e bacon: Build Snapdragon Camera
+aafc84b bacon: Remove power HAL
+52acecc Revert "bacon: Enable LZMA-compressed update packages"
+279479a bacon: update fingerprint
+8be37a6 bacon: Re-enable low-latency output
+6662d15 Our vendors
+0f23801 Fix speaker audio for media
+
+project device/oppo/msm8974-common/
+93483ce msm8974: Slightly reduce input-boost freqs for non-primary CPUs
+78fa999 msm8974: Update WCNSS config
+8f88c0a msm8974: Increase input-boost freq for primary CPU
+843ca40 msm8974: Stop Interactive's aggressive scale down
+ca1a022 msm8974: Add symlinks for modem and mba images
+33053b0 Revert "msm8974: Disable fluence"
+dc5af39 Bringup missing selinux policies into caf kernels device files
+24179ad msm8974: Enable new sample rate representation and overhaul profiles Change-Id: I3d58897803fc00fd2787fe421692438338d0f45d
+
+project kernel/oneplus/msm8974/
+2d47331 cpufreq: yankactive: added new governor for latency-sensitive workloads
+4d1dd2d cpufreq: yankactive: Update to latest
+a3b09ef cpufreq: yankactive: Tune default parameters
+4720856 ak_bacon_defconfig: enable GOV_YANKACTIVE
+d1529ec cpufreq: impulse: added new governor from Hybrid Kernel
+65f6347 cpufreq: impulse: burn tuning directly into governor
+d110095 ak_bacon_defconfig: enable GOV_IMPULSE
+768cca2 cpufreq: slim: add new @slim governor
+a37a875 cpufreq: slim: tuning and burning @robbieL811 settings
+b357885 ak_bacon_defconfig: enable GOV_SLIM
+1f369bf cpufreq: intellimm: add new @faux123 governor
+003dfbd ak_bacon_defconfig: enable GOV_INTELLIMM
+b19e06c cpufreq: zzmoove: add new @zanezam governor
+a4002657a cpufreq: zzmoove: updated to the latest v1.0 beta8
+420a1b7 cpufreq: zzmoove: fix store_inputboost_typingbooster_cores undeclared here
+38e8f64e cpufreq: zzmoove: Fix lcd notifier and powersuspend compile issues due to a merge derp in 1.0 beta8
+7f92b2d cpufreq: zzmoove: scaling/zz_get_next_freq:
+c474f63 cpufreq: zzmoove: Suspend restrictions:
+e6fff54 ak_bacon_defconfig: enable GOV_ZZMOOVE
+a69e7c9 cpufreq: slim: fix a mistake into gpu boost
+29d5474 block: cgroups, kconfig, build bits for BFQ-v7r8-3.4
+2ede775 block: introduce the BFQ-v7r8 I/O sched for 3.4
+e85d75f block, bfq: add Early Queue Merge (EQM) to BFQ-v7r8 for 3.4.0
+f726e62 ak_bacon_defconfig: enable IOSCHED_BFQ
+1c2ff0a block: scheduler: add ZEN
+aafec68 block: scheduler: optimize ZEN
+c9f0b3f block: scheduler: add VR
+54cc6fa block: scheduler: add SIOPLUS
+a674e78 block: scheduler: add TRIPNDROID
+0ac5988 ASoC: wcd9xxx-mbhc: Cut detection time in half for PLUG_TYPE_HEADPHONE
+5966bec ASoC: wcd9xxx-mbhc: Don't sleep for first poll in correct-plug worker
+2be347c Kernel Version: AK.017.OPO.CAF
+3337f02 kbuild: remove warning about "make depend"
+f2ed0c0 ak_bacon_defconfig: merged to all static defconfig
+418eb0b Revert "ASoC: wcd9xxx-mbhc: Increase HPH_TRANS_THRESHOLD to 3"
+de2ac4d ASoC: wcd9xxx-mbhc: Use dynamic delay in correct-plug worker
+d6b44e1 power: Import charger and fuelgauge drivers from cm-12.1
+b8dc9a4 Kernel Version: AK.018.OPO.CAF
+f9d81d8 include/linux/spinlock.h:340:1 fix warnning flags may be used uninitialized
+7e23b5a makefile: added new -g0, -fivopts, -fno-inline-function optimizations
+294bce9 Kernel Version: AK.019.OPO.CAF
+a3426a7 Revert "power: Import charger and fuelgauge drivers from cm-12.1"
+9f86474 cpufreq: Protect against hotplug in cpufreq_register_driver()
+eb591cc cpufreq: interactive: Do not reschedule timer if policy->max changes
+3b124cc ak-bacon-build: wipe ccache
+c4170a6 Kernel Version: AK.020.OPO.CAF
+
+project vendor/oneplus/
+111c92c bacon: Use Oxygen camera libraries
+826980f bacon: Update camera libs from Oxygen update
+98bff59 bacon: Update blobs from Oxygen update
+c51d36e bacon: Add custom camera HAL based off CAF LA.BF.1.1.1.c3
+736fe3e bacon: Update camera HAL
+d28603a bacon: Update camera HAL for 4K video
+6cb3d60 bacon: Ship firmware images with ROM
+01339c0 bacon: Update camera HAL
+2439782 bacon: Switch back to CM sensor definitions
+3299bf9 bacon: Update camera HAL
+8eabe89 bacon: Ship WCNSS firmware from LG G3
+29f1b06 bacon: Update camera HAL
+c079c75 bacon: Update camera HAL
+917c9aa bacon: Update camera HAL
+fe494a4 bacon: Fix orientation vector for magnetometer
+a73b16a Revert "bacon: Ship WCNSS firmware from LG G3"
+ee483f8 bacon: Update camera HAL
+a1c552b bacon: Update camera HAL
+8c1323a bacon: Update camera HAL
+58cb8b6 bacon: Update camera HAL
+ed0141d bacon: Update camera HAL
+f499813 bacon: Update camera HAL
+cc29ff0 Revert "Revert "bacon: Ship WCNSS firmware from LG G3""
+665c547 bacon: Ship modem firmware from CM11S-44S
+8151ae7 bacon: Don't ship modem and mba images
