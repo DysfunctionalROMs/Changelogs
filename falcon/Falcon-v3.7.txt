@@ -1,0 +1,13 @@
+
+project device/motorola/falcon/
+fb94bb8 falcon: Move props to the common device tree
+
+project device/motorola/msm8226-common/
+06033fa msm8226-common: Fix LED notifications
+c7a599d msm8226-common: rootdir: remove default_values
+b608397 msm8226-common: Add LED brightness control support
+14d3725 msm8226-common: Move system.prop to the common device tree
+41d34ae msm8226-common: clean NITZ props
+0fd7df4 msm8226-common: move titan/thea specific property to device
+fe2c886 msm8226-common: Use property override to set iosched
+19d1d98 remove adjust led brightness from overlay for now
