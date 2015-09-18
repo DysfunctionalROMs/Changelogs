@@ -1,0 +1,15 @@
+
+project device/asus/flo/
+9d69573 Remove dup on init flag
+0510888 flo: Get rid of notify_on_migrate
+a02288f Relocate performance profiles Moved the performance profiles to their own init script Based off this commit: https://goo.gl/OMu03u
+
+project kernel/asus/flo/
+44aadf5 Trim that fat
+5b7693f IO updates
+3d4117e block: Disable add_random
+a10d4ba Disable BlueZ dependencies Originally from this commit: https://goo.gl/4udJyf
+f4c894f Disable some more debugging
+80c85e8 cpufreq: interactive: Do not reschedule timer if policy->max changes
+92c88b6 cpufreq: interactive: prevents the frequency to directly raise above the hispeed_freq from a lower frequency.
+05dd589 cpufreq: interactive: don't skip waking up speedchange_task if target_freq > policy->cur

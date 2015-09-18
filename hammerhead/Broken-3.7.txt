@@ -1,0 +1,45 @@
+
+project device/lge/hammerhead/
+24fa7b5 Remove useless shit
+eee4bed Remove vendorsetup.sh Could've swore I nuked this awhile ago. Better late than never
+b6d9bab Update build fingerprint
+5079f82 hammerhead: power: Tone down input boost
+6483060 hammerhead: Disable modem ramdumps
+
+project kernel/lge/hammerhead/
+a22f1b5 arm/dts: hammerhead: Optimize panel init/uninit sequence
+95edf43 ext4: Add support for FIDTRIM, a best-effort ioctl for deep discard trim
+e4d661a hammerhead: gpiomux: Fix observed current leak while boot up
+fbc6eba ipv4: fix NULL checking in devinet_ioctl()
+ea1bc93 mdss: hdmi: Reduce dmesg spam
+aa0bab2 workqueue: fix possible stall on try_to_grab_pending() of a delayed work item
+2b4a0ca workqueue: Added null check and warning
+1e25f42 hashtable: introduce a small and naive hashtable
+3fd83f9 workqueue: use new hashtable implementation
+cde26ef cgroup: use new hashtable implementation
+3a425ea block,elevator: use new hashtable implementation
+ea03e8a mm/ksm.c: use new hashtable implementation
+271a5b7 mm/huge_memory: use new hashtable implementation
+4e9ced7 workqueues: Introduce new flag WQ_POWER_EFFICIENT for power oriented workqueues
+2b885aa workqueue: Add system wide power_efficient workqueues
+2b181e6 PHYLIB: queue work on system_power_efficient_wq
+678225e regulator: core: Use the power efficient workqueue for delayed powerdown
+8edf415 net/neighbour: queue work on power efficient wq
+af3502e workqueue: drop CPU_DYING notifier operation
+203b60b workqueue: ROGUE workers are UNBOUND workers
+94b0a88 workqueue: use mutex for global_cwq manager exclusion
+4c3fee2 workqueue: drop @bind from create_worker()
+d510d39 workqueue: reimplement CPU online rebinding to handle idle workers
+1514cc5 workqueue: don't butcher idle workers on an offline CPU
+c8393c1 workqueue: remove CPU offline trustee
+0bbd9fa workqueue: simplify CPU hotplug code
+92f1e03 workqueue: consider work function when searching for busy work items
+7a43da6 lockdep: fix oops in processing workqueue
+6027ee2 workqueue: set delayed_work->timer function on initialization
+80bd19b workqueue: change BUG_ON() to WARN_ON()
+1b2650b Hammerhead: Trim The Fat!
+3f878b0 defconfig: Enable workqueue power efficiency
+1039598 IO updates
+
+project vendor/lge/
+a432e06 hammerhead[caf]: Update to LMY48M
