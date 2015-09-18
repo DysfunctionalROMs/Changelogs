@@ -1,0 +1,35 @@
+project device/lge/f400/
+1239f91 Broke it
+75d12c2 Change F400K into F400 for all F400 variants
+43eee34 reaper_f400_defconfig:No longer referred to as 400k
+
+project device/lge/g3-common/
+442d825 g3: build ebtables and ethertypes
+01fa9dc g3: add radish blob
+81eb498 g3: use bfq ioscheduler after boot
+
+project kernel/lge/g3/
+b26593e Disable these for now: they cause rr and freezing
+b69ebf9 Linux 3.4.108
+d578c38 Enable 03 optimizations
+c815599 Staging: android: binder: Add some tracepoints
+c9cfe49 android: drivers: workaround debugfs race in binder
+347d053 Simple GPU Algorithm: Initial coding for devfreq based Adreno Drivers
+c899cf8 kernel: Replace timeconst.pl with a bc script
+08358d5 Thermal changes and Settings
+d5ff47c Trying xz compression
+aeb3b55 xz: Optimize Sfck Compression
+08b1b45 msm: bricked: adjust idle freq and tuning threshold values
+588333d msm: bricked: fix duplicated min/max cpus tunable
+01e9e04 defconfig: vs985: enable BQ5102X wireless charging
+32a59dc block: cgroups, kconfig, build bits for BFQ-v7r8-3.4
+423d946 block: introduce the BFQ-v7r8 I/O sched for 3.4
+ef94d51 block, bfq: add Early Queue Merge (EQM) to BFQ-v7r8 for 3.4.0
+a27924c Add Alucard gov
+769d2d3 msm: Add alucard hotplug
+11c7763 alucard_hotplug: replaced old nr_running average logic with the new avg_nr_running!
+f17d576 alucard_hotplug: max 2 cores to work in suspend/standby
+85e2f00 Enable alucard governor and bfq io scheduler
+d7355c4 Forced Fast Charge for LG G3 ported by PTMR3 thanks to faux123 and yank555.lu
+4006d7c cpufreq: impulse: burn tuning directly into governor
+b0b92fe Reaperize the vs985
