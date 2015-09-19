@@ -1,0 +1,7 @@
+project device/moto/shamu/
+ffcd96e8096c4bbc6b1a63600634760c3e01637a Add cflags the proper way
+11d6ccba6401b21fa6f724a085b1d356a381d460 Switching to custom linaro toolcahin
+a3d0c3f94cc8b229750cd4cbb3fb7e399dc88049 Fixing sudden loss fo data...
+
+project kernel/motorola/shamu-lz/
+a10073231381c81a547df3e02a6985bc00646467 Fix forbidden build error
