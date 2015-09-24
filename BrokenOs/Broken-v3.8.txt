@@ -1,0 +1,115 @@
+
+project build/
+60a7c38 build: Fix whitespace
+
+project device/qcom/sepolicy/
+bd1bb3b SEPolicy : Added policy for oma drm
+b588cd2 sepolicy: Include qcom-specific sepolicy from vendor/cm
+745cbee SEPolicy : Added policy for oma drm
+c2c8163 Revert "SEPolicy : Added policy for oma drm"
+2f3e449 SEPolicy : Added policy for oma drm
+cd13aa3 seandroid: imscm needs to communicate with apps
+da9a0ec Sepoilcy : add new file for CSVT specific policies
+1543edb Seandroid: Allow dumpsys to work from adb shell
+967a4c7 sepolicy: policy for imscm to app binder call
+e562f68 clean up definitions
+
+project frameworks/av/
+460ab93 audiopolicy: Never use low-latency audio for ringtones
+f92f675 audiopolicy: Fix the incall fix
+f2fcfd8 Media: Make media support DRM file's playing
+90434ca frameworks/av : Drm media file uses mm-parser sniffer
+5a276f8 Fix integer overflow in time conversion
+
+project frameworks/base/
+3af17c1 reopen keyguard carrier label
+89bb21b Revert a couple of badly-behaving ActivityManager patches.
+bbe7201 core: Reduce mutex contention in ActivityManager
+fb2d25f Revert "frameworks/base: Make minfree values optimal for 32bit devices"
+d40461b Revert "Remove obsolete OMA-DRM support".
+6bb0d73 libdrm: Added support for Combined Delivery and Separate Delivery
+d8be51a frameworks/base : Remove drm api entries from current.txt
+96d6513 frameworks/base : Added support for OmaDrmEngine
+d2d0fcc frameworks : Introduced new private DRM APIs in graphics library
+32758be DocumentsUi : Drm lock icon is added for drm content
+c0a4917 DocumentsUi : Drm lock icon can be shown on documnets picker view.
+329e742 Replacing FloatMath native implementation with calls to Math
+d2e2df9 Consider using app adj to identify if it is a B-service
+de034da Forward port CM Screen Security settings (1/2)
+39b1ac5 Add static patternToString() with pattern size
+9c0f79c Fix pattern visibility settings (1/2)
+3834a52 frameworks: fix reading default pattern size file
+7f9b12d LockPatternUtils: add a static way to retreive pattern from string
+1012c60 Keyguard: Don't show keyguard if CryptKeeper enabled
+
+project frameworks/native/
+aaaffc7 Set explicit ioprio where required
+
+project frameworks/opt/hardware/
+ed2a31f hardware: Add DisplayModeControl API
+ce027d2 cmhw: Add PersistentStorage API
+
+project hardware/intel/common/omx-components/
+45b6b3f Move init of variable after setjmp.
+
+project hardware/qcom/display-caf/msm8916/
+c115bfd qdutils: Fix misleading log message
+7313236 hwc: Set ioprio for vsync thread
+
+project hardware/qcom/display-caf/msm8960/
+d9816c5 display: Set thread priority using cutils
+6d8eb85 hwc: Set ioprio for vsync thread
+
+project hardware/qcom/display-caf/msm8974/
+2ca9c7a hwc: Set ioprio for vsync thread
+
+project packages/apps/Settings/
+59851b2 settings: Display apk path in App info
+4a7b315 Settings: forward port lock pattern grid size (2/2)
+397f4e0 Settings: handle decrypting larger pattern sizes
+1867e0e Forward port pattern visibility settings (2/2)
+6818a8a Settings: pass intent extra EXTRA_REQUIRE_PASSWORD after selecting pattern size
+75d7ed9 CryptKeeper: pattern unlock displays incorrect pw when correct
+6ab7614 Settings: fix non lock pattern CryptKeeper crash
+a878540 CryptKeeper: layout whole screen in bounds
+087bc4e CryptKeeper improvements
+53dae15 Settings: fix potential crash when setting new pattern
+
+project packages/services/Telephony/
+b874480 Disable useless forwarding toast when starting a call
+
+project platform_manifest/
+f0732c9 Updating UBER path
+34690bc Damnit Z
+
+project prebuilts/gcc/linux-x86/arm/arm-eabi-4.9/
+7ad96a0 9/20/15 - 4.9.4 UBERTC Snapshot
+
+project prebuilts/gcc/linux-x86/arm/arm-eabi-5.2/
+2c8f9fb 9/20/15 - 5.2.1 UBERTC Snapshot
+
+project prebuilts/gcc/linux-x86/arm/arm-eabi-6.0/
+d67c5cb 9/20/15 - 6.0.0 UBERTC Snapshot
+
+project prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/
+a91488b 9/20/2015 - 4.9.4 UBERTC Snapshot
+
+project system/core/
+fe752cd fs_mgr: zram: allow specifying stream count
+152ec2c fs_mgr: When formating ext4 volumes, respect the length parameter
+1b64307 Camera: Longshot with Burst Functionality.
+6b4a187 rootdir: Set ioprio for SurfaceFlinger
+27cdff9 cutils: Add support for BFQIO cgroups
+fdddb7d cutils: Fix copypasta in ioprio code
+884d49e cutils: Fix display ioprio
+8724710 cutils: Clean up ioprio grouping
+42b5bd8 cutils: Remove ioprio magic
+
+project vendor/broken/
+72fd68c cm: SELinux policy for persistent properties API
+a874914 cm: sepolicy: Create standard policy for LiveDisplay
+c40e8e6 cm: sepolicy: Create central place for QC-specific policy
+e781e66 cm: Fix a few denials
+ff54ab9 cm: Update shared init.rc
+1334b58 APN: add Sprint MVNO Ringplus, Ting update
+ef26de3 apns: combine internet and mms apns for vzw

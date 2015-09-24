@@ -1,0 +1,8 @@
+
+project device/oneplus/bacon/
+ab7931a track bacons caf kernel ourselves
+5c94e93 Comment out ambient display till it comes back to caf kernel
+
+project device/oppo/msm8974-common/
+9ad55dc Change kernel path for our repo
+528de95 Move LiveDisplay to vendor
