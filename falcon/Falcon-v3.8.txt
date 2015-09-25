@@ -1,0 +1,4 @@
+
+project device/motorola/msm8226-common/
+3206731 msm8226-common: rootdir: remove duplicated rgb sysfs
+6cfa2ea msm8226-common: remove duplicated sepolicy
