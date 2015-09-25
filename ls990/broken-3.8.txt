@@ -1,0 +1,162 @@
+project device/lge/g3-common/
+aef7ca9 sepolicy: remove duplicate livedisplay entry
+2b30af5 Disable audio offload
+7609f25 LiveDisplay moved to vendor
+
+project kernel/lge/g3/
+a27924c Add Alucard gov
+769d2d3 msm: Add alucard hotplug
+11c7763 alucard_hotplug: replaced old nr_running average logic with the new avg_nr_running!
+f17d576 alucard_hotplug: max 2 cores to work in suspend/standby
+85e2f00 Enable alucard governor and bfq io scheduler
+d7355c4 Forced Fast Charge for LG G3 ported by PTMR3 thanks to faux123 and yank555.lu
+4006d7c cpufreq: impulse: burn tuning directly into governor
+b0b92fe Reaperize the vs985
+76e942b Lost these in a pick ffs
+35d142d cpufreq: slim: add new @slim governor
+551f6c4 cpufreq: slim: tuning and burning @robbieL811 settings
+86634cc cpufreq: fix 'input_event_boosted' multiple definition
+0755beb Compile with -O3
+504611c msm8974pro: dts: cpu overclocking to 2.88Ghz
+e824265 UNLEASH THE BEAST
+7b7d5ca GPU: Enable OC Freq of 657MHz
+1a43fd9 GPU: Add 27MHz Freq Step
+f060c9e mm: Tweak read ahead
+c9a2f0c msm8974pro: dts: cpu underclocking to 268Mhz
+28eb52b Revert "GPU: Enable OC Freq of 657MHz"
+75663bf Revert "GPU: Add 27MHz Freq Step"
+aaf9f6b Revert "mm: Tweak read ahead"
+dc30193 Revert "msm8974pro: dts: cpu underclocking to 268Mhz"
+b663bac toolchain: additional build fix for newer Uber 6.0.0 20150427 version
+a016e6d toolchain: additional build fix for newer Uber 6.0.0 20150501 version
+c962f9d Add support for gcc5 and gcc6 W/small fix for compiler
+5221c45 byteorder: allow arch to opt to use GCC intrinsics for byteswapping
+9eed1c2 Optimize copy_page for modern ARM platforms
+8cbf45b Defconfigs updated for gcc intrinsics for byteswapping
+542f017 GCC5-GCC6 Compiler Error Fixes gcc5: gpu: msm: fix 5.0 compile
+435fc16 makefile: additional flags to compile on GCC 5.2+
+463590a 5.7
+339e465 ipv6: add check for blackhole or prohibited entry in rt6_redire
+eb6f207 e1000: add dummy allocator to fix race condition between mtu change and netpoll
+213a9ca KVM: s390: Zero out current VMDB of STSI before including level3 data.
+14c6828 usb: musb: core: fix TX/RX endpoint order
+b05c6fe pinctrl: remove maxpin from documentation
+9efb675 compal-laptop: Check return value of power_supply_register
+8e23b5a pinctrl: remove doc mention of the enable/disable API
+0d9eaae pinctrl: fix example .get_group_pins implementation signature
+afab503 drm/radeon: fix doublescan modes (v2)
+a59e260 usb: common: otg-fsm: only signal connect after switching to peripheral
+0065283 ASoC: wm8741: Fix rates constraints values
+51f59ed cdc-wdm: fix endianness bug in debug statements
+b8274e3 staging: panel: fix lcd type
+5a51315 UBI: fix out of bounds write
+36882de UBI: initialize LEB number variable
+eacc19f UBI: fix check for "too many bytes"
+dc29893 C6x: time: Ensure consistency in __init
+ef3ca46 Drivers: hv: vmbus: Don't wait after requesting offers
+ddc6218 Btrfs: fix log tree corruption when fs mounted with -o discard
+1bdb0e0 btrfs: don't accept bare namespace as a valid xattr
+b562d2e ARM: 8320/1: fix integer overflow in ELF_ET_DYN_BASE
+b9582bf rtlwifi: rtl8192cu: Add new USB ID
+e2d93a8 ASoC: cs4271: Increase delay time after reset
+4af9393 ext4: make fsync to sync parent dir in no-journal for real this time
+aba8cd3 jhash: Update jhash_[321]words functions to use correct initval
+2d4c728 RDS: Documentation: Document AF_RDS, PF_RDS and SOL_RDS correctly.
+15562b8 selinux/nlmsg: add XFRM_MSG_GETSPDINFO
+5ea6866 selinux/nlmsg: add XFRM_MSG_[NEW|GET]SADINFO
+9fe4ff4 x86/iommu: Fix header comments regarding standard and _FINISH macros
+1658f6a scsi: storvsc: Fix a bug in copy_from_bounce_buffer()
+682f65e ALSA: emu10k1: don't deadlock in proc-functions
+c41a36e MIPS: Hibernate: flush TLB entries earlier
+e276354 powerpc: Fix missing L2 cache size in /sys/devices/system/cpu
+ea61a83 selinux/nlmsg: add XFRM_MSG_REPORT
+04f7e12 selinux/nlmsg: add XFRM_MSG_MIGRATE
+61dab49 selinux/nlmsg: add XFRM_MSG_MAPPING
+74a4587 s390/hibernate: fix save and restore of kernel text section
+3a9d98f Btrfs: fix inode eviction infinite loop after cloning into it
+e6d530a powerpc/perf: Cap 64bit userspace backtraces to PERF_MAX_STACK_DEPTH
+f277300 ACPICA: Utilities: split IO address types from data type models.
+5f82b9a fs/binfmt_elf.c: fix bug in loading of PIE binaries
+2f4defc IB/core: disallow registering 0-sized memory region
+f21e9d4 IB/mlx4: Fix WQE LSO segment calculation
+401aa62 megaraid_sas: use raw_smp_processor_id()
+b828a4b firmware/ihex2fw.c: restore missing default in switch statement
+827072c ptrace: fix race between ptrace_resume() and wait_task_stopped()
+e0c6ce8 memstick: mspro_block: add missing curly braces
+f6e5250 nfsd: fix nsfd startup race triggering BUG_ON
+008d5ca nfs: don't call blocking operations while !TASK_RUNNING
+5bee43e nfs: fix high load average due to callback thread sleeping
+1b6821c RCU pathwalk breakage when running into a symlink overmounting something
+10ef996 ALSA: hda - Fix mute-LED fixed mode
+9e00b0e ALSA: emu10k1: Fix card shortname string buffer overflow
+8f4a2e7 ALSA: emux: Fix mutex deadlock at unloading
+16e34ef drm/radeon: Use drm_calloc_ab for CS relocs
+5badc0d SCSI: add 1024 max sectors black list flag
+2dc881c 3w-sas: fix command completion race
+c6fe435 3w-xxxx: fix command completion race
+5e2e992 3w-9xxx: fix command completion race
+e705345 serial: xilinx: Use platform_get_irq to get irq description structure
+ecaeacc serial: of-serial: Remove device_type = "serial" registration
+3534b82 ALSA: emux: Fix mutex deadlock in OSS emulation
+4057db9 ALSA: emu10k1: Emu10k2 32 bit DMA mode
+dbd9f08 powerpc/pseries: Correct cpu affinity for dlpar added cpus
+54bdcb3 ext4: move check under lock scope to close a race.
+f3be80d ARM: pxa: pxa_cplds: add lubbock and mainstone IO
+c7de631 ARM: pxa: mainstone: use new pxa_cplds driver
+248e8ce ARM: pxa: lubbock: use new pxa_cplds driver
+16e852f RDMA/CMA: Canonize IPv4 on IPV6 sockets properly
+e9bd25a xen/console: Update console event channel on resume
+ec45fe7 xen/events: Set irq_info->evtchn before binding the channel to CPU in __startup_pirq()
+0b74df3 mm/memory-failure: call shake_page() when error hits thp tail page
+96a1703 nilfs2: fix sanity check of btree level in nilfs_btree_root_broken()
+ad67a19 ocfs2: dlm: fix race between purge and get lock resource
+61c11fd libata: Add helper to determine when PHY events should be ignored
+8fb1fb4 libata: Ignore spurious PHY event on LPM policy change
+849ffa4 rtlwifi: rtl8192cu: Fix kernel deadlock
+76d0ac3 USB: pl2303: Remove support for Samsung I330
+7daaee9 USB: visor: Match I330 phone more precisely
+77f95a6 nfsd: fix the check for confirmed openowner in nfs4_preprocess_stateid_op
+0d3ed7b md/raid5: don't record new size if resize_stripes fails.
+0f2129c xhci: Solve full event ring by increasing TRBS_PER_SEGMENT to 256
+e843f76 xhci: gracefully handle xhci_irq dead device
+d200e00 usb-storage: Add NO_WP_DETECT quirk for Lacie 059f:0651 devices
+42f11ce ahci: un-staticize ahci_dev_classify
+f15be0d ARM: net: delegate filter to kernel interpreter when imm_offset() return value can't fit into 12bits.
+1b56d6e ext4: check for zero length extent explicitly
+ddeb15c ipvs: fix memory leak in ip_vs_ctl.c
+5f0b59c mac80211: move WEP tailroom size check
+4e4b7b7 KVM: MMU: fix CR4.SMEP=1, CR0.WP=0 with shadow pages
+ae47070 ASoC: wm8960: fix "RINPUT3" audio route error
+b7af487 ASoC: wm8994: correct BCLK DIV 348 to 384
+a0a126c Input: elantech - fix semi-mt protocol for v3 HW
+c8436cc powerpc: Align TOC to 256 bytes
+bd5530e mmc: atmel-mci: fix bad variable type for clkdiv
+a058845 sd: Disable support for 256 byte/sector disks
+f7c409d xen/events: don't bind non-percpu VIRQs with percpu chip
+8413ec4 crypto: s390/ghash - Fix incorrect ghash icv buffer handling.
+d96f309 bridge: fix parsing of MLDv2 reports
+2733337 ARM: dts: imx27: only map 4 Kbyte for fec registers
+cc14cc4 x86/mce: Fix MCE severity messages
+1286d6d x86: bpf_jit: fix compilation of large bpf programs
+6ddc88a lguest: fix out-by-one error in address checking.
+17fde59 fs, omfs: add NULL terminator in the end up the token list
+02a3924 target/pscsi: Don't leak scsi_host if hba is VIRTUAL_HOST
+f72daa3 ozwpan: Use proper check to prevent heap overflow
+cde53d8 ozwpan: divide-by-zero leading to panic
+7045ac5 ozwpan: unchecked signed subtraction leads to DoS
+02e2f66 drm/i915: Don't skip request retirement if the active list is empty
+5f6c1f7 ALSA: hda/realtek - Add a fixup for another Acer Aspire 9420
+f06e0bf MIPS: Fix enabling of DEBUG_STACKOVERFLOW
+fb20b17 bridge: use _bh spinlock variant for br_fdb_update to avoid lockup
+6843dbd bridge: disable softirqs around br_fdb_update to avoid lockup
+6b22a6a bridge: fix multicast router rlist endless loop
+3319d5d ring-buffer-benchmark: Fix the wrong sched_priority of producer
+d531ee2 tracing: Have filter check for balanced ops
+202c16d md: use kzalloc() when bitmap is disabled
+2d545b1 x86, kvm: use kernel_fpu_begin/end() in kvm_load/put_guest_fpu()
+9c6a7e3 ipmi: fix timeout calculation when bmc is disconnected
+e5176de bridge: superfluous skb->nfct check in br_nf_dev_queue_xmit
+dc78dd6 NET: ROSE: Don't dereference NULL neighbour pointer.
+8eb389f pipe: iovec: Fix memory corruption when retrying atomic copy as non-atomic
+ab4c85e sched: Queue RT tasks to head when prio drops
+b0af4d4 Linux 3.4.109

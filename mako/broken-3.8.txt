@@ -1,0 +1,9 @@
+project device/lge/mako/
+10db596 update to LMY48M fingerprint and description
+
+project kernel/lge/mako/
+b778a4f cpufreq: interactive: Do not reschedule timer if policy->max changes
+7efde51 cpufreq: interactive: prevents the frequency to directly raise above the hispeed_freq from a lower frequency.
+bd379e0 cpufreq: interactive: don't skip waking up speedchange_task if target_freq > policy->cur
+c75b18f mm: change max readahead size to 512KB
+198a16e Add support for gcc5/6 tnx Eliminater74
