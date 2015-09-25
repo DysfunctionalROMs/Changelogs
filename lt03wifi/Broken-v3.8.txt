@@ -1,0 +1,10 @@
+
+project device/samsung/lt03wifi/
+d3df61b Fix media being commented out
+e0676e8 Fixed comment for Z
+2470020 Changed vendor source
+13c056c Added debugging statements
+2fd54b0 Samsung hardware maybe needed
+3408693 OOps it is revision not branch
+e72fd1b get it going right
+
