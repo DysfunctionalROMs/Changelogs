@@ -1,0 +1,4 @@
+
+project device/asus/flo/
+e6eab1f Bringing the kernel in house
+37ad5a6 Moved LiveDisplay to vendor

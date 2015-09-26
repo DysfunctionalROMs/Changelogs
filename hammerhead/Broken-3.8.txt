@@ -1,0 +1,4 @@
+
+project device/lge/hammerhead/
+c217a16 Bringing the kernel in house
+29743ed Move LiveDisplay to vendor
