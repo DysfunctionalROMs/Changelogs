@@ -1,0 +1,60 @@
+project device/asus/mofd-common/
+4fc951e mofd-common: Set our arch variant to silvermont
+a61c1b2 mofd-common: init: Install init.zram.sh to /system/etc to match the .rc
+b022ca1 mofd-common: init: Set the I/O scheduler to BFQ after boot
+47b62ca mofd: add intel recovery fw updater module
+bf81226 support f2fs partitions on /data and /cache
+c66ca0f libhealthd: Add support for our non-standard charging status
+5fdaafa Oops, don't commit gcc 4.9 (it doesn't build yet)
+b5a9b0c sdcard: update overlay to allow unmount sdcard option
+4847ae6 Add asus prop to allow recovery to flash stock OTA
+46e1d15 libhealth: remove crpalmer debugging messages
+ba29b51 ramdisk: Don't set a default freq to 1.833 ghz
+52e128e ramdisk: Create a init script for power configuration
+d73fa4b ramdisk: Enable CM power profiles
+c59fde5 ramdisk: Reduce the cost of the interactive governor
+d7eb4d5 power: Switch to a source build powerHAL
+406c9c8 Keep Interactive settings after profile switch.
+2f17391 ramdisk: power: Unify the interactive governor settings
+
+project hardware/intel/common/omx-components/
+45b6b3f Move init of variable after setjmp.
+
+project kernel/asus/moorefield/
+5bfaaec DRM - radeon: Don't link train DisplayPort on HPD until we get the dpcd
+f0351ef iio: bmg160: IIO_BUFFER and IIO_TRIGGERED_BUFFER are required
+e23b376 iio: Add inverse unit conversion macros
+8acac89 iio: adis16480: Fix scale factors
+6edf532 clk: versatile: off by one in clk_sp810_timerclken_of_get()
+fc1ed8d PCI: Fix TI816X class code quirk
+67d9493 USB: symbolserial: Use usb_get_serial_port_data
+e9f45c1 USB: ftdi_sio: Added custom PID for CustomWare products
+724a1f8 usb: dwc3: ep0: Fix mem corruption on OUT transfers of more than 512 bytes
+8a17666 usb: host: ehci-sys: delete useless bus_to_hcd conversion
+12c1d88 serial: 8250: don't bind to SMSC IrCC IR port
+4a44972 crypto: ghash-clmulni: specify context size for ghash async algorithm
+451fb84 HID: usbhid: Fix the check for HID_RESET_PENDING in hid_io_error
+ef4884a xtensa: fix threadptr reload on return to userspace
+8e4c703 xtensa: fix kernel register spilling
+073e30a devres: fix devres_get()
+9934f29 auxdisplay: ks0108: fix refcount
+c69f577 of/address: Don't loop forever in of_find_matching_node_by_address().
+0a00134 drivercore: Fix unregistration path of platform devices
+90fa764 hpfs: update ctime and mtime on directory modification
+8627f67 xtensa: don't use echo -e needlessly
+7fba80a Linux 3.10.89
+fc10be8 Revert "More f2fs"
+a2ca725 Revert "Regenerate defconfig for f2fs"
+44dce54 Revert "F2FS: Skip unsupported codepage"
+32bbaea Revert "Fix paths for f2fs"
+317581a Revert "F2FS: Update to latest version"
+dbbdd5b f2fs: bring kernel up to date with Jaegeuk Kim's linux-3.10 branch
+15595c6 Revert "battery: Switch to qcom 'standard' charging status / charge_type"
+3d17233 fix build asus leds
+7eb15a9 fix uuid
+b095652 add additional trace headers for intel drivers
+
+project vendor/asus/
+e1771a8 mofd-common: Switch to using a source built PowerHAL
+
+
