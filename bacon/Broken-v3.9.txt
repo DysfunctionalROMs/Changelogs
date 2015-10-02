@@ -1,0 +1,10 @@
+
+project device/oneplus/bacon/
+06a0ef0 Update all overlays from rebase
+3129716 Comment out config_proximityCheckOnWakeEnabledByDefault for now
+1c38026 Allow BlurUI
+ffcda8d Remove Ambient till supported
+b2b25d2 audio: Increase ADC volume for dmic-endfire path
+
+project device/oppo/msm8974-common/
+56cb187 Update all overlays from rebase v2.0

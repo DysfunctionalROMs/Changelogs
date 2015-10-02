@@ -1,0 +1,49 @@
+
+project bionic/
+cb81f2a bionic: Allow devices to add device specfic static libs
+
+project build/
+d2a09c7 build: Add Flag to Use Oracle JDK on Codefire * Works just fine, easier to deploy Oracle JDK Locally
+426e8f3 build: Add Config Option To Keep Compressing APKs * Some older devices only have a limited system partition Enabling this universally would make it too big to fit
+
+project frameworks/base/
+6d584f0 Frameworks: Lockscreen blur & see through (1/2)
+cadbff9 WindowManager: Upper level changes to expose blur effect
+97d8af4 Frameworks: Lockscreen blur & see through (1/2) FIXES credits to David96
+36801ba SystemUI: improve blur layer behavior on lockscreen
+9c8e6b9 systemui: Underp blur effect after theme change
+400eafb BlurLayer: Remove unnecessary surface transactions
+ff9678a SystemUI: hide blur when showing keyguard media
+1bf92d6 systemui: Fix the blur effect
+153e3a9 base: start nfc service prior to systemui
+
+project frameworks/native/
+2aca90d SurfaceFlinger: Native changes to add blur effect
+b7cea7f SurfaceFlinger: Featurize libuiblur module for OSS build
+
+project packages/apps/Nfc/
+31abd4d nfc: create a bootstrap service
+
+project packages/apps/Settings/
+7cd460f Update custom_strings.xml
+6baf086 Lockscreen see-through & blur (2/2)
+
+project platform_manifest/
+02d2f50 Track @arter97's Linaro LTO GCC 5.2 TC
+c1f3c62 track our own NFC
+7b7f009 put 2 forgotten repos together..
+
+project prebuilts/gcc/linux-x86/arm/arm-eabi-4.9/
+004516e 10/01/15 - 4.9.4 UBERTC Snapshot
+
+project prebuilts/gcc/linux-x86/arm/arm-eabi-5.2/
+9345268 10/01/15 - 5.2.1 UBERTC Snapshot
+
+project prebuilts/gcc/linux-x86/arm/arm-eabi-6.0/
+bfb6bf4 10/01/15 - 6.0.0 UBERTC Snapshot
+
+project prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/
+3df2a0c 10/01/2015 - 4.9.4 UBERTC Snapshot
+
+project vendor/broken/
+61dccf6 v3.9
