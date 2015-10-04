@@ -1,0 +1,338 @@
+
+project device/asus/flo/
+9fa1226 BlurUI support Just in case.
+
+project kernel/asus/flo/
+dce8901 idr: fix a subtle bug in idr_get_next()
+e6e09d1 smd_pkt: Add sanity check to avoid unregistering the driver twice
+db742fc keys: notify system preparing to force reset if resetkey is defined
+dd1b290 flo/deb: keypad: set powerkey button to have reset notification
+239313c mmc: add force poweroff notify and sw reset for some card
+e71837a arm: use -mtune=cortex-a15 for Krait targets
+7196e3c tick: Upstream fixes
+6dc8b51 ARM: pxa: add regulator_has_full_constraints to corgi board file
+a3f6be5 ARM: pxa: add regulator_has_full_constraints to poodle board file
+6dd3ae9 ARM: pxa: add regulator_has_full_constraints to spitz board file
+47a4f3e hx4700: regulator: declare full constraints
+9c9f6f2 PCI: Generate uppercase hex for modalias var in uevent
+55fec39 usb: core: buffer: smallest buffer should start at ARCH_DMA_MINALIGN
+724e1d9 axonram: Fix bug in direct_access
+dcff47b Bluetooth: ath3k: Add support of AR3012 bluetooth 13d3:3423 device
+f7ac7d4 smack: fix possible use after frees in task_security() callers
+b1a1189 KVM: s390: base hrtimer on a monotonic clock
+8c28700 PCI: Fix infinite loop with ROM image of size 0
+3815a1e USB: cp210x: add ID for RUGGEDCOM USB Serial Console
+43ee2a6 staging: comedi: comedi_compat32.c: fix COMEDI_CMD copy back
+d2dc579 ARM: 8284/1: sa1100: clear RCSR_SMR on resume
+94a140a xprtrdma: Free the pd if ib_query_qp() fails
+2dac8b9 cdc-acm: add sanity checks
+3f78f2c USB: add flag for HCDs that can't receive wakeup requests (isp1760-hcd)
+1b028dc USB: fix use-after-free bug in usb_hcd_unlink_urb()
+6e0c0e3 vt: provide notifications on selection changes
+143055c tty: Prevent untrappable signals from malicious program
+9035fff ath5k: fix spontaneus AR5312 freezes
+b692682 rtnetlink: ifla_vf_policy: fix misuses of NLA_BINARY
+ffc95fd ALSA: off by one bug in snd_riptide_joystick_probe()
+f273e8a fsnotify: fix handling of renames in audit
+67796bc NFSv4.1: Fix a kfree() of uninitialised pointers in decode_cb_sequence_args
+4dd7d87 cpufreq: speedstep-smi: enable interrupts when waiting
+1909979 mm/hugetlb: fix getting refcount 0 page in hugetlb_fault()
+466e13a mm/hugetlb: add migration/hwpoisoned entry check in hugetlb_change_protection
+45169a7 mm/hugetlb: add migration entry check in __unmap_hugepage_range
+cec0b76 mm/mmap.c: fix arithmetic overflow in __vm_enough_memory()
+9f74b98 mm/nommu.c: fix arithmetic overflow in __vm_enough_memory()
+b43326a iscsi-target: Drop problematic active_ts_list usage
+9322fad mm/memory.c: actually remap enough memory
+3f198b6 drm/radeon/dp: Set EDP_CONFIGURATION_SET for bridge chips if necessary
+ea83447 ALSA: hdspm - Constrain periods to 2 on older cards
+1db943c jffs2: fix handling of corrupted summary length
+ad86f47 dm mirror: do not degrade the mirror on discard error
+2c761f3 dm io: reject unsupported DISCARD requests with EOPNOTSUPP
+a223e35 ipv6: fix ipv6_cow_metrics for non DST_HOST case
+4d3e0c7 fixed invalid assignment of 64bit mask to host dma_boundary for scatter gather segment boundary limit.
+7241d14 sg: fix read() error reporting
+1b27fa2 IB/qib: Do not write EEPROM
+8819294 dm: fix a race condition in dm_get_md
+0a12644 dm snapshot: fix a possible invalid memory access on unload
+ade5f59 kdb: fix incorrect counts in KDB summary command output
+0c3d016 debugfs: leave freeing a symlink body until inode eviction
+393d0b8 autofs4 copy_dev_ioctl(): keep the value of ->size we'd used for allocation
+b6cb843 gpio: tps65912: fix wrong container_of arguments
+662f130 ALSA: pcm: Don't leave PREPARED state after draining
+7b9f60f nilfs2: fix potential memory overrun on inode
+f9a4fd3 team: fix possible null pointer dereference in team_handle_frame
+05d041d KVM: emulate: fix CMPXCHG8B on 32-bit hosts
+a8da384 xhci: Allocate correct amount of scratchpad buffers
+a474ee5 USB: usbfs: don't leak kernel data in siginfo
+1c6ec5e USB: ftdi_sio: add PIDs for Actisense USB devices
+87240e3 USB: serial: fix potential use-after-free after failed probe
+142a2bb USB: serial: fix tty-device error handling at probe
+e71042e mac80211: Send EAPOL frames at lowest rate
+b6a6611 USB: serial: cp210x: Adding Seletek device id's
+028c9ba NFSv4: Don't call put_rpccred() under the rcu_read_lock()
+2e81956 usb: ftdi_sio: Add jtag quirk support for Cyber Cortex AV boards
+70534a6 eCryptfs: don't pass fs-specific ioctl commands through
+95a7dfc drm/radeon: do a posting read in r100_set_irq
+1cfc6c8 drm/radeon: do a posting read in rs600_set_irq
+d097891 drm/radeon: do a posting read in r600_set_irq
+57c2162 drm/radeon: do a posting read in evergreen_set_irq
+8f58331 drm/radeon: do a posting read in si_set_irq
+7435572 drm/radeon: fix DRM_IOCTL_RADEON_CS oops
+2c20361 ACPI / video: Load the module even if ACPI is disabled
+d064d22 ASoC: omap-pcm: Correct dma mask
+f04ed1e x86/asm/entry/64: Remove a bogus 'ret_from_fork' optimization
+5013b9e xhci: fix reporting of 0-sized URBs in control endpoint
+a82e1fe xhci: Workaround for PME stuck issues in Intel xhci
+a4fb894b Change email address for 8250_pci
+d0e1863 tty: fix up atime/mtime mess, take four
+2185a0a console: Fix console name size mismatch
+0359c2e net: irda: fix wait_until_sent poll timeout
+682053f TTY: fix tty_wait_until_sent on 64-bit machines
+473d616 sunrpc: fix braino in ->poll()
+2e7b830 gadgetfs: use-after-free in ->aio_read()
+03e5cc6 ipvs: add missing ip_vs_pe_put in sync code
+059baba ARM: at91: pm: fix at91rm9200 standby
+97b631a bnx2x: Force fundamental reset for EEH recovery
+60be550 libsas: Fix Kernel Crash in smp_execute_task
+50c4e66 can: add missing initialisations in CAN related skbuffs
+4223c6f ftrace: Fix en(dis)able graph caller when en(dis)abling record via sysctl
+6b58100 ftrace: Fix ftrace enable ordering of sysctl ftrace_enabled
+d14f1d1 xen-pciback: limit guest control of command register
+ae44f00 drm/vmwgfx: Reorder device takedown somewhat
+1a8bc94 ALSA: control: Add sanity checks for user ctl id name string
+2fb37d0 ALSA: snd-usb: add quirks for Roland UA-22
+0a6b77c fuse: notify: don't move pages
+6e1f4ca fuse: set stolen page uptodate
+8b708ac dm: hold suspend_lock while suspending device during device deletion
+7512579 dm io: deal with wandering queue limits when handling REQ_DISCARD and REQ_WRITE_SAME
+efa46e7 mac80211: drop unencrypted frames in mesh fwding
+658ac0c mac80211: set only VO as a U-APSD enabled AC
+7764722 mac80211: disable u-APSD queues by default
+59cb5a8 virtio_console: init work unconditionally
+8c31b6e virtio_console: avoid config access from irq
+aba7ff8 x86/vdso: Fix the build on GCC5
+589f176 ASoC: sgtl5000: remove useless register write clearing CHRGPUMP_POWERUP
+d7fc02a Input: synaptics - query min dimensions for fw v8.1
+3d8262b Input: synaptics - fix middle button on Lenovo 2015 products
+0323d96 Input: synaptics - handle spurious release of trackstick buttons
+a1293ae vt6655: RFbSetPower fix missing rate RATE_12M
+d70b06a x86/asm/entry/32: Fix user_mode() misuses
+8e5603a ASoC: adav80x: Fix wrong value references for boolean kctl
+4c708a7 ASoC: ak4641: Fix wrong value references for boolean kctl
+9080507 ASoC: cs4271: Fix wrong value references for boolean kctl
+b39e369 ASoC: wm2000: Fix wrong value references for boolean kctl
+04c0d16 ASoC: wm8731: Fix wrong value references for boolean kctl
+33f44f7 ASoC: wm8903: Fix wrong value references for boolean kctl
+07e94e1 ASoC: wm8904: Fix wrong value references for boolean kctl
+6b30702 ASoC: wm8955: Fix wrong value references for boolean kctl
+f325dad ASoC: wm8960: Fix wrong value references for boolean kctl
+1766068 crypto: aesni - fix memory usage in GCM decryption
+5b9ad16 nl80211: ignore HT/VHT capabilities without QoS/WMM
+57d5367 IB/mlx4: Saturate RoCE port PMA counters in case of overflow
+d174b2d tcm_fc: missing curly braces in ft_invl_hw_context()
+55e54f0 target/pscsi: Fix NULL pointer dereference in get_device_type
+01cab9e writeback: add missing INITIAL_JIFFIES init in global_update_bandwidth()
+54acaa8 nbd: fix possible memory leak
+6470668 net: ethernet: pcnet32: Setup the SRAM and NOUFLO on Am79C97{3, 5}
+921c261 perf: Fix irq_work 'tail' recursion
+b362af4 sched: Fix RLIMIT_RTTIME when PI-boosting to RT
+07da1da writeback: fix possible underflow in write bandwidth calculation
+b494de1 selinux: fix sel_write_enforce broken return value
+270ab4d hfsplus: fix B-tree corruption after insertion at position 0
+ad6e8eb ALSA: hda - Add one more node in the EAPD supporting candidate list
+07ba28e USB: ftdi_sio: Added custom PID for Synapse Wireless product
+1569351 cifs: fix use-after-free bug in find_writable_file
+92dfa6c usb: xhci: handle Config Error Change (CEC) in xhci driver
+7698301 usb: xhci: apply XHCI_AVOID_BEI quirk to all Intel xHCI controllers
+8a9ea65 net: use for_each_netdev_safe() in rtnl_group_changelink()
+118369a USB: ftdi_sio: Use jtag quirk for SNAP Connect E10
+211328d radeon: Do not directly dereference pointers to BIOS area.
+9cb1fb1 x86/reboot: Add ASRock Q1900DC-ITX mainboard reboot quirk
+25bc68c mac80211: fix RX A-MPDU session reorder timer deletion
+2f5dc20 IB/uverbs: Prevent integer overflow in ib_umem_get address arithmetic
+20beae6 be2iscsi: Fix kernel panic when device initialization fails
+0dc0ee1 Defer processing of REQ_PREEMPT requests for blocked devices
+6c0ca6a ocfs2: _really_ sync the right range
+81b1e13 ALSA: usb - Creative USB X-Fi Pro SB1095 volume knob support
+e13606a x86/reboot: Fix a warning message triggered by stop_other_cpus()
+0da0f5d splice: Apply generic position and size checks to each write
+ed6a1d2 powerpc/mpc85xx: Add ranges to etsec2 nodes
+e022cb9 sb_edac: Fix erroneous bytes->gigabytes conversion
+9604580 spi: spidev: fix possible arithmetic overflow for multi-transfer message
+e4ff6f2 IB/core: Avoid leakage from kernel to user space
+5a91ca5 hpsa: refine the pci enable/disable handling
+ff27899 hpsa: add missing pci_set_master in kdump path
+22bf594 hpsa: turn off interrupts when kdump starts
+1dda62b hpsa: fix memory leak in kdump hard reset
+20eb1ab fs: take i_mutex during prepare_binprm for set[ug]id executables
+4f1afa0 openvswitch: Check currect return value from skb_gso_segment()
+4ea232d net: make skb_gso_segment error handling more robust
+e0a6825 ipvs: uninitialized data with IP_VS_IPV6
+c31c239 autofs4: check dev ioctl size before allocating
+7b86366 UBI: fix soft lockup in ubi_check_volume()
+e053e6c perf tools: Fix build with perl 5.18
+52ff06e config: Enable NEED_DMA_MAP_STATE by default when SWIOTLB is selected
+9a0426f PCI: Convert pcibios_resource_to_bus() to take a pci_bus, not a pci_dev
+0872815 don't bugger nd->seq on set_root_rcu() from follow_dotdot_rcu()
+4e1a914 cdc-acm: prevent infinite loop when parsing CDC headers.
+2367162 IB/core: don't disallow registering region starting at 0x0
+4d15835 writeback: use |1 instead of +1 to protect against div by zero
+dfbe6fc xen-pciback: Add name prefix to global 'permissive' variable
+1bf3056e slub: refactoring unfreeze_partials()
+5f9f06d xen: netback: read hotplug script once at start of day.
+c6cb52a Linux 3.4.108
+d97a484 ipv6: add check for blackhole or prohibited entry in rt6_redire
+866fc38 Bluetooth: ath3k: Add support Atheros AR5B195 combo Mini PCIe card
+25dedee Drivers: hv: vmbus: Fix a bug in the error path in vmbus_open()
+5bfa31f e1000: add dummy allocator to fix race condition between mtu change and netpoll
+28e0a86 KVM: s390: Zero out current VMDB of STSI before including level3 data.
+0558ba4 usb: musb: core: fix TX/RX endpoint order
+0119e02 pinctrl: remove maxpin from documentation
+530c14a compal-laptop: Check return value of power_supply_register
+7b05b95 pinctrl: remove doc mention of the enable/disable API
+ca9c706 pinctrl: fix example .get_group_pins implementation signature
+d784610 drm/radeon: fix doublescan modes (v2)
+75a5d61 usb: common: otg-fsm: only signal connect after switching to peripheral
+a3ec2b1 ASoC: wm8741: Fix rates constraints values
+f9f0e7b cdc-wdm: fix endianness bug in debug statements
+5ca9c91 staging: panel: fix lcd type
+1c06495 UBI: fix out of bounds write
+649234e UBI: initialize LEB number variable
+e8fd0b0 UBI: fix check for "too many bytes"
+b00b557 C6x: time: Ensure consistency in __init
+f280749 Drivers: hv: vmbus: Don't wait after requesting offers
+cb8b366 Btrfs: fix log tree corruption when fs mounted with -o discard
+eb0caa1 btrfs: don't accept bare namespace as a valid xattr
+e1be5c2 ARM: 8320/1: fix integer overflow in ELF_ET_DYN_BASE
+a7dc2f4 rtlwifi: rtl8192cu: Add new USB ID
+d7014d2 ASoC: cs4271: Increase delay time after reset
+5675521 ext4: make fsync to sync parent dir in no-journal for real this time
+3b20e18 jhash: Update jhash_[321]words functions to use correct initval
+fe4dbc5 Input: elantech - fix absolute mode setting on some ASUS laptops
+b582ae2 RDS: Documentation: Document AF_RDS, PF_RDS and SOL_RDS correctly.
+97291bc selinux/nlmsg: add XFRM_MSG_GETSPDINFO
+94da74e selinux/nlmsg: add XFRM_MSG_[NEW|GET]SADINFO
+3bd2f43 x86/iommu: Fix header comments regarding standard and _FINISH macros
+4381271 scsi: storvsc: Fix a bug in copy_from_bounce_buffer()
+d853cd1 ALSA: emu10k1: don't deadlock in proc-functions
+cfbc32b MIPS: Hibernate: flush TLB entries earlier
+5e270d4 powerpc: Fix missing L2 cache size in /sys/devices/system/cpu
+17b89ed selinux/nlmsg: add XFRM_MSG_REPORT
+950d590 selinux/nlmsg: add XFRM_MSG_MIGRATE
+236eabe selinux/nlmsg: add XFRM_MSG_MAPPING
+eb39b4a s390/hibernate: fix save and restore of kernel text section
+323a8e8 Btrfs: fix inode eviction infinite loop after cloning into it
+5820ad1 powerpc/perf: Cap 64bit userspace backtraces to PERF_MAX_STACK_DEPTH
+6af0d54 ACPICA: Utilities: split IO address types from data type models.
+bc39817 fs/binfmt_elf.c: fix bug in loading of PIE binaries
+2add069 IB/core: disallow registering 0-sized memory region
+96c591b IB/mlx4: Fix WQE LSO segment calculation
+1d04452 megaraid_sas: use raw_smp_processor_id()
+5dec43f firmware/ihex2fw.c: restore missing default in switch statement
+fc47476 ptrace: fix race between ptrace_resume() and wait_task_stopped()
+d35addc memstick: mspro_block: add missing curly braces
+0f7eb67 nfsd: fix nsfd startup race triggering BUG_ON
+ea1c3a4 nfs: don't call blocking operations while !TASK_RUNNING
+0cb25e4 nfs: fix high load average due to callback thread sleeping
+e554530 RCU pathwalk breakage when running into a symlink overmounting something
+46961e2 ALSA: hda - Fix mute-LED fixed mode
+edd200c ALSA: emu10k1: Fix card shortname string buffer overflow
+aa604a9 ALSA: emux: Fix mutex deadlock at unloading
+2322246 drm/radeon: Use drm_calloc_ab for CS relocs
+7c0d00d SCSI: add 1024 max sectors black list flag
+33bbd04 3w-sas: fix command completion race
+af42a48 3w-xxxx: fix command completion race
+fc2f916 3w-9xxx: fix command completion race
+51f2e53 serial: xilinx: Use platform_get_irq to get irq description structure
+78aa2b0 serial: of-serial: Remove device_type = "serial" registration
+e46226f ALSA: emux: Fix mutex deadlock in OSS emulation
+f6a025e ALSA: emu10k1: Emu10k2 32 bit DMA mode
+6ddd3bd powerpc/pseries: Correct cpu affinity for dlpar added cpus
+a11c67b ext4: move check under lock scope to close a race.
+c573029 ARM: pxa: pxa_cplds: add lubbock and mainstone IO
+e8a4de1 ARM: pxa: mainstone: use new pxa_cplds driver
+b307074 ARM: pxa: lubbock: use new pxa_cplds driver
+1a5206e mmc: core: add missing pm event in mmc_pm_notify to fix hib restore
+1a20dfd RDMA/CMA: Canonize IPv4 on IPV6 sockets properly
+2a0f245 xen/console: Update console event channel on resume
+7b84386 xen/events: Set irq_info->evtchn before binding the channel to CPU in __startup_pirq()
+7e93a8e mm/memory-failure: call shake_page() when error hits thp tail page
+d5e4721 nilfs2: fix sanity check of btree level in nilfs_btree_root_broken()
+33722d1 ocfs2: dlm: fix race between purge and get lock resource
+a730473 libata: Add helper to determine when PHY events should be ignored
+66f395f libata: Ignore spurious PHY event on LPM policy change
+a48c48a rtlwifi: rtl8192cu: Fix kernel deadlock
+9d53617 USB: cp210x: add ID for KCF Technologies PRN device
+7bd6baf USB: pl2303: Remove support for Samsung I330
+b5d05d8 USB: visor: Match I330 phone more precisely
+2e68e42 nfsd: fix the check for confirmed openowner in nfs4_preprocess_stateid_op
+9f0b0f0 md/raid5: don't record new size if resize_stripes fails.
+dd468ed xhci: fix isoc endpoint dequeue from advancing too far on transaction error
+86bc093 xhci: Solve full event ring by increasing TRBS_PER_SEGMENT to 256
+0d5c226 xhci: gracefully handle xhci_irq dead device
+a99f5f0 usb-storage: Add NO_WP_DETECT quirk for Lacie 059f:0651 devices
+b6aab42 ahci: un-staticize ahci_dev_classify
+dc5bd8f ahci: avoton port-disable reset-quirk
+db3ce82 ARM: net: delegate filter to kernel interpreter when imm_offset() return value can't fit into 12bits.
+f49adf8 drm/radeon: fix VM_CONTEXT*_PAGE_TABLE_END_ADDR handling
+4705696 ext4: check for zero length extent explicitly
+0f8b8b6 ipvs: fix memory leak in ip_vs_ctl.c
+eeee713 mac80211: move WEP tailroom size check
+41d7507 KVM: MMU: fix CR4.SMEP=1, CR0.WP=0 with shadow pages
+a7d9fd3 ASoC: wm8960: fix "RINPUT3" audio route error
+970a753 ASoC: wm8994: correct BCLK DIV 348 to 384
+7dd3c25 Input: elantech - fix semi-mt protocol for v3 HW
+8c0d866 powerpc: Align TOC to 256 bytes
+0b9566d ALSA: hda - Add Conexant codecs CX20721, CX20722, CX20723 and CX20724
+b6eacc2 mmc: atmel-mci: fix bad variable type for clkdiv
+bb13c50 sd: Disable support for 256 byte/sector disks
+3f2c90e xen/events: don't bind non-percpu VIRQs with percpu chip
+e4a3ef2 crypto: s390/ghash - Fix incorrect ghash icv buffer handling.
+5b064d7 bridge: fix parsing of MLDv2 reports
+59b7805 ARM: dts: imx27: only map 4 Kbyte for fec registers
+c54041b x86/mce: Fix MCE severity messages
+8c17a5e x86: bpf_jit: fix compilation of large bpf programs
+bbfe843 lguest: fix out-by-one error in address checking.
+1f3e83a fs, omfs: add NULL terminator in the end up the token list
+af7637b d_walk() might skip too much
+04d8c33 target/pscsi: Don't leak scsi_host if hba is VIRTUAL_HOST
+4acda1b USB: serial: ftdi_sio: Add support for a Motion Tracker Development Board
+74b174d ozwpan: Use proper check to prevent heap overflow
+9c8c0a3 ozwpan: divide-by-zero leading to panic
+a8826ea ozwpan: unchecked signed subtraction leads to DoS
+149cbee drm/i915: Don't skip request retirement if the active list is empty
+c48b3d1 vfs: read file_handle only once in handle_to_path
+774e77b Input: elantech - fix detection of touchpads where the revision matches a known rate
+6480a88 ALSA: hda/realtek - Add a fixup for another Acer Aspire 9420
+bebef0c ALSA: usb-audio: add MAYA44 USB+ mixer control names
+9967c89 USB: cp210x: add ID for HubZ dual ZigBee and Z-Wave dongle
+4fa9109 MIPS: Fix enabling of DEBUG_STACKOVERFLOW
+6900351 bridge: use _bh spinlock variant for br_fdb_update to avoid lockup
+930a4ef bridge: disable softirqs around br_fdb_update to avoid lockup
+fcc4358 bridge: fix multicast router rlist endless loop
+f603a85 ring-buffer-benchmark: Fix the wrong sched_priority of producer
+3f53888 tracing: Have filter check for balanced ops
+e463444 udf: Check length of extended attributes and allocation descriptors
+a51cc31 md: use kzalloc() when bitmap is disabled
+8d5a0b2 ipv4: Missing sk_nulls_node_init() in ping_unhash().
+3aa65be x86, kvm: use kernel_fpu_begin/end() in kvm_load/put_guest_fpu()
+cddf0d3 x86, kvm: fix kvm's usage of kernel_fpu_begin/end()
+b25a2f6 ipmi: fix timeout calculation when bmc is disconnected
+d549284 net: socket: Fix the wrong returns for recvmsg and sendmsg
+cbefa3c bridge: superfluous skb->nfct check in br_nf_dev_queue_xmit
+79cc37c block: fix ext_dev_lock lockdep report
+f70ea2b NET: ROSE: Don't dereference NULL neighbour pointer.
+939628a pipe: iovec: Fix memory corruption when retrying atomic copy as non-atomic
+007e139 sched: Queue RT tasks to head when prio drops
+5bb4b5a udp: fix behavior of wrong checksums
+4de3029 Flo: Update to Linux 3.4.109
+5d312f1 kernel: add relaxed power savings from NVIDIA (experimental)
+48ea5fc seqlock: enhance power efficiency #2
+a0d2c85 Introduce Lazyplug
+6eba0aa lazyplug: separate thread for reducing wake-up delay
+6f110fd lazyplug: add mutex & boolean check for lazy mode
+5e8d414 vdec: add lazyplug hooks
+feddd6c Defconfig: Enable Lazyplug
+844b63c Flo: Add exFAT support
+c99df70 Removing several custom governors Trying to keep it simple for a change
+
