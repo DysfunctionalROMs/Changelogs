@@ -1,0 +1,210 @@
+project device/moto/shamu/
+6da709d0902173233d9c3e590b3deb35dee34f21 Bring back the ffmpeg call
+0aaf6fcc456d4fe60b1cfcbb5cb7532988a75ce8 Revert "Set persist.sys.usb.config=mtp...this is breaking shit"
+522cc22225b9e05182d0c02b2892eaa0310a02af Decrease long press back to kill timeout
+87ffaac7f23efed14c8c329bd81cf9859627121e Build librmnetctrl.so from source
+123884ec5d1eb51071327bf5a903eb844c363351 Set persist.sys.usb.config=mtp... forces usb mount option as mtp in developer options, but it isn't changing the option in the rom...
+8d86f2b3b4196478e4de4336fb199f16dd6925be Bluetooth firmware was moved to device tree... originally commit by dhacker29 but cherry-pick was failing with an empty commit message
+4d561048da6ee4282cf88a572bf8f9298398f1f0 Don't use old-apns-conf.xml
+bfda2cda92d43e35e43f121f2c8542155e8838e3 Fixinf derp... thanks for the pull request and help jamie!
+6105af136ddb3e79cde6b9d9b7ffb4c327d2518c Fixing IMSEnabler crash
+7fb40a35aa544a87d9decb4608294e9564e207b8 Return of the much less crippled liblight
+26f03652a554d0ec54918550ada3f92c6ddd657a Add stlport
+6c6489d5016585d6ad33bb3843b35844bb2661ff Dumping the last bit of verity
+81d4ca592de9d9516b370744a860201dcfad048b Update device-proprietary-files.txt
+f11b9773e72cacfb393f57070f25531ad972bb4e shamu: Build libxml2 from source
+3d6a54841984213bab876454a08f533eb875e2c3 fstab.shamu: bringing it up to par with fs2, etc
+8aa338baa8cb00768486d4400015945e27d977fe Enable config_proximityCheckTimeout
+d690039149f3be55211f9166e7e8e719ba367911 Remove duplicate
+29e6c58e70437b405680dcb6c2d9a780255e8bda Remove call for ffmpeg
+c3f608a1ed2914023e0618b53eb9a7a8af007175 BUILD_FINGERPRINT: MRA58K
+04a9e009e8d282926fa5694cee14f81e3f925392 build.prop: Add persist.radio.sib16_support
+00dadc493191a88d09dc7f31931c912c6a45b804 build.prop: Disable rcs as per stock
+423e956f91f161576558747c67c165b7b4393a00 Set WiFi calling props
+e4078b51801f2cc6548663ec29570d5ad48f7e68 Shamu: Use libfmas for audio effects
+ac64a562c43b19f83739d477847193d3a9545540 sepolicy: Fixes for atfwd, and netmrgd denials
+6645cc50f5f6670e9586b4a8e41d9356a638b6e0 shamu: Add old-apns-conf.xml * not entirely sure its needed but factory image has it maybe its a fallback
+846fe92626ae41cd93b372a3ba77bdd0414d46b3 disable mp-decision logspam
+c997d88d25b8edc28ae76b324cdeca5fa77222c1 finish off the job - kill verity completely
+1c329bd2cf473c82814d5d84b4ac46b5fd31b727 add missing persist.data.qmi.adb_logmask=0
+484ae8280593fe7e4c7804e596461a93929a6578 set proper wifi and bluetooth power ratios *pulled from factory image aosp had just default settings these need to be adjusted per device
+e5e95f15bb9e4822a527223aeee7c031de6b18a4 Fix Shamu Network Values * in the past 3 factory images network values are set 10,0,1 but AOSP is set 9,0,1 lets fix it * just doing this as an overlay as im sure its shamu related as 10 is World 
+c43ed94810e433f75495efc28e952a87db1994f8 Disable dexpreopt only on affected apk's
+86cc9baf7997f8c4a15fea10fb2d5dff51dffbe2 kill device verification warning
+271e481966d4077dfc898ab514b860573d3ce199 Upping the recovery partition size
+81b84840d1f5f82b0fa2b5cf2a86236379aba751 Revert "From caf to aosp"
+15bea3e0d1bec73e53d9c1a57e170aca9fc17a6e Revert "TARGET_BOARD_PLATFORM:hardware is defining as apq8084 instead of msm8084" this just didn't make sense...
+5eecceb4a7007d01c9bcb6666be0fa0c59625138 Using default liblights for now
+1baa78829607b977dcc8c4c504585ffb92dbaf36 TARGET_BOARD_PLATFORM:hardware is defining as apq8084 instead of msm8084
+44486da1bccbb781671c79fd6d7f33fcab4d3df1 sepolicy: removing a duplicate
+c0db3b5867a4c8813cae22df05568ec47ff9d55d Making placeholders for features not yet added
+9a8ec07b05f8626dd50586673ac96cc9a178484a From caf to aosp
+f060feb5469c27ae680955ec9c677ee7187d7f65 Updating dependencies
+e13c32a40c1c609a7b9e9c797c40f70c2328e803 Merge remote-tracking branch 'msm/marshmallow-release' into m6.0
+
+project kernel/motorola/shamu-lz/
+f0c6158d286944b2a0d3d256ef260f058b04e1eb Fix build errors after merging tags
+9b18ad1cd7562f13009db4dbeed1442be080af35 power: qpnp-smbcharger: update iusb only at beginning of charging
+2f32122d24c2eae7f8f3ec34a0ad5c1882d8c255 msm: vidc: Allow clients to specify/query the colorspace
+db1b10ad1984f6721ba1baa50c021eba0e5349d8 msm: display: remove warning messages for bandwidth calculation
+b8544f8e8c04228a225ea9a43638f7649a52554b Removing commit list output
+2270b9973a562f5d660ed99e33e1ed0fe40a9e6a Bump to 3.0
+c82fdac1cdb463585f23b38f040e73d191d33171 makefile: Enable O3 optimizations
+2daf94aff0a5507df7a17214d8e794ccd654380f Update defconfig and Remove fastcharge 1.0 residuals
+48fa18c6d4364b60144a1ae37c7a8af363170fa3 lowmemorykiller: adapt to vmpressure
+ee16d32845d78d46f825f9ab5332898a1ac401ed lowmemorykiller: Do proper NULL checks
+7c1f5975667f3fa97a49a74c258d9b3eaff8059f lowmemorykiller: remove duplicate include
+9737438c922281df1d63352b6241e38b12a00cb3 mm, oom: make dump_tasks public
+bc228ea8c8e35eacc45d58c71d25d0d3fd6668bd lowmemorykiller: enhance debug information
+3e7177d3cc216be332098f52dfd055f4de044cce staging:android:lmk: read rb tree root with spinlock
+82247fa8c10c1c4b8fbcd3aca7819a386080568f android: lowmemorykiller: squash task adj rbtree optimization from Motorola
+70eb0532006d81786cd466959f1d79e7dacf9817 rbtree: fix rbtree_postorder_for_each_entry_safe() iterator
+9a24064aa91c844144bca31d39eab9a45d715c26 rbtree: add rbtree_postorder_for_each_entry_safe() helper
+b470b9c98423866fb83c2c359eb35de64924445f lib/rbtree.c: fix typo in comment of __rb_insert()
+dbf07dc047a587d1258e405c6b47ab4ca0baa492 rbtree: add postorder iteration functions
+560773ab709c27dbd319793738df92b4c107a3cf mm: vmpressure: account allocstalls only on higher pressures
+d69011d8969523a6c53d780e9306b8df30d56909 mm: vmpressure: scale pressure based on reclaim context
+895fbb8a559d65a84188d05559702e18b416dfa8 mm: vmpressure: allow in-kernel clients to subscribe for events
+b122ce79ad48093b3ef904ce5f354787877f1373 tcp_cubic: do not set epoch_start in the future
+e4e335f6881eda08b689cfb4c93450614c0fa02c tcp_cubic: better follow cubic curve after idle period
+e0dc8006039d8eb471bca382a1baad6a56740c3c Revert "arm/dts: shamu: Enable Empty Learning feature."
+f311c1102b390be8cadad85cdcfbae59b1003658 msm: mdss: kcal: Only apply updates on index 0
+83ebda47c00bf81750acd31a9525e8d0580e0c1e msm: mdss: kcal: Use PCC for negative display mode
+fcc8597eedb6642c56d2fdfe6f5e175e9fbeb081 lz4: fix system halt at boot kernel on x86_64
+c67f7f1cb26f5278258891bf053040f12c3cae60 Makefile: sort list of defconfig targets in make help output
+f9d2beae9222cc336bf822da49074d9743206b5a kbuild: remove warning about "make depend"
+bb00a331e21c16f47dd2c8cce2847bb7ba5a5171 PM / Wakeup: Use rcu callbacks for better performance
+d36eb34164f88c5937c09cbdea0527a88ee62f73 Revert "sched_avg: add run queue averaging."
+d51238b13a8cff93950ba4494c0b1321ea760dab arm: irq: Tone down kernel logging
+3582e5deffe29bc78d60916d02f0d37f809273e1 arm: smp: Update the topology masks before calling CPU_STARTING notifiers
+8185d73a4b1e4ed04d7b87d89bc77a56ddb07953 usb: gadget: Remove moto cdrom sysfs for drivedroid full support
+d20628d4f62ce4976fbd8e24642bd71769696e98 usb: gadget: mass_storage: added sysfs entry for cdrom to LUNs
+a7e9fc9ba7656e24f263c7979c7dff09722fe3f5 msm: mdss: KCAL: Send a pp display commit when changes are made
+38af0daf6bdbcca9945126aaac61102a90406617 mm/compaction: fix wrong order check in compact_finished()
+fff20ea55a4e16d489659eaecfd594c6a8b7ff86 mm/compaction: make isolate_freepages start at pageblock boundary
+3ee753ff13b5020246fb64ebcc41e7cd7f57cc01 mm: compaction: detect when scanners meet in isolate_freepages
+c061159e248f160dd8e193b24241eab9c6db804d mm: compaction: reset cached scanner pfn's before reading them
+90c1efe38c0b2bc47d363a022102fd687563b672 sysrq: Emergency Remount R/O in reverse order
+6591b364cefd8ea856910a9de68eb214d80ddd89 pstore: pmsg: return -ENOMEM on vmalloc failure
+0d3a597c10f9e3ac5d484b858092476cfbb10002 Page cache miss tracing using ftrace on mm/filemap
+913a16442790235bf01ea6416645f94cd9bb1245 lib: lz4: Set ARM_EFFICIENT_UNALIGNED_ACCESS
+3472826fa899600915da7e413226d76ace85d1d5 lib/lz4: Pull out constant tables
+49735f840f2d91775f0eb27579c34a0cd4c1f5f6 cfq-iosched: fix the setting of IOPS mode on SSDs
+65993267086f2bea49f483b230613e26f3d4119e block: Make CFQ default to IOPS mode on SSDs
+656f2e6cdde2760e1b675df35163de29be5eb75d ext4: replace open coded nofail allocation in ext4_free_blocks()
+e2b0b1264f9ad58a7ef531e9692be0d8e84d7fa1 ext4: correctly migrate a file with a hole at the beginning
+095703ebd8b9c75888c6429dd087502dfd3feede ext4: be more strict when migrating to non-extent based file
+bc66e1b09e129be202f3d9ce20d83a2aba701bfe ext4: fix reservation release on invalidatepage for delalloc fs
+ecfdeb15140a0044a08b41f5fb58af1801ce4868 ext4: don't retry file block mapping on bigalloc fs with non-extent file
+d3f2059e8b5c521f3c92d09bc2319476fd66e802 ext4: call sync_blockdev() before invalidate_bdev() in put_super()
+8a6512bf9a8e5e6ebfb300bc724756e2650275be ext4: fix race between truncate and __ext4_journalled_writepage()
+97e2463f3c36c81742588efbdc6ddbaf280d91cd ext4: check for zero length extent explicitly
+b0c7f89ba18e517adea38719b08893d979d969d6 ext4: fix data corruption caused by unwritten and delayed extents
+5679dd939fd98d28b65dcfc3ab13f684d1d48a6a ext4: make fsync to sync parent dir in no-journal for real this time
+d08ab099e89d933970a77051fbc37f426f88dc3f lowmemorykiller: use for_each_thread instead of buggy while_each_thread
+575f9a8f9939d0e83c7fc3b93c2b0498e96eed1f ext4: optimize test_root()
+457b43b096a1ed609a9d3d19e7b3e24e53aac84e ext4: optimize starting extent in ext4_ext_rm_leaf()
+40f07a438da0ba0e3e5f279933a66352e79171fc ext4: handle symlink properly with inline_data
+c58c02b326fc3081218cfda6396784886a0c3e15 quota: provide interface for readding allocated space into reserved space
+edacad96f3176e36dc71d45afc0a8bc977368d83 ext4: convert write_begin methods to stable_page_writes semantics
+955684fa8e201902211afcc6f5828ca1591e5f5c ext4: prevent bugon on race between write/fcntl
+b2dec5e1487c4a8cf1d81cd2afb5548109bfa4f8 ext4: fix warning in ext4_da_update_reserve_space()
+4c98187a7da715e4b654cb9bc3d7e8c5da4291ff ext4: fix oops when loading block bitmap failed
+9bbf9be5d330fec1705c2a6442d705bf994c0647 ext4: fix overflow when updating superblock backups after resize
+edf0033891647b62814ecbfe1510c910c41cd169 ext4: check s_chksum_driver when looking for bg csum presence
+56eff9511e45c6bb14df1b593c7e93cf60b5bb9f ext4: fix reservation overflow in ext4_da_write_begin
+a0438f9ff3fec95e02a7fdd36c8b38da8a39b9eb ext4: add ext4_iget_normal() which is to be used for dir tree lookups
+464351de273dc11de5471774641dae9e01370747 ext4: grab missed write_count for EXT4_IOC_SWAP_BOOT
+24db6506ebf4c5dcc0607fcb8700de41b76dd0c5 ext4: don't check quota format when there are no quota files
+df25d490a31daae389f705a0c4968f85b5169feb ext4: check EA value offset when loading
+e07e979a662a62a5c4fd8f2167a7f64ce09cda1e ext4: fix BUG_ON in mb_free_blocks()
+0223a8e7257f3eb4eafe062861a380cc31766757 ext4: fix ext4_discard_allocated_blocks() if we can't allocate the pa struct
+0030b467d398d82cd871e8a676b9a43ccf4a348e ext4: disable synchronous transaction batching if max_batch_time==0
+22cecb79873aa250d7a275e2257f9c24d4abab06 ext4: clarify error count warning messages
+2f03ec88b9f8c5364fbf042e1f86a3330822afa6 ext4: fix unjournalled bg descriptor while initializing inode bitmap
+3d2c3e1a51a57f3cb75dc594cf0e7c51cfc6690f ext4: Fix hole punching for files with indirect blocks
+29ce824631c11c34b7b9d434ee2bfcc5cd7447d9 ext4: Fix buffer double free in ext4_alloc_branch()
+4550aaf01dcdf16bdb29feb04727c0aa6d278e2a ext4: fix wrong assert in ext4_mb_normalize_request()
+35ffcca0e1f78c72f258470d517cbd3fb760e221 ext4: fix zeroing of page during writeback
+bb0ad7ff52ee5f9cd3f7146e933fbd592b2bf7a4 AIO: Don't plug the I/O queue in do_io_submit()
+fb24c883f12010f5a69a1b086d560ad05621354f msm: mdss: increase mdp core clock to match panel pixel clock
+d8552002613870ced28e5dda7a364ea54ddf865f i2c-qup: improve the bus recovery procedure in qup i2c driver
+86e73c8321a38bd6de7d3d19cb2983cca907c875 power: make sync on suspend optional
+86386cc598815c89e0a675a37e1444d136ab173e PM / devfreq: Return error when tz init fails
+d2503e90779963e60423cd7b017caa3810d25231 crypto: arm/aes update NEON AES module to latest OpenSSL version
+bb30fa6ce2a4303461dd7e73763699ac4fa4dbb1 staging: Remove logger from android Makefile and base-cfg
+1eadcbabf02ba635df3cdaa122be3eee9e792ec8 msm: slimbus: use interruptible wait to reduce system's load average
+d5e70732802660dca67250e35fa8a2f7cf938f7c staging: Remove the Android logger driver
+452f8dabfcf4a8322965ac95e2bac61de68175be msm: mdss: Save HBM state across panel off/on
+b65d2f393194243c9e2942aa0c6ff296637430ad ASoC: hdmi-codec: rate limit the debug print messages
+1d918cc3ef2ff5c18609cdb60c8fe0f92befe13b msm: mpm: disable debugging
+1dc0ea9e34255ac79c071473f08dc8c46198143a usb: ks_bridge: disable debugging
+98ed4419385f2dd2eeb57c07bcfd1b93c934a7c2 usb: gadget: fix build warning
+263ec7e562c795109a91d76eebf5c3ddbbc3ca1e msm: camera: change log level in csiphy
+951441e55fe2427138b66f18b5d2e9db6c13f3b6 msm: mdss: rate limit log spam
+37317c3265edc515f4ca0d01e861f36e661a328a ion: this debugfs creation fails - remove code for it
+5bc555ab198ac63f9902ff82539f60fae86fcffb Input: fix defuzzing logic
+837daf46315881f2765b98947c9fb1f276703f9a tty: Fix high cpu load if tty is unreleaseable
+06332f7500936b08e0cbcd2d56739051570b5d66 msm: camera: Assign NULL after freeing memory
+8a1b8c68f21400dadd1f207368c84fae89d0a7bc msm: kgsl: Wake up GPU only for touch events
+93a55b262c0cb82829ebacf8d8354cbed5f72d06 diag: Reduce error message frequency
+c20289cff93c6e51f3a43b7a430b8ad4dd6dfbf1 audit: Imma let you finish, but shut up
+66f8800d3e68919260d9207b72a5ce58a63dba65 selinux: just shut up
+f50514f9d82e7e63b7a855f122efac2c6dc0a5b1 mdss: use an interruptible thread on edp to reduce load_average
+7f9e39742f25f1218a207fb57d7b8515e3eb55d5 msm: mdss: prevent excessive logging after shutdown requested.
+c6de77041590e24403a0d70e78aea472d48ac844 msm: mdss: change the print level to debug for dynamic fps write
+e0c38e5f1f62476d7cb70fb2aa15ff347a29799b mmc: core: With great features come great spam
+ff13942dc988d131ebc6c9a919f9e4a551889300 clocksource: arch_timer: Use _no_log variants while accessing registers
+64b94c3ef73d8c5cc7dbac36bf545cf048245868 mdss: we can probably use interruptible thread on this code path
+affeb04c7e64460debaf4b1047faefd517ae85e6 ARM: dts: msm: Remove support for qcrypto1 device for 8084
+eaecb10b8a5f098c59cc49302f6a71af40072639 ARM: dts: msm: disable support of 50MHz for i2c for apq8084
+21f6feae6d93439173c0d9cfb256044b47d1ca59 USB: gadeget: ci13xxx: Fix warning for debug usage
+3d224deab9dac556b00381aba6b05de00fffafc9 ARM: only allow kernel mode neon with AEABI
+0dc283eb959424a308519118ab05ccb9f5c8315f ARM: be strict about FP exceptions in kernel mode
+6d14f2640c8fda6ad312b5e57ca298b7f78ae218 Optimized ARM RWSEM algorithm
+25a5d380947fecf5d1945c61a89bbfd201bf520a int_sqrt: Improve 3x faster integer sqrt.
+d97659ac464f1282c0ce892803878bcb7c733c10 int_sqrt.c: Correction square root algo with naming
+1c1a6bd6289f8163204a76915d28a1c28f4bf297 Not cool to force that debugging.
+994596f4a80efcad221376dae120e7972342fc38 netfilter: x_tables: Silence some debug info
+9b188be2fdb26f96f5473b43eff3ba2fd4dfb849 smb135x-charger.c: increase polling time for ADC
+976385676cd738649b9081c7c18b78b5cabc1dd0 arm/kernel/irq.c: remove irq affinity warnings
+18142b9f3b9e63d3662dd525ada7f2368c14bd4f msm: camera: suppress excessive logging - boot faster
+097f5b18022c5aebcb7ba0584bce11cf79ea1090 binder: Quiet Binder
+e616d5190d763db616156554ff6caaa1f942a4fa msm: camera2: cpp: to silence non-fatal errors
+4c858d3fbcc4befdf0690acd2aed4e9becdb05c1 cpufreq: Break out early when frequency equals target_freq
+e7ef635dd6b2593ec2cf0cfda216b23477980462 tools/include: use stdint types for user-space byteshift headers
+0647f5a5e9e1098d1ca17a3c9b0c35d36e144c7f futexes: Increase hash table size for better performance
+b4823da433c441c52cfc7311ccbb0e3074a98434 ARM: add .gitignore entry for sha256-core.S
+3d75a15488160a76f00402e9fc4623667351b9e7 sched: LOAD_FREQ (4*HZ+61) avoids loadavg Moire. From http://ripke.com/loadavg/moire
+471750998ba57a67061b5b22728ad841aecb97ac writeback: Fix occasional slow sync(1)
+f5e34c6c060be71957ff7f800af77c3ff12a2842 shut up unwind
+bb59ed5e34c8ca23336a6d8508edf8749c3c6a39 msm: don't build rq_stats
+8693f1298fa522affbeebd8bdc665cc5e629c7cf debug: remove: arm unwind: remove logspam while in debug mode
+04ae612f999ee36f4093def2b30307293e451b73 block: Disable add_random
+2d36c19dbc33a0c1c7de3db67fdb5160556347f2 ARM: smp: Wait just 1 second for other CPU to halt
+8d3a348e5a01b7ae6bfd76148077cfa36b581a3e audit: kiss goodbye you stupid piece of crap logging messages.
+17d0f67b7350f8668e18cdbea49c500a9ae43e33 block: deadline: Optimize for non-rotational
+f975a9675fe7a090213430ac1b10d1993277a234 block: row: add magic values.
+0ca61d7dd988a4465d9af742d26d45ed906245b9 cpufreq: interactive: Move definition of cpufreq_gov_interactive downwards
+30a96850ca5d58f30b42d5f43991c066c7dba3fb cpufreq: interactive: Remove unnecessary cpu_online() check
+35b2cc5ffa58877ac269b96f3ce08515c34087a3 sched: remove unused trace
+1ab79da3c9c96139430f17d983c4b8c7428be4a2 Lower GPU voltage constraint
+11124a0895d2402530e9e522b80fe584169ab4cd fast charge: initial adaptation for Shamu to work with qcom's quick charge 2.0
+bfdc4cc23de7e06d2bd94f2ead5b032680508f46 mach: msm: fix mismatch.
+16d6ef2608f4e13e6f30b9196a578c354c8a0cf8 fs: take i_mutex during prepare_binprm for set[ug]id executables
+40a5849e5f40d4f8e347f6040c68367e6743604b net: llc: use correct size for sysctl timeout entries
+f5ede5249e3dd376cd8344fd773367bda47b0e7b netfilter: nf_conntrack: reserve two bytes for nf_ct_ext->len
+cab4dbab44c23de3ca9c0be5cd19d501a5e0780a udp: fix behavior of wrong checksums
+e50e517e458523c39588c09d589dd182db18e260 ipv6: Don't reduce hop limit for an interface
+0c2d09d9ce04ce0845e2f7e68c59630e380f3a07 mm: Fix NULL pointer dereference in madvise(MADV_WILLNEED) support
+57a3931eac0bc70fe61c52044b9068daace28b83 vfs: read file_handle only once in handle_to_path
+25c26ebf6a188315f73ff705fb7bd85c11ea4d33 mnt: Prevent pivot_root from creating a loop in the mount tree
+775f07d639e8a7eb80902d140e6622acc6db8823 mnt: Only change user settable mount flags in remount
+86c09aa116815c1e66d784f8d0dadb643ff2842a netfilter: conntrack: disable generic tracking for known protocols
+5f7e21058542ed8c1aa0983e005ad052670e7120 eCryptfs: Remove buggy and unnecessary write in file name decode routine
+a27c3f9b7f36f6e04d2edaa9f851878b14c09f93 KEYS: close race between key lookup and freeing
+64f0277adfc690f68d1a8e519ada90f56ddcea3e tracing/syscalls: Ignore numbers outside NR_syscalls' range
+bcd22207ff3c496c057a7d2320aef6d73ff354f0 Enable kexec_hardboot (multiboot)
+2ed7dfbad518afddeee72f1d79e9072404bbf208 Don't reset keys pressed at suspend time
+bb05debdfb4c8a32d59307798f3bb239244ed664 Updating defconfig
+cdd218019178540c481866ccb8fb347b03bc1f35 Merge remote-tracking branch 'android/android-msm-shamu-3.10-marshmallow' into m6.0
