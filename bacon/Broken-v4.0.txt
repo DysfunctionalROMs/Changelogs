@@ -1,0 +1,8 @@
+project packages/apps/SnapdragonCamera/
+04700e9 SnapdragonCamera: Separate tap-to-focus keys between camera/video
+c727c68 SnapdragonCamera: Set camera parameters before restarting preview
+
+Nothing else is busted except the camera slow-mo and Ill be working on that
+
+
+If it aint broke, dont fix shit..

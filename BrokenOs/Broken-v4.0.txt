@@ -1,0 +1,167 @@
+
+project art/
+e3d322c art: Build compiler with GCC if QC extension is used
+0d6633f art: Set check_bail_out to false by default
+236296b ART: Add scorpion to the known cpu variants list
+0d8eb78 Fix build breaks when using clang on M
+c8d4710 ART: Fix arm32 assembly for Clang
+2f97cfa ART: Disable Clang for arm
+3975b26 dex2oat: Increase timeout to allow slow CPUs to finish compilation
+843b9f9 art: Fix whitespace errors added by caf
+c7faeca art: allow devices to disable CAF bailout patches
+
+project bionic/
+66b9053 libc: ARM64: denver64: optimized memmove breaks denver
+
+project frameworks/base/
+f070b05 PermissionGrant: Introduce Support for flashing Gapps v2 for the missing pieces * this makes AOSP/CAF based ROMs compatible with 6.0 Gapps packages * this resolves the problem of permissions not being granted to google core apps * this will probably need to be updated regulary
+de80382 SystemUI - DayNight notifications update
+63ee228 make network meter play nice with dark mode (didnt need the whole commit change..maintained authorship) Conflicts: 	core/java/android/provider/Settings.java 	packages/SystemUI/src/com/android/systemui/statusbar/phone/StatusBarIconController.java 	packages/SystemUI/src/com/android/systemui/statusbar/policy/NetworkTraffic.java
+d86e9c0 Frameworks - DayNight notification actions/global actions update
+276e301 Fix Gmail/Hangouts Notification Text Color
+cab6f8f [1/2] SystemUI: Add time-context headers to the notification header
+0447e8d SystemUI: time-context header fixes
+f550a5d Fix a few imports that came in when doing headers
+35309dd Frameworks: Do not allow to access quick settings on secure lockscreen - option (1/2)
+1291ce3 wifi: Framework support for Ad-Hoc WiFi (IBSS mode)
+f523a03 base: nat464X: Only update ipv4 pseudo-interface when it's connected
+4a65cb4 framework: add "Turn wifi off" string
+12cccea framework: add string for wifi subscription change notification
+c483eae settingslib: Make networkId visible.
+9e38142 Udpate instrumentation code
+c778628 Shorten first boot time by filtering dexopted apps by LRU.
+f7fcc59 systemui: Fix ClassCastExceptions
+d2074e5 BatteryBar [1/2]
+8a83543 Allow unlinking ringer with notification volume [1/2]
+48b3da2 Take into account default app for default grants
+9da50fe Enforce weaker grant if app is default handler for miltiple action
+223b971 Handle renamed packages during default grants
+fa657da Fix to show inifinite resolveractivity
+7544493 Remove duplicate assignment statement
+e85b793 Fix to avoid UI freeze issue
+3cb148c Measure absolute value of pointer motion distance
+cf70420 Remove freezing window to fix UI freezing issue
+d92aa4d Handle IllegalArgumentException
+9b861b6 Fix NativeDaemonConnectorException issue accessing null object
+ff37d77 Fix NPE in NetdResponseCode.InterfaceClassActivity
+bacc646 Fix NPE in JobServiceContext when closing job
+2659d3e Fix NPE in JobStore when jobs.xml is empty
+c512a3d Fix type casting for broadcast delay with service
+a5c5739 Do not kill attaching process when removing task
+9fb6be4 Full screen recents [1/2]
+ea00b4a Avoid NPE in printspooler when changing language
+43ff355 Check if adapter is valid before updating adapter
+630f879 Avoid NPE in ArraysAdapter on null item
+53eeda5 Fix forcing media stream control on tablet
+a1016dd Fix system watchdog timeout when reading too many usage events.
+3bf74ed PackageManagerService: Grant signature permission to setup and search
+dace2cf Fix deadlock between ActivityManager and BackupManager under some race conditions.
+e867738 Screenshots info is not updated when device is plugged in MTP mode
+3c7cca2 Revert "Allow unlinking ringer with notification volume [1/2]"
+ad2f949 [1/2] base: unlink notification volume (Squashed) because of omni merging 6.0 into 5.1 just cherrypicking their commit wasnt gonna work, and had undesired consequences this squashs all the relevant parts needed for 6.0
+ef9e174 base: silent mode is back ringer mode silent for normal mode and priority interruptions
+c340d7e Volume down in silent for dnd toggle *defaults to off *allows to be able to toggle wheter volume down in silent activates dnd
+d12ceea Volume up in do not disturb to exit dnd mode *defaults to off
+a6c8d3a SystemUI: Apply tint on battery level text
+788b18d Break SystemUI Tuner into two parts [1/2] - Removed left over demo code - Added back button to QS
+d8ce276 Keyguard: Forward port lockscreen quick unlock (1/2)
+aa57268 Disable PIN entry after successful quick unlock
+8e20f19 Revert "Screenshots info is not updated when device is plugged in MTP mode"
+c5eaa9d Fix a few dumbass merge derps
+e12b3ae Revert "BatteryBar [1/2]"
+ced3c0e Broken logo in the statusbar [1/2]
+a66acbf Broken logo color settings [1/2]
+12cbfe1 SlimDim [1/2] modified highly for our source
+0dff466 Frameworks: port SlimSeekBarPreference to Slim6
+0e336e1 Fix NavDim for our M source
+7557110 Overhaul permissions based off the work of Alex Naidis <alex.naidis@linux.com>
+2b5b762 Allow broswer permissions (original author in previous commit here in source)
+b56cebd Battery Bar [1/2]
+494f279 Fix batteryBar on Navbar * this fixs the dual navbar battery bar when its supposed to be hidden and makes it work as intended * this also breaks statusbar tests need to spend some time solving this in java here https://github.com/PurifiedRom/android_frameworks_base/commit/39e80d24d28ac2026ff9dd3f7c832b6f489fe404#diff-ca2883aa3b534f5a1db5e0789780cf18R86 * proper fix would be to have it look for xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui which is what the statusbar uses and xmlns:systemui="http://schemas.android.com/apk/res-auto which is what navbar uses * we dont run statusbar tests so it isnt a big concern at the moment
+344aeed Fix battery bar on nav for tablets and phones Tweaked from https://github.com/BrokenOs/frameworks_base/commit/29a828cb7e1b204212e0be63003886879884fb59
+b10f042 Give the power menu an animation *Thanks to Omni for the parts I used
+072ab90 Gesture Anywhere [1/3]
+2668ac6 XuiMod: Toast Animations [1/2]
+c070d2f PORT-Custom scrolling values 1/2 from Bliss Stalk.
+3766816 AOKP custom system animations (1/2)
+7dc9139 Add Slide left and right Toast Animations.
+559aab2 FW Base : add listview animations
+4f0549e FWB: IME animations (1/3)
+2b5abfa Add missing bits
+c39ed66 Double derp
+7a2784a [2/2] framework/base: Add EdgeGesture service. and fix a few things Based on code of PieService.
+
+project frameworks/native/
+55c037d Update GraphicBufferMapper.h
+
+project frameworks/opt/net/wifi/
+f5d163f Wifi: Add IBSS supported method
+864a5b4 Fixed logging format
+5070396 WifiController: fix high perf lock sometimes not respected
+b545e94 wifi: Set the mode at native layer
+f525fdf wifi: support devices with SoftAp that don't require firmware reload
+
+project hardware/qcom/audio-caf/msm8974/
+1358257 hal: Fix build with debug enabled
+d995c59 hal: Add support for perf lock management
+97d8e9c hal: Fix low-latency capture
+fdba813 policy_hal: check PCM offload property to decide offload support
+412d96c audiopolicy: use deep buffer output by default for music streams
+3545546 audio HAL: fix thread starvation
+2ae232a hal: reroute active capture usecases which share same backend
+66e27c9 policy_hal: Reject offload path for AV streaming usecase
+c2711cd policy_hal: hal: add support to enable Direct PCM
+b970dcb policy_hal: Update offload disabled flags
+8c2602a hal: policy: fallback to deep buffer if stream is music
+a1d008e hal: add support to send compress offload fragment size
+727d70e hal: Increase Deep buffer buffering
+8191ecb hal: Increase PCM offload buffering
+08e8bcc hal: Reduce minimum offload fragment size for PCM offload
+8c88487 hal: add support for ull audio playback
+86659ab audio HAL: do not stop capture on overrun
+baaa8b9 hal: Add support for perf lock management (continued)
+9d90f41 msm8974: Clean up PCM offload checks in policy HAL
+
+project hardware/qcom/display-caf/msm8960/
+192b634 gralloc: Add a private flag for INTERNAL only
+
+project hardware/qcom/display-caf/msm8974/
+1a6c62e gralloc: fall back to old pixel alignment on old blobs
+
+project hardware/ril/
+f0c3d00 ril: Allow devices to opt-out of building rild
+
+project packages/apps/Messaging/
+d2a09ec Messaging DayNight switching Add the capability for aosp messaging to switch with DayNight. there are zero drawable edits, only style and color changes. As is, there are minor unthemed elements in the message text input and contact search results due to not being able to change them without altering drawables.
+
+project packages/apps/Settings/
+8263220 [2/2]Settings: Add time-context headers to the notification header
+6bfcbeb Put Kernel Adiutor back in settings
+94d6bbc Settings: Do not allow to access quick settings on secure lockscreenoption (2/2) Comment out entry in settings till i work some kinks Conflicts: 	res/xml/security_settings_misc.xml
+d304259 wifi: forward port avoid poor connection setting
+b0b2a6c Keyguard: Forward port lockscreen quick unlock (2/2)
+11d0fd7 Full screen recents [2/2]
+d390f69 Volume rocker directions in silent for dnd toggle *defaults to off
+add868a Break SystemUI Tuner into two parts [2/2]
+0e3ef3b Allow unlinking ringer with notification volume (Squashed) [2/2]
+38753df Move down carrier label
+b341fbf Broken logo in the statusbar [2/2]
+3d3ff5a Broken logo color settings [2/2]
+46ad1fd SlimDim  [2/2] modified highly for our source
+4acbe4c Battery Bar [2/2]
+a6a492e Move up Brokenwalls
+6f738e6 Gesture Anywhere [2/3]
+d5b9bcf Squash Blisspop's animation settings
+54d459a Settings: Add preference for EdgeGesture service. and fix everything I broke so far Change-Id: I0325b0a9aa6eb943b48483aebe151726a2c64ac4
+
+project packages/services/Telephony/
+4de45cf Break MSIM dependency on qci-telephony-framework
+
+project platform_manifest/
+917c156 Our LatinIME
+02d9651 our apache http
+45bf6fd track cm external/connectivity
+1a33588 track qcom opensource vendors from cm
+
+project vendor/broken/
+dc4041f Move up LatinIME
