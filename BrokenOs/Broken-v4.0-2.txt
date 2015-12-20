@@ -1,0 +1,160 @@
+
+project build/
+4a2a447 "MRA58W"
+0a79f49 "MRA58X"
+2895d67 Update security string to 2015-12-01 - DO NOT MERGE
+d65154e "LMY48Z"
+
+project external/skia/
+6b69605 Purge non-NEON ARM code DO NOT MERGE
+
+project external/tinycompress/
+46b2351 timycompress: Show a warning if metadata ioctl is not supported
+f5d9264 tinycompress: Lrn2C
+
+project frameworks/av/
+8724c00 audio policy: bind setMode() and setPhoneState() operations
+ad59b70 stagefright: Tolerate some malformed HEVC files
+3b7d315 libstagefright: Add support for NV21 color format
+3c9bfbd stagefright: Fix integer size issue
+0cfa3a4 camera: Disable extra HDR frame on QCOM_HARDWARE
+29636c6 MediaProfiles: Enhance profiles for extended usecases
+7286f5d stagefright: Reduce logspam
+eb312b9 Revert "libmedia: Add 1440p camcorder quality"
+0111a03 camera: Fix high battery drain after using flashlight
+00f066c video: Add QHD & 2K profile for recorder
+914c2a8 libmedia: Add 1440p camcorder quality
+8480535 Add DUMP permission check to ResourceManagerService.
+661a4e2 DO NOT MERGE Fix vulnerability in mediaserver
+34d6542 stagefright: fix AMessage::FromParcel
+473b0d5 MPEG4Extractor: ensure buffer size is not less than 8 for LastCommentData.
+70680ce OMX: allow only secure codec to remotely call allocateBuffer.
+ad55db4 Don't crash when there's no conceal frame
+ee79ab8 ID3: check possible integer overflow for extendedHeaderSize and paddingSize.
+7529536 Check NAL size before use
+cb3b5b5 stagefright: check bounds for MediaCodecList.getCodecInfo
+4024479 AudioFlinger: Clear record buffers when starting RecordThread
+aab7a8d Revert "AudioPolicyService: fix race in AudioCommandThread"
+84b7e7c Revert "audio policy: bind setMode() and setPhoneState() operations"
+4a68cbe The progress bar of next song is not properly started in offload use case
+
+project frameworks/base/
+b56cebd Battery Bar [1/2]
+494f279 Fix batteryBar on Navbar * this fixs the dual navbar battery bar when its supposed to be hidden and makes it work as intended * this also breaks statusbar tests need to spend some time solving this in java here https://github.com/PurifiedRom/android_frameworks_base/commit/39e80d24d28ac2026ff9dd3f7c832b6f489fe404#diff-ca2883aa3b534f5a1db5e0789780cf18R86 * proper fix would be to have it look for xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui which is what the statusbar uses and xmlns:systemui="http://schemas.android.com/apk/res-auto which is what navbar uses * we dont run statusbar tests so it isnt a big concern at the moment
+344aeed Fix battery bar on nav for tablets and phones Tweaked from https://github.com/BrokenOs/frameworks_base/commit/29a828cb7e1b204212e0be63003886879884fb59
+b10f042 Give the power menu an animation *Thanks to Omni for the parts I used
+072ab90 Gesture Anywhere [1/3]
+2668ac6 XuiMod: Toast Animations [1/2]
+c070d2f PORT-Custom scrolling values 1/2 from Bliss Stalk.
+3766816 AOKP custom system animations (1/2)
+7dc9139 Add Slide left and right Toast Animations.
+559aab2 FW Base : add listview animations
+4f0549e FWB: IME animations (1/3)
+2b5abfa Add missing bits
+c39ed66 Double derp
+7a2784a [2/2] framework/base: Add EdgeGesture service. and fix a few things Based on code of PieService.
+4bf1a00 Stop that hw menu key from unlocking on swipe
+5fbcd2c Revert "CamcorderProfile: Add 1440p camcorder profile"
+b1f520f Remove Qualcomm BoostFramework
+2c077f0 Camera: Longshot with Burst Functionality.
+96f0573 video: Add QHD & 2K profile for recorder
+619f16f CamcorderProfile: Add 1440p camcorder profile
+651bbf9 Send next alarm's show intent via PendingIntent
+44a0b92 Add ability to ignore interruptions while active media playback [1/2] Change-Id: I162066593edbcafecfbdc54d042938edcffc17ab
+80de82d Napalm Meet QuickSettings Tuner, Tuner Meet Napalm * light this shit on fire. it has way to many restrictions
+5d3de0a Add customization for Quick Settings [1/2]
+1559fd0 QS: Don't show inversion and hotspot tiles by default If you do a clean install, these tiles will be active. Disabled that and don't show them by default.
+c8bb497 QS: change location sensors mode in quick settings [1/2]
+d76ab57 Centralize QuickSettings constants
+68eeab8 SystemUI : Add adb over network tile
+aea2068 SystemUI: add NFC tile
+cd45d33 SystemUI: clean up Location tile
+3dbc663 SystemUI: Compass Tile
+b820b5e SystemUI : Add screen timeout tile
+d9f26b2 QS: add Sync tile (1/2)
+db899ed QS: Option to show four tiles per row (1/2)
+cc0cc91 Fix NFC tile disappearing randomly
+70a5e07 QS: add Brightness tile
+6087f0b QS: add Battery saver tile
+5ceed09 SystemUI: Add missing QS accessibility messages
+9a0035a QS: add Screen off tile * Long press for power menu
+3cbd61c QS: add Expanded desktop tile QS: add a little delay when toggling expanded desktop
+ce619a5 Added show volume panel tile to QS
+bd9a7bf QS: Add Ambient Display Tile (1/2)
+3289954 QS: add Screenshot tile (1/2)
+c4e00b2 Port "Option to hide Adb notification icon (2/2)"
+fcde538 Framework: Forward port ADB over network (Part 2 of 2)
+
+project frameworks/native/
+a286ebf exynos4: getphys implementation on buffermanager for samsung omx
+256042d getphys for omx samsung
+55c037d Update GraphicBufferMapper.h
+a6da10a Update GraphicBufferAllocator.cpp
+a8c21e0 Update GraphicBufferMapper.cpp
+d49bc0c fix soft reboot
+4560b6f native: dock battery
+c93df13 add number constraint for samples per MotionEvent
+
+project frameworks/opt/net/wifi/
+1b3e7f8 Add DUMP permission check to WifiScanner service.
+5f90ce5 Security Vulnerability in android::onPnoNetworkFound [DO NOT MERGE]
+
+project frameworks/opt/telephony/
+99bc12c Revert "Fix HD icon shown for MO VoLTE call when it shouldn't"
+
+project hardware/ril/
+f0c3d00 ril: Allow devices to opt-out of building rild
+
+project packages/apps/Settings/
+4acbe4c Battery Bar [2/2]
+a6a492e Move up Brokenwalls
+6f738e6 Gesture Anywhere [2/3]
+d5b9bcf Squash Blisspop's animation settings
+54d459a Settings: Add preference for EdgeGesture service. and fix everything I broke so far Change-Id: I0325b0a9aa6eb943b48483aebe151726a2c64ac4
+9751e85 Add ability to ignore interruptions while active media playback [2/2].
+3184a9c Napalm Meet QuickSettings Tuner, Tuner Meet Napalm pt2 * light this shit on fire. it has way to many restrictions
+1b473b0 Add customization for Quick Settings [2/2]
+41587ea Fix bug on QS selection preference.
+7a7936f Cleanup and fix QS tile implementation
+bdb478e Settings : Update for centralized quick settings
+2365547 Settings : Add adb over network tile
+0e1d204 Settings: add nfc tile
+8589e20 Properly name string resources and update icon references
+dadcc1e Settings : Sort QSTiles in picker
+950f679 QS: change location sensors mode in quick settings [2/2]
+1e45910 Settings: add compass tile
+b59ff13 Settings : Add screen timeout
+810ab9b QS: add Sync tile (2/2)
+c365ada QS: Option to show four tiles per row (2/2)
+c8d96c0 QS: add newly added tiles * Battery saver * Brightness * Screen off * Expanded Desktop
+f498939 QuickSettings Theme and exposures *expose quick settings elements to be themeable *theme quick settings to coincide with the purenexus settings theme *switch from pngs to vectors for the add and delete buttons
+2123226 Settings: add a way to reset quick settings tiles
+82aed8a Added show volume to tile chooser
+595ebae QS: Add Ambient Display Tile (2/2)
+b8ff6ad QS: add Screenshot tile
+69761bc add missing color calls
+ee9d1da Port "Option to hide Adb notification icon (1/2)"
+49bd5bf Settings: Forward port ADB over network (Part 1 of 2) and fix the switches Squashed commit of: - Adb over network (Settings part for Jellybean)   + Display WiFi IP Address & Port as preference summary.   Note: adb_over_network were already pushed in 5555aae   Author: Tanguy Pruvot   Id: Ia05aa8f6281c9bdcb3d5e62566b103c38bc70b82
+58a1448 Theme qs screen for DayNight
+6f578c7 Goddamn if moving shit dont fix it.. Thanks to @beanstown106 for the heads up
+
+project packages/services/Telephony/
+4de45cf Break MSIM dependency on qci-telephony-framework
+
+project platform_manifest/
+45bf6fd track cm external/connectivity
+1a33588 track qcom opensource vendors from cm
+da5f91f 6.0.0_r6
+8e60dfa 6.0.0_r7
+
+project system/bt/
+5cc53e5 Bluetooth: Change Sampling Frequency to 48 kHz
+
+project system/core/
+4944039 healthd: dock battery
+
+project vendor/broken/
+7faf5a5 adding Pure
+
+project vendor/qcom/opensource/display-frameworks/
+122d8a6 display-fw: Properly initialise mIsGPUAllowedForProtected flag

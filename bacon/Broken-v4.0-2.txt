@@ -1,0 +1,25 @@
+project device/oneplus/bacon/
+5efa981 bacon: Update WCNSS configuration
+d5e5540 bacon: Minor audio update
+babcae0 media_profiles: cleanup for M
+876c2ab bacon: Import changes from 1.5 release
+
+project device/qcom/common/
+61563fd power: Reduce interactive timer with screen off
+
+project hardware/qcom/audio-caf/msm8974/
+505da3f audio: hal: Add support to send codec specific data in gapless
+faefb32 hal: Upstream offload fixes
+26d4452 hal: Trivial cleanups
+44b0192 Add more allowed frame counts to be configured
+
+project hardware/qcom/display/
+8045b96 hwc: Fix to avoid heap corruption
+e585864 hwc: Fix MDP comp array index access
+41e362c hwc: Move max app layer check outside isFrameDoable routine.
+
+project hardware/qcom/display-caf/msm8974/
+1a6c62e gralloc: fall back to old pixel alignment on old blobs
+
+project kernel/oneplus/msm8974/
+44936d1 cpu_input_boost: Remove thread-migration boosting and clean up
