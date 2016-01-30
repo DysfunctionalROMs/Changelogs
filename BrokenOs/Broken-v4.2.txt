@@ -1,0 +1,751 @@
+
+project art/
+f03eab1 Art: disable host clang by default
+
+project bootable/recovery/
+bff9786 recovery:updater: Changes to support 32->64 bit upgrades
+
+project build/
+6cd0c32 Fucking merge derp
+511a9c0 Change the cache partition size check into warnings.
+fe8bfae qcom: Fix non-QC target pathmappings
+7e7c3e4 qcom: Add dataservices to project pathmap
+c063e30 Update Security String to 2016-02-01
+e6789b4 "MMB29T"
+
+project external/chromium-webview/
+24baf6f Update arm/arm64 to 48.0.2564.71
+
+project external/stagefright-plugins/
+6de1c90 stagefright-plugins: Skip stream with jpeg tag
+24988a8 stagefright-plugins: Update pixfmt
+
+project external/tinyalsa/
+2ce81df tinyalsa: Use kernel headers when available
+fb72295 tinyalsa: Add a board config to drop silence_size for blob compat.
+
+project frameworks/av/
+02645bf stagefright: Fix crash on mediaserver
+8bdd095 ACodec: Fix error handling in OutputPortSettingsChangedState
+4f4723a Tabs -> spaces
+a6e3ed3 Fix more amrwbenc overflows
+8c4d014 Fix more potential (benign) AMRWB overflows
+6981543 Clean up time zone handling in MtpUtils::parseDateTime.
+f8eea5d drm : Give permission to access drm service api from Oma Drm engine
+3fec0e5 cameraservice: Change the error mapping for ERROR_CAMERA_DEVICE.
+94f3841 Disable integer sanitization for amrwbenc
+6877308 Use unified syntax to compile with both llvm and gas.
+60fc867 codecs: update for check ifeq ($(TARGET_ARCH),arm)
+fcd3c6e Fix overflow in amrwbenc
+c2a6c58 Use standard arm assembly syntax.
+ddf0593 libstagefright: Support YVU420SemiPlanar camera format
+8ad6568 av: Add support for loading audio_effects_vendor.conf
+427887b libstagefright:Fix random memcmp crash while accessing output format.
+f6e8c70 AudioMixer: delete reformatBuffer provider in proper order
+617daaf StagefrightMetadataRetriever: correct the status flag
+9dae27c ACodec: update native window crop rectangle
+4486f97 nuplayer: looping playback only if it was running
+e80385c audio: Update anchor time for offload playback post resume
+7c1e4d7 av: "ACodec: update native window crop rectangle" depends on QCOM
+df1c503 Revert "Stagefright: Allow setting high-framerates in CameraSource"
+317738c libmedia: Add 1440p camcorder quality
+a4011dc libstagefright: check requested memory size before allocation for SoftMPEG4Encoder and SoftVPXEncoder.
+37829ce Fix security vulnerability in ICrypto DO NOT MERGE
+
+project frameworks/base/
+231c515 Add support for QC's time_daemon
+54c8984 Alarm: Don't use invalid timerfd alarm types
+4b23d25 REVERT DO NOT MERGE: Remove DayNight theme
+29e317f SystemUI-Use Material.DayNight theme
+72b606e DocumentsUI: Fix Night Mode Theming
+70de3de Add alternate WebView provider package
+ad34f95 Turn on native recents clear-all button
+b25a51b Power menu: Add buttons, (1/3):
+b860b9a Frameworks/Systemui DayNight update
+dff5fdd Frameworks/Systemui DayNight update *******v2.0 to  fix text*******
+b1aa63d Layers 6.0 - SystemUI header
+002e046 Fix dark text summary for notifications torn apart from https://github.com/TeamTwisted/platform_frameworks_base/commit/4885e4e162adc5d16b99e31ce72ce7e1efddb6ca by xWASABI
+8b4b251 Frameworks DayNight - Resolver
+79ff176 Update expanded header image and save the old for future use
+50d8a05 Dark theme upon flash
+1d4df9f SystemUI - DayNight notifications update
+ff25022 Frameworks - DayNight notification actions/global actions update
+e81bbc1 Fix Gmail/Hangouts Notification Text Color
+f4624bb Change default night header
+876c303 Frameworks - DayNight ambient display support
+2340c72 BrokenROM Theme - Night mode update for stock dark * Add Broken accent color to theme when night switch enabled. * Custom quick settings panel and notification drawables.
+b8e2cda Make things a bit more "neutral" for the haters
+46e6e36 Lighten the qs tile text
+2d0afce Fix a string
+a1314c5 utils: Introduce ScreenType class
+531b214 input: Forward-port support for chained input filters
+940d91f Support GESTURE_SENSOR input device type with GestureService
+309b9be [2/2] framework/base: Add EdgeGesture service.
+543c52c gesture: fix possible race during initialization
+bdee8ec Dispatch keys to a device specific key handler
+122dd9c PowerManager: Don't wake up device when charger is plugged/unplugged (1/2)
+5d5df0d DeviceKeyHandler: Fix suspend gesture not working
+23c2ab6 Camera: Longshot with Burst Functionality.
+681c0ac CamcorderProfile: Add 1440p camcorder profile
+5cd3c1b androidfw: STFU
+74879da Reintroduce button-backlight (and respective inactivity timeout)
+b5dba87 Camera: Don't throw exceptions when value pairs have spaces in them
+d1bea8a PackageInstallerSession: use ftruncate if fallocate is ENOTSUP
+1f82bb6 keyboard: re-add code to detect lid state and handle lights
+fc7e975 display: Don't enable keyboard lights when dozing
+6be689b Add PowerManager integration for button and keyboard backlight.
+3db7b41 power: Disable keyboard/button lights while dozing/dreaming
+e68195c ProximityWake : Add support for checking proximity when waking device
+1df1354 Remove duplicate reboot action
+7a8b1e4 Factor out preference-in-storage check to overridable method.
+fb4ea6d powermanager: Initialize SensorManager in systemReady()
+e714f40 Add alternate WebView provider package
+166003c Use Google WebView as default
+f9385e2 Broken boot
+08ef612 PackageManager: allow build-time disabling of components and move some symbols Allow components to be specified as disabled at build time (applied on boot).
+9e1326c SystemUpdateService: enable service but lock its receivers [1/2]
+feff256 geofence: Low power geofence HW implementation
+75962e3 fb: Slims navbar customizations
+607702e Ported up [1/2] Slims Hardware Key Rebinding ALOT of work by me @InkSlinger666
+018efbe Fix powermanager brackets breaking build
+f03b7a1 InputMethodService: Disable fullscreen keyboard.
+4ca84db BrokenOs logo instead "No recent apps" text *If you cleared all recent apps and click the recents button again *you will see the "No recent apps" centered in screen, *show a logo instead - because why not
+067c58f [1/2] frameworks/base: Battery and Notification Lights
+ebbe9b8 Also dump widget options in 'dumpsys appwidget'.
+0adb04a PhoneWindowmanager: disable panic mechanism when PolicyControl activated.
+c621f97 SystemUI: Add double tap to sleep gesture
+5e2c14e Double tap to sleep on navigation bar [1/2]
+9016d67 SystemUI: Update screenshot notification icon to material
+c55314c core: Update system icon to material
+2488e38 allow forcing HighEndGfx mode
+c879252 Allow override of DUN settings
+5df26d3 net: Don't spam logs when ConnectivityExt isn't available
+0abf74d Guard in short-circuit evaluations for stringSplit methods.
+3fcad86 Allow sending vendor- or device-specific commands to the camera HAL.
+35c6d45 telephony: SignalStrengh: Don't calculate a LTE snr if the srq is invalid
+3d0e9dc Framework: Fix GSM signal strength
+50ea59d Allow creating custom dialogs in DialogPreference.
+12cb415 Treat default value that wasn't found as empty value.
+a4f50a6 Allow adjusting progress on touch events
+a0fdd91 Add ISO mode support
+c3ef799 Add power mode support
+8d018f6 Add additional ISO modes
+cc811a4 Add support for sending raw commands
+8dff189 Don't discard framebuffer on exynos4
+e492260 Properly handle null URIs.
+beeb6bd Rework thumbnail handling
+97d4436 extend PreferenceActivity for title text on a single pane mode
+9ade4b4 Fix GSM signal strength
+5311b0b SystemUI: Add missing recycle calls
+c4c1712 Add support for DCHSPAP
+7f9c5c2 Remove unnecessary updateSurfaceScreenOn call.
+41acceb Fix ANDROID_LOOP=true for ArgoNavis and Perseus ringtones
+fb8bd69 BootMessage: Show each app name being optimized during boot
+2a2f605 Bootmsg: The app name is now displayed in bold text.
+5360586 Smoother Upload and Download Animation
+e72875b Speed things up!!
+64784c4 Turn off some debugs
+830aafd     Improve scrolling cache
+f7a877f Turn off carrier provisioning by default
+b39e872 Materialize text select handle
+a614f19 Materialize toast frames
+cbccfb5 Disable More Debugging
+e5f9351 Update GPS Icons to be more Material
+0de9063 Reduce log verbosity: Don't spam logcat
+705a4ad Materialize missed calls icons
+58719fb Fix Def App Icon for ldpi
+1226a9f Delete Media Tests
+5121981 Speed Up Long Press Timeout
+df3d36b Speed up StatusBar
+342b488 Allow faster app switching
+8a495b4 ActivityThread, shut the density up!
+bab724d Fix battery padding
+c8cc565 Don't disable rotation tile
+fa2a25d Screen pinning improvements
+64db9f7 Change defaults
+a4acbdd Battery saver enhancements
+a14d779 Improve Recents-View
+e7e408e Merge derps in camera
+26beb44 Kill a few duplicates in camera
+7af1858 Telephony: Add getLteOnGsmMode() method (1/2)
+061f483 Revert "RRO: idmap: fix sorting of overlays.list"
+b973862 Revert "idmap: Fix the problems for runtime overlay."
+f7937c7 Revert "idmap: Do not unlink the file if it is locked by another process."
+8275613 Fix fatal boot error
+6091e03 Remove Qualcomm BoostFramework
+a2e7765 PhoneWindowManager: add ability to use EdgeGestureService for system gestures.
+5f752cb RRO: themeable ambient display notifications
+6363995 PIE 3.0 (1/2)
+8deed95 SlimActions: add menu big drawable support
+9d9fa94 Resized navbar menu icons
+0baeb96 Unknown apps: enable by default
+ff817c4 SystemUI: QS: Add long click support
+2d21aec SystemUI: QS: Add QSDetailItems
+a817748 Marshmallow: volume rocker wake (1/2)
+0706828 SystemUI : Make battery percentage configurable
+371eaef Marshmallow: If a wake key is disabled by the user, do not wake from doze.
+1880700 volume rocker wake: add volume keys to isWakeKey KeyEvents
+3e4c658 SystemUI: improve circle battery
+ee4fdcb Enable SystemUI Tuner by default
+5ddeaea Allow setting a per-device default configuration for STATUS_BAR_BATTERY_STYLE
+e3b144e SettingsProvider: Make the default battery style Circle
+111bfe8 SystemUI: Apply tint on battery level text
+a246c40 SystemUI: finish circle battery animation after unplugging
+408ffea [1/2]frameworks/base: Add three-fingers-swipe to screenshot
+017b4a3 Statusbar clock and date customizations
+aba50cf Fix up clock and date customizations
+b8ec7ab Framework: Configurable 0, 90, 180 and 270 degree rotation (1/2)
+b29fdb1 SystemUI: Add double tap to sleep gesture
+7dc326e SystemUI: double tap to sleep improvements
+4f6764f SystemUI: double tap status bar to sleep (1/2)
+c9101e9 FWB: Add Left clock (1/2)
+dd6557c Fix rotate of IME arrow... STILL NEED COLOR FIX
+dcc2dd8 Show carrier label / custom & change color [1/2] [Squashed]
+e9c855b Power menu customizations [1/2]
+c6114bc SystemUI: Correct long press intents of some tiles
+b6a54ac SystemUI: make clock and time clickable in statusbar
+384e7c3 Remove demo mode, is useless.......
+7ad6135 Fix build
+58b44d3 QS: Make WiFi and Bluetooth tile detail view consistent
+1498f3c DoNotDisturb: Add long click
+e1f5eb2 Add icons to battery saver notification (dismiss & turn off)
+4af5371 SystemUI: hide navigation bar faster in SetupWizard
+2e5228e Remove minimal dead zone at navigation bar (fix Nexus 4)
+7147ac3 Remove unnecessary videos
+0f25a31 SystemUi: Don't show cellular data tile on secondary users.
+c5890a2 prevent unnecessary warning logs caused by View.toString()
+0652d1f Kill Bugreport from power menu options
+93d5574 Kill the long press log that came with the power menu changes
+7f5f5fc Frameworks/base: Second Clock (1/2)
+f312ef9 Fix clock seconds display with am/pm Instead of just adding seconds to the resulting timestamp, replace within the dateformat itself the minutes together with the seconds.
+74ecee2 Give the power menu an animation *Thanks to Omni for the parts I used
+7da4c6c base: rotation based volume key swap
+8573c73 frameworks: add keyguard wallpaper functionality to WallpaperManager
+0c37b31 base: add keyguard support in WallpaperCropActivity
+012ff5d WallpaperCropper: use same action bar style as Launcher3
+acb99e8 SystemUI: add Weather display to status bar header *also fix "ghost" weather display
+6766a63 SystemUI: Add option to disable search bar in recents (2/2)
+f2e7266 improve lock screen wallpaper behavior
+48a6a8b Revert "frameworks: add keyguard wallpaper functionality to WallpaperManager"
+b86008c frameworks: add keyguard wallpaper functionality to WallpaperManager
+968523c SystemUI needs the SET_WALLPAPER permission
+3d254ae improve lock screen wallpaper behavior
+1b07e34 Fix some keyguard wallpaper issues
+02cf157 optimize wallpaper load,avoid show black wallpaper.
+c000682 Revert "Fix some keyguard wallpaper issues"
+dcdd45c Longpress power lockscreen torch [1/2] Long pressing power while screen is off will launch torch
+9c3fe95 MediaRecorder: Add pause interface
+9cb91d7 [1/2] SystemUI: Add time-context headers to the notification header
+a827c5f SystemUI: time-context header fixes
+e1f3146 Fix a few imports that came in when doing headers
+fc68711 Full screen recents [1/2]
+1187b6f Fix forcing media stream control on tablet
+bd09cfc PackageManagerService: Grant signature permission to setup and search
+3d58d9e Fix deadlock between ActivityManager and BackupManager under some race conditions.
+b89f559 Screenshots info is not updated when device is plugged in MTP mode
+9523c42 [1/2] base: unlink notification volume (Squashed) because of omni merging 6.0 into 5.1 just cherrypicking their commit wasnt gonna work, and had undesired consequences this squashs all the relevant parts needed for 6.0
+907d168 base: silent mode is back ringer mode silent for normal mode and priority interruptions
+2eb9f6a Volume down in silent for dnd toggle *defaults to off *allows to be able to toggle wheter volume down in silent activates dnd
+f221df0 Volume up in do not disturb to exit dnd mode *defaults to off
+91240e0 Break SystemUI Tuner into two parts [1/2] - Removed left over demo code - Added back button to QS
+fec6bed Broken logo in the statusbar [1/2]
+b23a888 Keyguard: Forward port lockscreen quick unlock (1/2)
+aa13a68 Disable PIN entry after successful quick unlock
+38c4f83 Kill the spinner taken from this commit https://github.com/BrokenROM/frameworks_base/commit/f49d8f065ea7a5ff04b91fb85e116bf9aa1934be Original author unknown for now
+618c74a SystemUI : Port forward statusbar brightness control
+e9627c2 Keyguard: allow keyguard to be dismissed via intent
+9f04bd7 Keyguard: Add option to scramble pin layout when unlocking (2/2).
+da28378 SystemUI: fix status bar brightness slider eating events
+ba0acf7 Quick settings: Option to disable brightness slider (1/2)
+048dbef SystemUI: Double tap to sleep on the lock screen (1/2)
+dfcd1b3 SystemUI: allow recent tasks to draw behind the status bar
+6f517b9 SystemUI: fix recents task view height calculation
+4c7cb51 systemui: Forward-port notification counters
+ae0c30e Status bar: Update notification count icons:
+2dfae12 [1/2] Base: Hide power menu on secure lockscreen Adds an option to enable/disable power menu on secure lockscreen.
+746c198 Fix brightness slider
+32da81b Fix build
+68e1a88 fb: less notifications sound (1/2)
+610c8ef Napalm Meet QuickSettings Tuner, Tuner Meet Napalm * light this shit on fire. it has way to many restrictions
+5f0a7d7 Add customization for Quick Settings [1/2]
+2fc1026 QS: Don't show inversion and hotspot tiles by default If you do a clean install, these tiles will be active. Disabled that and don't show them by default.
+1c357c9 QS: change location sensors mode in quick settings [1/2]
+85080f6 Centralize QuickSettings constants
+13a7484 SystemUI: add NFC tile
+201b151 SystemUI: clean up Location tile
+8d46622 SystemUI: Compass Tile
+71c8b1b SystemUI : Add screen timeout tile
+bd7198fe QS: add Sync tile (1/2)
+d893098 QS: Option to show four tiles per row (1/2)
+220fa1f Fix NFC tile disappearing randomly
+01039ab QS: add Brightness tile
+4fb7e53 QS: add Battery saver tile
+055831e SystemUI: Add missing QS accessibility messages
+8a08dd5 QS: add Screen off tile * Long press for power menu
+b166143 Added show volume panel tile to QS
+db69b10 QS: Add Ambient Display Tile (1/2)
+6661249 QS: add Screenshot tile (1/2)
+929dfea Port "Option to hide Adb notification icon (2/2)"
+a8adc64 Framework: Forward port ADB over network (Part 2 of 2)
+cc76695 SystemUI : Add adb over network tile
+1d3051d Reboot/Recovery tile (1/2)
+bd26a7f Screen Recording: forward port from 4.4
+d055587 bring back screen record shortcut
+880072c screen record: make sure to always delete tmp files
+4ecb8c9 Add Screen Record to the Power Menu [1/2]
+2547d41 Squashed On-The-Go mode (1/2)
+89bc1ef On The Go: Fix and tint power menu icon
+6289b74 On-the-go : Improve quick settings dialog
+0f6cb1b Tint onthego power icon properly in light theme
+c8964d3 Fix some Power Menu icons while in Dark Mode
+123ab14 Make screenrecord grey like the rest
+12e83b7 [2/2] Frameworks: Slim doze options
+14d7c30 Frameworks: port SlimSeekBarPreference to Slim6
+11fc83c SlimSeekBarPreference: clean up a wee bit
+9418fcc slimseekbarpreference: set monitorbox text as string
+2377802 Lighten the qs tile text and fix some merge derps
+d1a2a60 Allow custom density setting
+f0a47c5 Revert "geofence: Low power geofence HW implementation"
+2c866a6 remove carrier label color and make carrier label play nice with dark statusbar * thanks to @dwitherell for the darkstatusbar tweaks as always :)
+dad47f5 Set carrier label on keyguard to empty string if isWifiOnly device
+200e1f2 Fix keyguard carrier label visibility
+d6a2c04 [1/2] Display cursor buttons in navigation bar while typing.
+552f240 Dashboard tileview double lines toggle [2/2]
+be26f35 Configurable dashboard columns [2/2]
+7f909ed base: start nfc service prior to systemui
+db21c96 statusbar: move more icon to the left of notifications *this makes it more inline with aosp having it to the right just looked off *this also makes sure that left clock and carrier label come before the more icon
+e1090b1 QS: Brightness - dismiss QS on long press Dismiss quick settings so the user will see the brightness dialog.
+863714b NotificationManager: always restore identity on notification error
+dd67bae Fix headsup notification setting (peeking) resetting on reboot
+506d883 Fix the NullPointerException
+b16cb89 Fix race condition
+b3008e0 Fix NPE in TextUtils
+a72e15e Don't draw vertical scrollbar if it is in hidden state
+9d0e764 Fix race condition in panel expansion handling.
+f6bc8a9 Keyguard: Create lockscreen weather, move weatherimpl to utils.
+02dc8a7 Lock screen: Weather panel improvements, (1/2):
+bc2bd1c Clean Up Lockscreen Weather (items & layout) [1/2] *previously it was pretty janky lockscreen colors still needs rework *removed values cLock doesnt natively show "wind, humidity" *removed redundant timestamp that just wastes space *changed layout of lockscreen weather a bit *also made things more symetrical
+0014de5 Changed contextual notification panel headers
+bfe8bb2 Revert "Make screenrecord grey like the rest"
+9cf201e Revert "Add Screen Record to the Power Menu [1/2]"
+3e450a9 Don't allow contact sharing by default for device not recognized as carkit.
+a3e3fd4 DO NOT MERGE Ensure that the device is provisioned before showing Recents.
+0ff194c DO NOT MERGE SoundPool: add lock for findSample access from SoundPoolThread
+b94133f EncoderCapabilities: Adding HFR entry in EncoderCapabilities and JNI
+
+project frameworks/native/
+94ed8b0 Add GESTURE_SENSOR input source
+3e10996 inputflinger: Add gesture sensor support
+7e241c9 exynos4: getphys implementation on buffermanager for samsung omx
+bf2a681 surfaceflinger: Reimplement hwrotation
+8c34e2b Fix boot animation rotation problem when ro.sf.hwrotation is set to 90 or 270
+958b654 sensorservice: Fix init sequence for pre-1.1 API sensor HALs
+6e6430e sensorservice: Register orientation sensor if HAL doesn't provide it
+4e84c2b sensor: Skip additional permission request checks
+db5ea83 sensorservice: Don't replace HAL orientation sensor
+de0cc66 surfaceflinger: odd hw rotation (90/270) patch for swapping width/height
+f36d824 libgui: Don't assign handle to NULL after free
+a3d356c libgui: Don't assign handle to NULL after free is common
+bdfe8f2 libbinder: allow devices to disable ashmem size tracking
+19bea53 SF: Fix invalid reduction of transparent region from a layer.
+7a76f09 Fix the execution point of onFrameAvailable/onFrameReplaced callbacks
+b835f0b sensor: Allow devices to skip the permission request
+
+project frameworks/opt/net/wifi/
+63901ec Fixed logging format
+b24ba02 WifiController: fix high perf lock sometimes not respected
+d17153e wifi: Set the mode at native layer
+3a8cf90 wifi: support devices with SoftAp that don't require firmware reload
+
+project frameworks/opt/telephony/
+e7ddc6c Telephony: Add getLteOnGsmMode() method (2/2)
+ed8094b Squashed support for RIL subclass
+dbab1e0 RIL: forward port support for mQANElements
+db02505 Telephony: If no wrapped message, originating address is null
+a147d13 GsmSST: Disregard any invalid verbose values for timezones in NITZ requests
+d0251d5 UiccController: add back registerForOn
+1a4a774 UiccController: use registerForAvailable only when persist.radio.apm_sim_not_pwdn is enabled
+dda36d1 RIL: squashed support for old RIL
+52b0bfe RIL: Make mQANElements configurable by property
+3db76b2 Activate default UICC application if not done automatically.
+88afb32 Implement UICC TLV Data decoding.
+b63eb5f TMP: MSIM: Don't return -1 for getDefaultDataSub() if there's SIM in
+459d0cb Store correct IMSI when retreived from SIMRecords and use it for RuimRecords
+3bb37d1 Add dummy SUB record in CDMA NV mode
+caeb862 DCTracker: HACK Fix eHRPD/LTE data connection.
+5b1b970 Set default subscriptions when single SIM is available
+b1c3a63 Telephony: Allow more RIL methods to be overridden
+fdb96f7 Also activate default UICC apps once after SIM presence.
+
+project hardware/broadcom/wlan/
+71af25d Fix use-after-free in wifi_cleanup()
+
+project hardware/intel/common/libmix/
+e01cfdd intel: libmix: Use ASUS_ZENFONE2_LP_BLOBS instead
+543245f intel: videodecoder: AVC: Remove "constraint_set5_flag" for zenfone2
+eaa09ab intel: videodecoder: mpeg4: Remove got_vol/got_vop for zenfone2
+fea1c72 intel: videodecoder: Remove attrib_ptr for zenfone2 blobs
+347c889 intel: videoencoder: Kill logspam when casting a screen
+
+project hardware/intel/common/libva/
+02ad2b8 intel: av: Update slice header group def to support zenfone2 blobs
+92286f2 intel: av: Remove attrib_ptr for zenfone2 blobs
+
+project hardware/intel/common/libwsbm/
+b2fc92b intel: libwsbm: Use ASUS_ZENFONE2_LP_BLOBS instead
+
+project hardware/intel/common/omx-components/
+eef0672 intel: omx: LP blob compatibility
+1338ce0 intel: omx: Zenfone2 blobs cannot handle metadata mode
+43ccd58 intel: omx: Unbreak SetConfigVideoBitrate
+
+project hardware/intel/img/hwcomposer/
+e8f0703 Hwcomposer: Enable VirtualDisplay feature
+72e9fcf HWC: adapt VirtualDevice for old blob compliance
+a2bc976 intel: hwcomposer: Use ASUS_ZENFONE2_LP_BLOBS instead
+8b7b71a intel: hwcomposer: csc mode is only supported on newer blobs
+
+project hardware/intel/img/psb_headers/
+21817aa intel: mixvbp: LP blob compatibility
+
+project hardware/intel/img/psb_video/
+28f732b intel: psb_video: Use ASUS_ZENFONE2_LP_BLOBS instead
+a1c9ae0 intel: psb_video: LP blob compatibility
+
+project hardware/qcom/bt-caf/
+7c1a965 libbt-vendor: Don't bother with gen-buildcfg for CAF variant
+
+project hardware/qcom/display/
+05673d3 Revert "overlay: add tertiary display definition in overlay"
+
+project hardware/qcom/gps/
+a440587 gps: Use project pathmap to determine build eligibility
+5037e80 gps: Simplify guard makefile
+
+project hardware/ril/
+8d110aa reference-ril: Return success for RIL_REQUEST_ALLOW_DATA
+3dd1ac5 Revert "rild: Don't use the clientId argument with non-qcom hardware"
+
+project hardware/ti/omap4/
+828b7c7 sgxfreq: limit frequency to default on boot
+2c2f2f6 sgxfreq: add sysfs interface to store frequency limit
+
+project packages/apps/Bluetooth/
+1f0066e Bluetooth: Disable clang
+
+project packages/apps/Contacts/
+dfa108c  Layers 4.0
+659d981 DayNight Telephony Theming (1/7)
+904517c Night mode updates (3/5)
+
+project packages/apps/ContactsCommon/
+b332140  Layers 4.0
+855be89 DayNight Telephony Theming (2/7)
+e72f01a Night mode updates (4/5)
+
+project packages/apps/DeskClock/
+2ec4014 Make new menu entry to link to cLock widget settings.
+2a4975a DeskClock: fix crash when trying to view world cities
+1467833 New Launcher icon by Travis Hall aka Not Just Another Designer
+9319bc5 DeskClock night mode Very minor edits were made to achieve night mode. I left both styles.xml and colors.xml complete for themers to have all the values to play with.
+
+project packages/apps/Dialer/
+e88884a add missing permissions to dialer *these were in google dialer and not aosp dialer..
+92baf8b Layers 4.0 expose colors for ease of use
+e392493 DayNight Telephony Theming (3/7)
+68d20b4 Dialer: fix FAB button width.
+1d38b91 Night mode updates (2/5)
+
+project packages/apps/InCallUI/
+2eedea7 DayNight Telephony Theming (4/7)
+a2dbbe3 Night mode updates (1/5)
+
+project packages/apps/LockClock/
+a461a5c Automatic translation import
+ff1cf25 LockClock : Update to v23 + runtime permissions
+14c4616 Automatic translation import
+
+project packages/apps/Messaging/
+6acc042 Messaging DayNight switching Add the capability for aosp messaging to switch with DayNight. there are zero drawable edits, only style and color changes. As is, there are minor unthemed elements in the message text input and contact search results due to not being able to change them without altering drawables.
+6ab9e31 Night mode updates
+
+project packages/apps/Nfc/
+ab164ae NFC: Adding new vendor specific interface to NFC Service
+c111871 nfc: create a bootstrap service
+140731a NFCService: Add sysprop to prevent FW download during boot with NFC off.
+52f183f NFC: Clean duplicated and unknown permissions
+
+project packages/apps/PhoneCommon/
+258cc5b DayNight Telephony Theming (5/7)
+8d91366 Night mode updates (5/5)
+
+project packages/apps/Settings/
+59f7480 Power menu: Add buttons, (2/3):
+a883de8 Launch SuperSU from Settings
+0a5226c Settings: BrokenOTA
+af21de0 Try to fix ota fc
+2caa809 About Device team banner
+8e90319 Changing about device banner.. Thanks to D-Fuse
+209c136 Dashboard: Broken settings
+a4bd4e1 tweak a few icons...
+eaac51b Broken About
+08a7e71 Settings up Broken Pieces subsections
+5d9343b Add tile to launch BitSyko Layers App from Settings
+629d60a Add Missing Back buttons in settings * was originally done by @kufikugel for CBSetting i just brought to settings and adapted for marshmallow
+d81fdeb Skip Misc/Overcounted battery stats regardless of build type.
+1c623cf Enable Development Settings By Default regardless of build type * also kill dev countdown + redo arleady enabled string
+df3f99e Fix metrics for Broken Pieces subsections
+b0f851d Add a global switch preference
+647b1d4 Add additional battery saver steps
+6b19d5e Settings: apple can do...we can do as well
+528ea99 Enable MultiWindow for everyone! :)
+4fea2e4 Settings: Add Utility function
+37a965f Utils: add isPackageInstalled boolean
+a165d3a Settings: Remove screen rotation from accessibility
+9fe3baa Allow launching display rotation settings externally
+71354a4 Settings: Remove Wallpaper selection from Display
+9402fc7 Add ColorPicker Extracted from https://github.com/zephiK/android_packages_apps_Settings/commit/0a9d7553c91a4d8698ed75926656563df83406e0
+c9b0289 That aint us
+1fb355e location: Enable 3dot menu
+6d9dde0 Remove Bug Reporting
+b343679 Remove Bug report options from developer settings
+3c2908f Remove all Google Legal Information, System Update Settings
+b8d4c86 Settings: Materialize standard colors in colorpicker
+77b59a2 The start of headers
+1dc714c Slim -> Broken
+be1e270 Bring out BrokenWalls for human consumption
+cded0fb open up night
+473e022 RIP -night DO NOT MERGE
+ea8f371 DayNight: improve storage summary
+dfaf4d9 BrokenROM - Custom dashboard tile icon. ** Vectorized BrokenROM icon. ** Created new drawable/ic_broken_settings.xml
+330fb04 Fix a few icons tinting (SuperSU and Layers)
+71e62bc Restart SystemUI for DayNight
+b42b11d Blacken the cards
+db34809 Make a dark banner
+02ca52b Put Kernel Adiutor back in settings
+8f11e52 Break MSIM dependency on qci-telephony-framework
+d380534 settings: Add Broken Device Maintainers Adapted by Crackerteg from this commit: https://goo.gl/Th8Ww1
+67af4ac Fix some strings
+bbced55 Settings: Add preference for EdgeGesture service.
+0bf87b7 Setting up gesture settings
+85d6563 Tint the gestures icon properly
+9d561e7 Hide gestures if not supported
+3df858d Only use device custom icon if it provides one
+ed0fc69 Change the gesture string
+9786ab1 PowerManager: Don't wake up device when charger is plugged/unplugged (2/2) Original commit by MarcLandis - https://github.com/zephiK/android_frameworks_base/commit/5a1b422691d689c10002e704d26035576eb84f38
+b235b7f Settings: Add proximity wake option
+46b6eed Added some switches back
+5b61cc4 Fix a fuck ton of fuck ups...
+dfe7ef7 Fix a switch
+ca5ad0c Settings: Slims navbar customizations
+e3659c3 Tear down Buttons and drop it into power menu
+65e5045 Forward Port: Add Broken Version to about phone
+f42da70 Ported up [2/2] Settings: Slims Hardware Key Rebinding Lots of work by me @InkSlinger666 First thanks to CM team for the 2 years where we used their approach for our custom hw key rebinding. This hardware key rebinding patches did in the past a good job and we extended it prior 4.3 with a lot Slim custom stuff.
+7b59cd3 Forward port button/keyboard backlight options
+54ab812 Add some more basic strings
+254cd8b [2/2] Settings: Battery and Notification Lights
+83da8a7 Settings: set a notification when forcing LED on
+6c86393 DeviceInfoSettings: Add and remove preferences:
+95d4bc0 bluetooth: Show a refresh icon on the select devices screen
+6e261eb Add fastscroll to the Manage applications screen
+807d1c4 Settings: auto hide fast scroll bar in manage apps screen
+dec6f2a Double tap to sleep on navigation bar [2/2]
+f34b2ec UsbModeChooserActivity - Theming update
+37d3ae1 PIE 3.0 (2/2)
+888148d SlimActions: add menu big action
+4fd9df6 Volume Rocker Wake [2/2] Based on Rascarlo's code - https://github.com/rascarlo/android_packages_apps_settings/commit/33af4f0d419533bcb62ae16ea46bf3c134bf12ca
+83ac4be Battery text mode (2/2)
+3a13b2c Fix nav gallery selection... Hints taken from Screwd
+91f6feb Three finger gesture switch(2/2) Original commit by ghbhaha.
+d03826b Settings: Configurable 0, 90, 180 and 270 degree rotation (2/2)
+6e66f49 Allow launching display rotation settings externally
+bc3b029 Settings: Do not rely on isRotationLockToggleVisible
+b21b3b7 Settings: statusbar clock customization + initial interface
+17c7a1a Settings: double tap status bar to sleep (1/2)
+23df533 Settings: Add Left clock (2/2)
+75c2699 Show carrier label / custom & change color [2/2] [Squashed]
+6b383de settings: Avoid an NPE
+6ceabd0 Configurable init.d
+1f363d1 Power menu customizations [1/2] Based on AlmightyMegadeth00's commit and Beantown106's modifications - https://github.com/PureNexus/android_packages_apps_PureNexusSettings/commit/89e05299b9c71d8aad150f12faad15db9526f3cd
+9e8fd5a Kill bugreport from power menu [2/2]
+1b0ab2f Kill some unneeded lines from initd and power menu
+9e4d3e3 DashboardTiles - Two Column support
+9c0b527 Allow user to change scan always available setting
+5b0bea2 Settings: Second Clock (2/2)
+1ecdf5f Settings: rotation based volume key swap [2/2]
+b74edf3 [1/2] Settings: keyguard wallpaper config
+0fdfd1d Settings: add "Show weather" toggle for status bar
+f91cccc Add option to disable searchbar in recents [1/2]
+58eb53a Longpress power lockscreen torch [2/2] Thanks to @Mazda-- for the method to hide on devices without flash
+f3d4d23 [2/2]Settings: Add time-context headers to the notification header
+0e803aa Keyguard: Forward port lockscreen quick unlock (2/2)
+e2b966a Full screen recents [2/2]
+3945fbc Volume rocker directions in silent for dnd toggle *defaults to off
+b85b9ec Break SystemUI Tuner into two parts [2/2]
+04217ed Allow unlinking ringer with notification volume (Squashed) [2/2]
+155c122 Broken logo in the statusbar [2/2]
+ed60599 clean up statusbar a little....add a default
+795f523 settings: Forward-port notification counters
+f6eead2 Statusbar brightness Settings component, https://github.com/zephiK/android_frameworks_base/commit/6e3b4fa0f912d689250dfe9abdcc1ca5364aadf7 Credits to Danesh
+6f5fdbd Settings: Add option to scramble pin layout when unlocking (1/2).
+fc1ed49 Quick settings: Option to disable brightness slider (2/2)
+5768458 Settings: Double tap to sleep on the lock screen (2/2)
+0e37b47 [2/2] Settings: Hide power menu on lockscreen
+e8314ec Settings: add less annoying sound notification
+7efd02c Napalm Meet QuickSettings Tuner, Tuner Meet Napalm pt2 * light this shit on fire. it has way to many restrictions
+334ebf5 Add customization for Quick Settings [2/2]
+a854f0f Fix bug on QS selection preference.
+7e7acc2 Cleanup and fix QS tile implementation
+734d4cc Settings : Update for centralized quick settings
+8a39dbd Settings : Add adb over network tile
+b5266a5 Settings: add nfc tile
+8ea460e Properly name string resources and update icon references
+110a5f4 Settings : Sort QSTiles in picker
+912f980 QS: change location sensors mode in quick settings [2/2]
+17050f8 Settings: add compass tile
+d0cc81c Settings : Add screen timeout
+225ac6c QS: add Sync tile (2/2)
+a0668fe QS: Option to show four tiles per row (2/2)
+54db084 QS: add newly added tiles * Battery saver * Brightness * Screen off * Expanded Desktop
+ec0b64c QuickSettings Theme and exposures *expose quick settings elements to be themeable *theme quick settings to coincide with the purenexus settings theme *switch from pngs to vectors for the add and delete buttons
+046771c Settings: add a way to reset quick settings tiles
+8020044 Added show volume to tile chooser
+8df00ec QS: Add Ambient Display Tile (2/2)
+078365f QS: add Screenshot tile
+b75a02b Missing color calls
+3217d7f Port "Option to hide Adb notification icon (1/2)"
+dd6ff27 Settings: Forward port ADB over network (Part 1 of 2) and fix the switches Squashed commit of: - Adb over network (Settings part for Jellybean)   + Display WiFi IP Address & Port as preference summary.   Note: adb_over_network were already pushed in 5555aae   Author: Tanguy Pruvot   Id: Ia05aa8f6281c9bdcb3d5e62566b103c38bc70b82
+9fbcc6c Reboot/Recovery tile (2/2)
+1df6842 Remove expanded tile for now
+80c0512 Settings: add switches for dashboard items
+2950ac1 Xposed support: add a receiver to signal developers if xposed is installed
+9dd3cc6 Update log message
+507951e [1/2] Settings: Slim doze options
+5342d86 Add Screen Record to the Power Menu [2/2]
+c2aa3d0 [2/2] Settings: On-The-Go mode On-The-Go turns on the camera of your phone and streams it to an overlay, which is drawn over everything. this makes you feel like your display is transparent, as you see the content behind it.
+58e4522 Add option to Restart SystemUI to DevSettings
+7083438 Fixing some qs theming
+a6828a3 Move up tiles
+4bde67a Add LCD density setting
+7f5007d Kill the color and extra shit from carrier label
+22325b0 [2/2] Display cursor buttons in navigation bar while typing.
+208a500 Drop columns back to one for the switch
+80602c6 Configurable dashboard columns [1/2]
+a610089 Dashboard tileview double lines toggle [1/2]
+b0abd14 Add now on tap to hardware keys
+c3d5ca3 Lock screen: Weather panel improvements, (2/2)
+5a781b1 Clean Up Lockscreen Weather (items & layout) [2/2]
+de30e03 Revert "Add Screen Record to the Power Menu [2/2]"
+31b03c0 Block developer settings during SUW
+acadf14 Uncheck checkbox for contact sharing by default for non carkit devices.
+17d6868 Preserve FRP lock if wiped during SUW
+
+project packages/apps/SnapdragonCamera/
+6e6cb43 CameraActivity: Handle NPE when film strip view is null
+
+project packages/inputmethods/LatinIME/
+2ed0afd Turn ON offensive words by default and disable vibration
+2afbfd0 Add Day/Night theme
+faac5ff LatinIME: Add fallback loader for JNI lib
+679ecc5 LatinIME: Only enable gesture mode if gesture lib is available
+fd855b0 Update JNI fallback lib name
+44f1774 Add Moar Key Options
+c2a2be2 LatinIME: Apply "Enable more keys for top row on tablets" (f6620308ba) and "Add "more" keys to ALL the keys" (c561f31af9) to slavik layouts.
+fe49560 LatinIME: Bring back ALL the keys for QWERTZ
+90fc73d LatinIME: enable gesture input via config
+f67d803 LatinIME: correctly handle jni fallbacks
+bd7fa20 Rearrange Morekey Options to follow numbers/symbols menu
+4318961 Add 5th number row to keyboard.
+f9b066c Fixing layouts and adding 5th row to QWERTZ.
+3c50a87 LatinIME: Add "more" keys to ALL the keys
+c0a2417 LatinIME: Fix to English dictionary can be added after deleting
+7d65964 Updating night colors to line up with rom
+
+project packages/services/Telecomm/
+81c57e8 DayNight Telephony Theming (6/7)
+aae004d Telecomm: Forward port phone_type switch support
+61a6cde telecom: Ensure that we always update bluetooth in dsda case
+
+project packages/services/Telephony/
+d848b00 DayNight Telephony Theming (7/7)
+daabc30 Phone: Enable LTE for GSM LTE phones (part I)
+a88c67a Telephony: Fix translatability of network modes
+1f4028e Break MSIM dependency on qci-telephony-framework
+
+project platform_manifest/
+b8c3938 Work up the manifest for 6.0.1 starts
+b289fd2 Set up a few more of our repos
+7f64951 6.0.1 readme
+5cfa447 our prebuilt webview
+829b86c our av
+1135d74 our qcom/media
+0a35a4c our art
+f4e4ac1 our qcom audio and display
+940d6db our ril and ril-caf
+b191ddd Adding back connectivity
+8f77b0c Some more of our themed repos
+9d6dbf4 track our own frameworks/opt/telephony
+766c50e our skia
+eb3f516 our system/core
+73cc19f A few repos we need for latest changes...LockClock,external/google and wallpaperpicker
+e74a722 Our LatinIME
+ef7c929 our qcom/gps
+177b897 our system_media
+4a86265 our stagefright_plugins
+ca304b8 our external/sepolicy
+ee9ad0a our apps/Bluetooth
+a3677e8 our nfc repos
+941adbc our fw_wilhelm
+6ff38fc Our deskclock
+de03d17 Our tinyalsa
+0bdf4da Track cm intel repos
+9848095 r10
+6f4f99b our opt/net/wifi
+
+project system/bt/
+18e783c Remove that damn parenthesis
+8ab5164 bluedroid: Disable BLUETOOTH_QTI_SW by default
+3b71908 Add I2S-PCM slave mode for SCO
+7d177ed bluedroid: Disable AVRCP 1.5 by default
+f3e791d bluedroid: Disable the test interface
+0429ea1 Fix compile when BTM_WBS_INCLUDED true and BLUETOOTH_QTI_SW false
+2798d49 shut a2dp logspam.
+43795c4 a2dp: kill more logspam
+df51d63 Bluetooth losing HF connection to car-kit after 5 seconds
+35d5403 bta: Fix device discoverability
+0195143 Bluetooth: Don't use command TX idle timer on Broadcoms
+529109e btm: Fix compile with BLE disabled
+1a73ae2 bluedroid: Add wiimote pairing support
+057c4c8 btsnoop: Enable snoop logging by default only on eng builds
+e2860e8 bt: Kill some logspam
+e5bec70 bt: Enable Bluedroid debugging only on eng.
+
+project system/core/
+a5d3dda init: add detection of charging mode
+652809b init: define BOARD_CHARGING_CMDLINE parameters
+72d9bf7 set /system/etc/init.d/* permissions
+f27895c set permissions on /system/addon.d/ and files within.
+7bcd11a Add sysinit service for init.d
+6ee0697 healthd: Stop logspam
+174e4f4 Set init.d permission
+7d25e95 fix initd
+477b511 liblog: Silence spammy logs from camera blobs (AEC_PORT and mm-camera)
+4190b10 healthd: allow custom charger
+2623aaf liblog: fix building with LOGD disabled
+bfa00ff [gatekeeperd] copy uid to local before passing to u_map
+d594a75 Add macro to call event logger for errors.
+785d456 Fix incorrect check of descsz value.
+
+project system/media/
+c969dad effects: Add AUDIO_EFFECT_VENDOR_CONFIG_FILE2
+
+project vendor/broken/
+f6f3dd7 6.0.1
+70364e0 Comment out some overlays for a minute
+c58e109 Unlock the system recievers and updates bools
+650bd9c Add xxxhdpi 1440x2560 bootanimation
+0fc4183 Update apn's from CM vendor
+bcb1090 v4.2
+
+project vendor/qcom/opensource/dataservices/
+5451bb0 Makefiles: Use project pathmap to determine build eligibility

@@ -1,0 +1,21 @@
+project device/oneplus/bacon/
+8b528b5 sepolicy: remove persist_block_device and kill some overlays for a minute * this is in common now
+a123455 Let out the prox bool
+b562889 Reopen the lights overlays
+ae04ed0 Upstream changes from sultanxda
+70fb4b0 Drop the dpi to 380 (cause I like it)
+
+project kernel/oneplus/msm8974/
+c3d9780 ASoC: msm: qdsp6v2: Convert wake_lock to wakeup_source
+54e1ab4 power: bq27541: Use SOC calculations from CM
+a8a8019 bacon_defconfig: Remove NFSv4 support
+9718b08 PM / devfreq: Remove unstable/unused governors
+8f4ec2b power: bq27541: Remove all OEM modifications
+b050b017 power: bq27541: Adapt for OnePlus One
+46b0d01 power: qpnp-charger: Adapt for new fuel-gauge driver
+de8b8af power: bq27541: Add calibration phase after charging
+ccaf5f8 power: bq27541: Don't limit charge rate
+37bf460 power: bq27541: Don't raise SOC while discharging
+df025f0 power: bq27541: Increase calibration cycle count to 3
+cf600f9 power: bq27541: Remove code redundancies
+bfd0cdd power: qpnp-charger: Remove Oppo's full-charge hack
