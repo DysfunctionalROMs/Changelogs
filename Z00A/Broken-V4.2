@@ -1,0 +1,75 @@
+Release for BrokenM
+
+project device/asus/Z00A/
+16d40f7 Z00A: Update proprietary files for camera wrapper
+1f0ba60 Z00A: overlay: Update the power_profile based on some tests
+
+project device/asus/mofd-common/
+cfc0e87 mofd: use vendor init to overide ro.serialno prop
+c8120c1 mofd: recovery: set serial on usb connection in recovery as well
+01aeb2d Revert "Tell init to not set ro.serialno for us,it is set by customize_service"
+22b7200 Revert "Use ScreenType util from cmsdk"
+f774ead Break gestures and dt2w
+4439029 mofd-common: init: Switch to ondemand cpufreq governor
+3ffb171 mofd-common: Remove interactive governor from PowerHAL
+f985bb1 mofd-common: power: Unplug cores 2&3 when not interactive
+3709062 Revert "mofd-common: init: Allow more outstanding datagram packets"
+4533ada remove cm
+4c1a487 remove CM dependencies and conflicting overlay
+7e018db fix MTorch
+
+project external/tinyalsa/
+2ce81df tinyalsa: Use kernel headers when available
+fb72295 tinyalsa: Add a board config to drop silence_size for blob compat.
+
+project kernel/asus/moorefield/
+5754e7f moorefield: net: Fix setting tcp_default_init_rwnd
+2e6681e mm/slub: don't wait for high-order page allocation
+9bb3a38 net: wireless: Increase scan entry expiration to fit new scan time
+98c90bd staging: android: ashmem: Avoid deadlock with mmap/shrink
+2e89962 cpufreq: ondemand: Change the calculation of target frequency
+b0465f9 cpufreq: Fix timer/workqueue corruption due to double queueing
+500d5d0 cpufreq: governor: Fix typos in comments
+391600d cpufreq: Don't use smp_processor_id() in preemptible context
+1fe0221 cpufreq: governor: Remove fossil comment in the cpufreq_governor_dbs()
+5d59000 cpufreq: Fix timer/workqueue corruption by protecting reading governor_enabled
+5375117 cpufreq: remove race while accessing cur_policy
+d5f00cd cpufreq: governor: Be friendly towards latency-sensitive bursty workloads
+199af85 cpufreq: governor: remove copy_prev_load from 'struct cpu_dbs_common_info'
+6c9d021 cpufreq: governor: register notifier from cs_init()
+2e09cb2 cpufreq: Fix governor start/stop race condition
+2cce31e cpufreq: Fix wrong time unit conversion
+73db758 cpufreq: ondemand: Eliminate the deadband effect
+c52848f cpufreq: governors: Remove duplicate check of target freq in supported range
+f6e3ffb cpufreq: ondemand: Remove redundant return statement
+7233bf7 cpufreq: Introduce new relation for freq selection
+31b9887 Cpufreq: Break out early when frequency equals target_freq
+40a8b9d moorefield: cpufreq: Name p to policy to match upstream
+868349c cpufreq: Don't create empty /sys/devices/system/cpu/cpufreq directory
+5e299e2 cpufreq: governor: split cpufreq_governor_dbs()
+9d3bb67 cpufreq: governor: Serialize governor callbacks
+39b2810 cpufreq: governor: Name delayed-work as dwork
+5d9f431 cpufreq: governor: Drop unused field 'cpu'
+c51f5da cpufreq: governor: Rename 'cpu_dbs_common_info' to 'cpu_dbs_info'
+cf9b646 cpufreq: governor: name pointer to cpu_dbs_info as 'cdbs'
+e0991c0 cpufreq: governor: rename cur_policy as policy
+5e64e5c cpufreq: governor: Keep single copy of information common to policy->cpus
+dc4e01b cpufreq: governor: split out common part of {cs|od}_dbs_timer()
+b73400e cpufreq: governor: Avoid invalid states with additional checks
+6fa94a5 cpufreq: governor: Don't WARN on invalid states
+19b008e moorefield: cpufreq: Fix on missed sizeof(*ptr) vs. sizeof(struct)
+38ef26c Revert "cpufreq: Don't create empty /sys/devices/system/cpu/cpufreq directory"
+e194243 cpufreq: ondemand: Drop unnecessary locks from update_sampling_rate()
+7af1a58 cpufreq: ondemand: Update sampling rate only for concerned policies
+68948b9 cpufreq: ondemand: Work is guaranteed to be pending
+38bc222 cpufreq: conservative: remove 'enable' field
+ccc0426 cpufreq: governor: Quit work-handlers early if governor is stopped
+3e5c95c cpufreq: governor: Pass policy as argument to ->gov_dbs_timer()
+f7b582b cpufreq: governor: initialize/destroy timer_mutex with 'shared'
+4d74be0 cpufreq: governor: replace per-CPU delayed work with timers
+bc92311 cpufreq: ondemand: update update_sampling_rate() to make it more efficient
+c888505 cpufreq: governor: Use lockless timer function
+54c9473 cpufreq: governor: Fix negative idle_time when configured with CONFIG_HZ_PERIODIC
+
+project vendor/asus/
+e17b51c mofd-common: Update houdini from fugu's mmb29t release
