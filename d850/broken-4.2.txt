@@ -1,0 +1,18 @@
+project device/lge/d850/
+b44a7e4 Add device maintainer
+3adcfbb Update dependancies
+
+project device/lge/g3-common/
+ac7eb48 Revert "g3: Enable temporary workaround for gralloc issue"
+6929695 g3: remove liboemcrypto
+ceb7627 g3: turn on TARGET_USE_COMPAT_GRALLOC_ALIGN
+6097381 Dex
+4ddbaea Revert "Fix dt2w"
+5876f96 Bring back the switch
+8c976d4 g3: use Snap camera app
+1ef86ae camera: fix iso modes with new hal
+6a010be g3: Snap: set preview size for photo via overlay
+067b0b3 g3: snap: enable lge hdr mode
+095d986 g3: Temporarily disable hw avc decoder
+3b68a07 Revert "g3: turn on TARGET_USE_COMPAT_GRALLOC_ALIGN"
+4beac9c Revert "Revert "g3: Enable temporary workaround for gralloc issue""
