@@ -1,0 +1,73 @@
+project device/motorola/falcon/
+f9b121f falcon: Rename camera HAL to be wrappable
+8b01d79 falcon: Exclude unsupported HFR modes
+50a49f3 falcon: Snap: Disable ZSL
+22996d1 falcon: init: Detect Boost Mobile
+
+project device/motorola/msm8226-common/
+6dc32a6 msm8226-common: Bring back the common camera wrapper
+717915b msm8226-common: camera: Enable touch AF
+da09a53 msm8226-common: Build Snap camera
+50335c8 msm8226-common: camera: Fix the build
+e255740 msm8226-common: Add a bunch of extra camera parameters
+e5caf3f msm8226-common: camera: Enable face detection
+9f12951 msm8226-common: camera: Enable additional scene modes
+3844e75 msm8226-common: camera: Add ISO support (falcon/peregrine)
+bf7b4e3 msm8226-common: Force NV12 and NV21 pixel alignment
+0448fe1 msm8226-common: camera: Enable HFR video recording
+6a8c59c msm8226-common: camera: Set HFR param only when recording
+f4495ee msm8226-common: camera: Don't disable HW face detection
+8ab0120 msm8226-common: camera: Remove preview fps range hack
+cd1bbbd Revert "msm8226-common: camera: Add ISO support (falcon/peregrine)"
+2a9e144 msm8226-common: Update fluence props
+
+project kernel/motorola/msm8226/
+9707f5f input: Implement DT2W, S2S, and S2W
+a86d56a8 drivers: notifier: add state notifier driver
+182bcec drivers: state_notifier: Implement suspend_defer_timer
+ebfb7e7 drivers: state_notifier: Export suspend status
+6383c89 irq: ratelimit is useless
+44d1a62 devfreq: adreno_idler: Introduce Adreno idler for devfreq-based devices
+96ef0af devfreq: adreno_idler: Clean up & Use state notifier helper
+d913a9f adreno_idler: enable by default
+32eb5d7 drivers: state_notifier: Prevent racy suspend call
+d8000b6 drivers: state_notifier: Use high priority workqueue
+635e8d9 drivers: state_notifier: use singlethread workqueue
+4eb4df6 drivers: state_notifier: start driver as subsystem
+bff028b msm: add MSM-hotplug driver Add latest msm-hotplug driver from neobuddy89
+2d746e8 drivers: state_notifier: sync with latest from neobuddy
+40a308e state_notifier: enabled by default
+4e456ca Revert "input: Implement DT2W, S2S, and S2W"
+cce86c0 initial s2w dt2w code import from @showp1984
+c199c87 dt2w/s2w: adapt and implement proper pocket mode for moto G [v2]
+c52d4e9 q6voice: may fix screen wake up during call
+6212d46 dt2w/s2w: switch to state notifier
+8eb8c9c ct406: enable PM if not build with CONFIG_TOUCHSCREEN_PREVENT_SLEEP
+51b0813 dt2w/s2w: implement call_activity
+eeb30f5 ct406.c: sweep2wake should trigger pocket mode
+2688bb5 ct406.c: remove unused powersuspend header
+4fedfc5 sweep2wake: add sweep2sleep and code update
+dd1963d dt2w/s2w: fix screen freeze if dt2w/s2w in disable mode
+9ded872 dt2w/s2w: should return 0 if proximity not covered
+f395aad Partially revert some recent changes for dt2w/s2w
+5206a90 dt2w/s2w/s2s: implement STATE_PREVENT_SLEEP
+6905373 dt2w: remove power effecient workqueue
+ba4c2eb dt2w/s2w/s2s: Remove suspend_touch function
+e588c7f msm: pm: Fix cpu collapse timeout
+d436fe5 msm_hotplug: remove cpu boost dependency
+20ebfdf ASoC: wcd9xxx: Enable headset in high performance
+aebf26e ASoC: wcd9xxx: Changes for High performance mode
+82279ac ASoC: wcd9306: Enable class AB and expose sysfs
+13225b2 ASoC: wcd9306: Fix req_clsh_state mismatch
+5a1fddf wakeup: add toggles for wlan wakelocks. They are all enabled by default, it's up to the user and I provide no support if Wi-Fi stops working normally without these locks enabled. This is for advanced users
+28ae4be wakeup: add toggle for bluedroid_timer wakelock
+1397846 wakeup: add toggle for bluesleep wakelock
+089625c Revert "msm_hotplug: remove cpu boost dependency"
+6017e55 Revert "msm: add MSM-hotplug driver"
+d9996b1 enable things
+df91e4a update local version
+
+project vendor/motorola/
+0ae17df falcon peregrine titan thea: Hexedit camera HAL for camera model exif
+cb73b78 falcon peregrine: Rename camera HAL to be wrappable
+c0adb80 msm8226-common: Update blobs to latest M release
