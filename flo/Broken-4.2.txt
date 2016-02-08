@@ -1,0 +1,8 @@
+
+project vendor/asus/
+2ab9396 mofd-common: Update houdini from fugu's mmb29t release
+3e7c0da Flo: Update blobs for Android 6.0.1 (MMB29Q)
+b8d5ae2 fugu: Build libaudiopolicymanager and prebuild libremotecontrolservice
+4156cc3 fugu: Nexus Player binaries for Android 6.0.1 (MMB29T)
+2c7d587 fugu: Nexus Player binaries for Android 6.0.1 (MMB29U)
+9781382 deb: Update blobs to 6.0.1 (MMB29Q)

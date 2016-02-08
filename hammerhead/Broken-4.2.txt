@@ -1,0 +1,20 @@
+
+project kernel/lge/hammerhead/
+e0153d3a dt2w: add doubletap2wake (disabled by default) * Squashed, based from showp1984 and flar2 work * Modes: 0:disabled, 1:enabled, 2:enabled fullscreen
+c374c7a dt2w: Prevent touches during phone calls based on flar2 work
+b270694 dt2w: Option to disable with power button
+997d723 dt2w: Power button also disable irq_wake in touch driver, fix unbalanced irq_wake based on flar2 work
+d81446a dt2w: add wake_timeout to disable wake functions after a determined period based on flar2 work
+a9f0ab8 dt2w: prevent end call when wake_timeout and end call with power button are enabled
+669dada dt2w: merge lates wake timeout and wake gestures fixes
+64c5310 defconfig: Enable dt2w, pwrkey_suspend and wake_timeout
+4cd4087 lower GPU volt constraints a bit
+50e8516 GPU Simple Governor: adapt GPU Simple Governor for Snapdrgaon 800 SOCs
+4f179d3 Simple GPU governor: fix a merge derp
+747d370 defconfig: Enable simple GPU governor
+
+project vendor/lge/
+c444ed3 hammerhead: update blobs for 6.0.1 (MMB29Q)
+4644998 g3: update headset audio cal from D85530b
+973edcb h811: use 20i blobs
+ac1ab93 g3: Use reduced GPS set
